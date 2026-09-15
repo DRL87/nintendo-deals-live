@@ -8,8 +8,8 @@ name: Daily deals snapshot
 
 on:
   schedule:
-    # 04:00 UTC daily (~14:00 AEST / 15:00 AEDT)
-    - cron: '0 4 * * *'
+    # 00:01 AEST daily = 14:01 UTC (during AEDT this is 01:01 AEDT)
+    - cron: '1 14 * * *'
   workflow_dispatch:
 
 permissions:

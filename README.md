@@ -7,7 +7,7 @@ A **static** living page of Nintendo Switch **AU eShop Current Offers**, filtere
 ## Architecture
 
 ```
-┌─────────────────────┐     cron 04:00 UTC      ┌──────────────────────────┐
+┌─────────────────────┐     cron 14:01 UTC (00:01 AEST)      ┌──────────────────────────┐
 │  GitHub Actions     │ ──────────────────────► │  scrape (Chrome)         │
 │  daily-snapshot.yml │                         │  parse Magento HTML      │
 └─────────────────────┘                         │  Steam match + OP/VP     │
@@ -80,7 +80,7 @@ Chrome user-data and scrape caches live under `.cache/` (gitignored).
 | **Preferred** | `wrangler pages deploy public --project-name=nintendo-deals` | Secrets set |
 | **Alternate** | Commit `public/deals.json` + git-backed Pages | Secrets missing, or dual backup |
 
-Both steps are in `.github/workflows/daily-snapshot.yml`. Schedule: `0 4 * * *` UTC + `workflow_dispatch`.
+Both steps are in `.github/workflows/daily-snapshot.yml`. Schedule: `1 14 * * *` UTC (00:01 AEST) + `workflow_dispatch`.
 
 ## Project layout
 
