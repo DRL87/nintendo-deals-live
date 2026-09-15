@@ -1,0 +1,91 @@
+# Daily Nintendo AU deals snapshot.
+# Scraping runs on GitHub Actions runners (headless Chrome).
+# Do NOT scrape from Cloudflare Workers — Nintendo’s WAF blocks typical edge fetches.
+# Prefer: write public/deals.json, then `wrangler pages deploy`.
+# Alternate: commit public/deals.json back to the repo (git-backed Pages).
+
+name: Daily deals snapshot
+
+on:
+  schedule:
+    # 04:00 UTC daily (~14:00 AEST / 15:00 AEDT)
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-snapshot
+  cancel-in-progress: false
+
+jobs:
+  scrape-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install Google Chrome
+        run: |
+          set -euo pipefail
+          wget -q -O /tmp/chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo apt-get update -qq
+          sudo apt-get install -y /tmp/chrome.deb
+          google-chrome --version
+          echo "CHROME_PATH=/usr/bin/google-chrome-stable" >> "$GITHUB_ENV"
+
+      - name: Install npm dependencies
+        run: npm ci || npm install
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run full scrape pipeline
+        env:
+          CHROME_PATH: /usr/bin/google-chrome-stable
+        run: npm run scrape
+
+      - name: Deploy to Cloudflare Pages (preferred)
+        # Requires repo secrets CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID.
+        # Token needs Cloudflare Pages Edit. Project name defaults to nintendo-deals.
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          if [ -z "${CLOUDFLARE_API_TOKEN:-}" ] || [ -z "${CLOUDFLARE_ACCOUNT_ID:-}" ]; then
+            echo "CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID not set — skipping wrangler deploy."
+            echo "Set those secrets, or rely on the commit-deals.json step for git-backed Pages."
+            exit 0
+          fi
+          npx wrangler pages deploy public --project-name=nintendo-deals --commit-dirty=true
+
+      - name: Commit public/deals.json (alternate / backup)
+        # Always keep the latest snapshot in git when there are changes.
+        # If you use git-connected Cloudflare Pages, this alone updates the site.
+        # If you only use wrangler deploy, you can delete this step.
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/deals.json
+          if git diff --staged --quiet; then
+            echo "No deals.json changes to commit"
+          else
+            git commit -m "chore: daily deals snapshot $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

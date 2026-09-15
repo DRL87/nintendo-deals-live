@@ -1,0 +1,25 @@
+{
+  "name": "nintendo-deals-live",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Living Nintendo AU eShop deals page \u2014 daily scrape via GitHub Actions, static host on Cloudflare Pages",
+  "scripts": {
+    "scrape": "node scripts/scrape.js",
+    "scrape:pages": "node scripts/scrape_pages.js",
+    "parse": "python3 scripts/parse_offers.py",
+    "build-deals": "python3 scripts/build_deals.py",
+    "serve": "npx serve public -p 3000",
+    "deploy": "npx --yes wrangler pages deploy public --project-name=nintendo-deals",
+    "serve:py": "python3 -m http.server 3000 --directory public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "puppeteer-core": "^25.10.0"
+  },
+  "devDependencies": {
+    "serve": "^14.2.6",
+    "wrangler": "^3.114.0"
+  }
+}

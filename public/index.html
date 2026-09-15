@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nintendo AU deals</title>
+<style>
+  :root {
+    --bg: #0e1116; --panel: #171c24; --card: #1d2430; --ink: #f4f1ea;
+    --muted: #9aa4b2; --red: #e60012; --gold: #f5c542; --like: #ff7a45;
+    --line: #2a3342; --ok: #7dffb3;
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; }
+  body { padding-bottom: var(--safe-bottom); }
+  a { color: inherit; }
+  header {
+    position: sticky; top: 0; z-index: 30;
+    background: #12161d;
+    border-bottom: 1px solid var(--line);
+    padding: calc(12px + var(--safe-top)) 14px 10px;
+  }
+  .wrap { width: min(1180px, 100%); margin: 0 auto; }
+  .head-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+  h1 { font-size: 1.15rem; margin: 0 0 2px; letter-spacing: -0.02em; line-height: 1.2; }
+  .sub { color: var(--muted); font-size: 0.78rem; margin: 0; line-height: 1.35; }
+  .sub a { color: #8ec8ff; }
+  details.filters { margin-top: 10px; }
+  details.filters > summary {
+    list-style: none; cursor: pointer; user-select: none;
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    min-height: 44px; padding: 0 12px;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    font-weight: 700; font-size: 0.95rem;
+  }
+  details.filters > summary::-webkit-details-marker { display: none; }
+  .tri {
+    width: 0; height: 0;
+    border-left: 6px solid transparent; border-right: 6px solid transparent;
+    border-top: 8px solid var(--ink);
+    transition: transform .16s ease;
+    flex: 0 0 auto;
+  }
+  details.filters[open] > summary .tri { transform: rotate(180deg); }
+  .filter-count { color: var(--muted); font-weight: 500; font-size: 0.8rem; margin-left: auto; margin-right: 8px; }
+  .panel {
+    margin-top: 8px; padding: 12px;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    max-height: min(70vh, 560px); overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .controls { display: flex; flex-direction: column; gap: 8px; }
+  input[type=search], select {
+    width: 100%; background: var(--card); color: var(--ink);
+    border: 1px solid var(--line); border-radius: 10px;
+    padding: 12px; font-size: 16px;
+  }
+  .group-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 6px 0 2px; }
+  .pills { display: flex; flex-wrap: wrap; gap: 8px; }
+  .pill, .gbtn {
+    border: 1px solid var(--line); background: var(--card); color: var(--ink);
+    border-radius: 999px; padding: 10px 12px; font-size: 0.85rem; cursor: pointer;
+    min-height: 40px;
+  }
+  .pill.on, .gbtn.on { background: var(--red); border-color: var(--red); color: #fff; }
+  .pill.rogue.on { background: var(--like); border-color: var(--like); }
+  .gbtns { display: flex; flex-wrap: wrap; gap: 6px; }
+  .gbtn { font-size: 0.78rem; padding: 8px 10px; min-height: 36px; }
+  section { padding: 14px 12px 6px; }
+  h2 { font-size: 1rem; margin: 0 0 10px; display: flex; align-items: center; gap: 8px; }
+  h2 .count { color: var(--muted); font-weight: 500; font-size: 0.85rem; }
+  .grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 14px; display: flex; flex-direction: column; gap: 10px;
+  }
+  .card[hidden] { display: none !important; }
+  section[hidden], .empty[hidden] { display: none !important; }
+  .card.featured { border-color: #ff8a5b; box-shadow: 0 0 0 1px #ff7a4533; }
+  .cover { text-decoration: none; }
+  .topline { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .badge { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; padding: 4px 7px; border-radius: 6px; }
+  .badge.op { background: #163d2a; color: var(--ok); }
+  .badge.vp { background: #1e3a4c; color: #8ec8ff; }
+  .off { background: var(--red); color: #fff; font-weight: 800; font-size: 0.8rem; padding: 4px 7px; border-radius: 6px; }
+  h3 { margin: 0; font-size: 1.05rem; line-height: 1.25; overflow-wrap: anywhere; }
+  .prices { display: flex; align-items: baseline; gap: 8px; }
+  .now { font-size: 1.2rem; font-weight: 800; }
+  .was { color: var(--muted); text-decoration: line-through; font-size: 0.9rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+  .chip { font-size: 0.7rem; padding: 3px 8px; border-radius: 999px; background: #2a3342; color: #d7dde6; }
+  .chip.genre { background: #243044; }
+  .chip.tag { background: #22262e; color: #b7c0cc; }
+  .chip.rogue { background: #4a2416; color: #ffc4a8; font-weight: 700; }
+  .chip.roguelike { background: #5a220f; color: #ffd0b5; }
+  .chip.roguelite { background: #143a36; color: #b6fff4; }
+  .chip.both { background: #3a2a08; color: var(--gold); }
+  .chip.muted { color: var(--muted); }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
+  .buy, .steam {
+    font-size: 0.85rem; text-decoration: none; padding: 11px 12px; border-radius: 10px;
+    min-height: 44px; display: inline-flex; align-items: center;
+  }
+  .buy { background: var(--red); color: #fff; font-weight: 700; }
+  .steam { background: #1b2838; color: #c7d5e0; border: 1px solid #2a475e; }
+  .empty { color: var(--muted); padding: 20px 12px; }
+  footer { color: var(--muted); font-size: 0.75rem; padding: 20px 12px 36px; }
+  .status { color: var(--muted); padding: 24px 12px; text-align: center; }
+  .status.err { color: #ff8a8a; }
+
+  .about-btn {
+    border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+    border-radius: 10px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+    min-height: 40px; white-space: nowrap; flex: 0 0 auto;
+  }
+  dialog.welcome {
+    border: 1px solid var(--line); border-radius: 16px;
+    background: var(--panel); color: var(--ink);
+    padding: 0; width: min(520px, calc(100vw - 28px));
+    max-height: min(85vh, 720px); overflow: auto;
+    box-shadow: 0 20px 60px #000a;
+  }
+  dialog.welcome::backdrop { background: #000c; }
+  .welcome-inner { padding: 20px 18px 16px; }
+  .welcome-inner h2 { margin: 0 0 10px; font-size: 1.2rem; }
+  .welcome-inner p, .welcome-inner li { color: #d7dde6; font-size: 0.92rem; line-height: 1.45; margin: 0 0 10px; }
+  .welcome-inner ul { margin: 0 0 12px; padding-left: 1.15rem; }
+  .welcome-inner li { margin-bottom: 6px; }
+  .welcome-actions {
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line);
+  }
+  .welcome-actions .buy { border: 0; cursor: pointer; }
+  .welcome-actions .ghost {
+    border: 1px solid var(--line); background: transparent; color: var(--muted);
+    border-radius: 10px; padding: 11px 12px; min-height: 44px; cursor: pointer;
+  }
+  .welcome-note { font-size: 0.78rem; color: var(--muted); margin: 0; }
+  @media (min-width: 640px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    h1 { font-size: 1.3rem; }
+    .sub { font-size: 0.85rem; }
+  }
+  @media (min-width: 960px) {
+    header { padding: 16px 20px 12px; }
+    details.filters[open] .panel, details.filters .panel { max-height: none; }
+    .controls { flex-direction: row; flex-wrap: wrap; align-items: center; }
+    input[type=search] { flex: 1 1 240px; width: auto; }
+    select { flex: 0 1 220px; width: auto; }
+    .grid { grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); }
+    section { padding: 18px 20px 8px; }
+  }
+</style>
+</head>
+<body>
+
+<dialog class="welcome" id="welcome" aria-labelledby="welcome-title">
+  <div class="welcome-inner">
+    <h2 id="welcome-title">What this page is</h2>
+    <p>A browsable shortlist of <strong>Nintendo Switch AU eShop Current Offers</strong>, filtered to games that are also well-reviewed on Steam. Skim deals on phone or desktop without digging through the store.</p>
+    <p><strong>How the data was put together</strong></p>
+    <ul>
+      <li>Daily scrape of the Australian Nintendo store Current Offers page (GitHub Actions + Chrome — not Cloudflare Workers).</li>
+      <li>Matched each title to Steam, then kept only games rated <strong>Overwhelmingly Positive</strong> or <strong>Very Positive</strong>.</li>
+      <li>Prices, discounts, and “Nintendo AU” links come from the AU eShop. Steam % / review counts are a quality filter, not a Nintendo score.</li>
+      <li>Steam genres and tags are shown on each card. Roguelike / roguelite titles are pinned in their own section at the top.</li>
+    </ul>
+    <p><strong>How to use it</strong></p>
+    <ul>
+      <li>Tap <em>Search &amp; filters</em> (triangle) for search, sort, Steam rating, rogue filters, and genres.</li>
+      <li>Rating and rogue filters stack. Sort applies inside each section so rogue games stay on top.</li>
+      <li>Open a title or <em>Nintendo AU</em> for the live store page. Prices can change after this snapshot.</li>
+    </ul>
+    <p class="welcome-note" id="welcome-note">Loading snapshot… · Not affiliated with Nintendo or Steam.</p>
+    <div class="welcome-actions">
+      <button type="button" class="buy" id="welcome-ok">Got it</button>
+      <button type="button" class="ghost" id="welcome-hide">Don’t show again on this device</button>
+    </div>
+  </div>
+</dialog>
+
+<header>
+  <div class="wrap">
+    <div class="head-row">
+      <div>
+        <h1>Nintendo AU Current Offers</h1>
+        <p class="sub" id="subtitle">Loading deals…</p>
+      </div>
+      <button type="button" class="about-btn" id="about-btn" aria-label="About this page">About</button>
+    </div>
+    <details class="filters" id="filter-box">
+      <summary>
+        <span>Search &amp; filters</span>
+        <span class="filter-count" id="active-count"></span>
+        <span class="tri" aria-hidden="true"></span>
+      </summary>
+      <div class="panel">
+        <div class="controls">
+          <input type="search" id="q" placeholder="Search titles and tags" autocomplete="off" enterkeyhint="search">
+          <select id="sort" aria-label="Sort deals">
+            <option value="score">Steam score</option>
+            <option value="op-first">Overwhelmingly Positive first</option>
+            <option value="reviews">Most reviews</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+            <option value="off">Biggest discount</option>
+            <option value="title">Title A–Z</option>
+          </select>
+        </div>
+        <p class="group-label">Steam rating</p>
+        <div class="pills">
+          <button type="button" class="pill on" data-rating="all">All ratings</button>
+          <button type="button" class="pill" data-rating="op">Overwhelmingly Positive</button>
+          <button type="button" class="pill" data-rating="vp">Very Positive</button>
+        </div>
+        <p class="group-label">Roguelike / lite</p>
+        <div class="pills">
+          <button type="button" class="pill rogue on" data-rogue="all">All games</button>
+          <button type="button" class="pill rogue" data-rogue="rogue">Roguelike / lite</button>
+          <button type="button" class="pill rogue" data-rogue="roguelike">Roguelike</button>
+          <button type="button" class="pill rogue" data-rogue="roguelite">Roguelite</button>
+        </div>
+        <p class="group-label">Genre</p>
+        <div class="gbtns" id="genre-btns"></div>
+      </div>
+    </details>
+  </div>
+</header>
+
+<p class="wrap status" id="loading">Loading deals.json…</p>
+
+<section class="wrap" id="rogue-sec" hidden>
+  <h2>Roguelike &amp; roguelite <span class="count" id="rogue-count">0</span></h2>
+  <div class="grid" id="rogue-grid"></div>
+</section>
+<section class="wrap" id="rest-sec" hidden>
+  <h2>Everything else on sale <span class="count" id="rest-count">0</span></h2>
+  <div class="grid" id="rest-grid"></div>
+</section>
+<p class="wrap empty" id="none" hidden>No games match that filter.</p>
+<footer class="wrap">Steam ratings are a quality filter, not a Nintendo score. Prices are AUD from the AU eShop. Rating and rogue filters stack. Snapshot updates about once a day.</footer>
+
+<script>
+(function () {
+  const SOURCE_FALLBACK = 'https://store.nintendo.com.au/au/digital-downloads/current-offers';
+  const WELCOME_KEY = 'nintendo-deals-welcome-v1';
+
+  const q = document.getElementById('q');
+  const sortEl = document.getElementById('sort');
+  const box = document.getElementById('filter-box');
+  const none = document.getElementById('none');
+  const rogueGrid = document.getElementById('rogue-grid');
+  const restGrid = document.getElementById('rest-grid');
+  const loading = document.getElementById('loading');
+  const subtitle = document.getElementById('subtitle');
+  const welcome = document.getElementById('welcome');
+  const aboutBtn = document.getElementById('about-btn');
+  const genreBtnsEl = document.getElementById('genre-btns');
+
+  let rating = 'all';
+  let rogue = 'all';
+  let genre = '';
+  let ratingPills = [];
+  let roguePills = [];
+  let gbtns = [];
+
+  if (window.matchMedia('(min-width: 960px)').matches) box.open = true;
+
+  function esc(s) {
+    return String(s ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function money(n) {
+    if (n == null || Number.isNaN(Number(n))) return '';
+    return '$' + Number(n).toFixed(2);
+  }
+
+  function ratingKey(label) {
+    return label === 'Overwhelmingly Positive' ? 'op' : 'vp';
+  }
+
+  function isRogue(flag) {
+    return flag === 'roguelike' || flag === 'roguelite' || flag === 'both';
+  }
+
+  function rogueLabel(flag) {
+    if (flag === 'both') return 'Roguelike + Roguelite';
+    if (flag === 'roguelike') return 'Roguelike';
+    if (flag === 'roguelite') return 'Roguelite';
+    return '';
+  }
+
+  function formatMelbourne(iso) {
+    if (!iso) return 'unknown time';
+    const d = new Date(iso);
+    if (Number.isNaN(d.getTime())) return iso;
+    try {
+      return new Intl.DateTimeFormat('en-AU', {
+        timeZone: 'Australia/Melbourne',
+        day: 'numeric', month: 'short', year: 'numeric',
+        hour: 'numeric', minute: '2-digit', hour12: true,
+      }).format(d) + ' AEST/AEDT';
+    } catch (e) {
+      return d.toISOString();
+    }
+  }
+
+  function formatMelbourneShort(iso) {
+    if (!iso) return '';
+    const d = new Date(iso);
+    if (Number.isNaN(d.getTime())) return '';
+    try {
+      return new Intl.DateTimeFormat('en-AU', {
+        timeZone: 'Australia/Melbourne',
+        day: 'numeric', month: 'short', year: 'numeric',
+      }).format(d);
+    } catch (e) {
+      return '';
+    }
+  }
+
+  function tagIsRogueish(t) {
+    const x = String(t).toLowerCase();
+    return x.includes('rogue');
+  }
+
+  function buildCard(deal) {
+    const flag = deal.rogue_flag || 'unknown';
+    const rk = ratingKey(deal.steam_rating_label);
+    const genres = deal.steam_genres || [];
+    const tags = deal.steamspy_tags || [];
+    const title = deal.title || '';
+    const textBits = [
+      title,
+      ...(genres),
+      ...(tags),
+    ].join(' ').toLowerCase();
+    const genresAttr = [...genres, ...tags].map((g) => String(g).toLowerCase()).join(' | ');
+    const featured = isRogue(flag);
+    const url = deal.nintendo_url || '#';
+    const price = deal.nintendo_price_aud;
+    const was = deal.nintendo_original_price_aud;
+    const off = deal.discount_percent;
+    const pct = deal.steam_percent_positive;
+    const reviews = deal.steam_review_count;
+    const appid = deal.steam_app_id;
+
+    const chips = [];
+    const rl = rogueLabel(flag);
+    if (rl) chips.push(`<span class="chip rogue ${esc(flag)}">${esc(rl)}</span>`);
+    genres.slice(0, 6).forEach((g) => {
+      chips.push(`<span class="chip genre">${esc(g)}</span>`);
+    });
+    tags.slice(0, 8).forEach((t) => {
+      const cls = tagIsRogueish(t) ? 'chip tag rogue' : 'chip tag';
+      chips.push(`<span class="${cls}">${esc(t)}</span>`);
+    });
+
+    const badgeCls = rk === 'op' ? 'op' : 'vp';
+    const badgeText = deal.steam_rating_label || '';
+    const offHtml = off != null ? `<span class="off">-${esc(off)}%</span>` : '';
+    const wasHtml = was != null ? `<span class="was">${esc(money(was))}</span>` : '';
+    const steamHref = appid ? `https://store.steampowered.com/app/${esc(appid)}/` : '#';
+    const steamLabel = pct != null
+      ? `Steam ${esc(pct)}% · ${esc(reviews ?? '')}`
+      : 'Steam';
+
+    const el = document.createElement('article');
+    el.className = 'card' + (featured ? ' featured' : '');
+    el.dataset.flag = flag;
+    el.dataset.rating = rk;
+    el.dataset.title = title.toLowerCase();
+    el.dataset.text = textBits;
+    el.dataset.genres = genresAttr;
+    el.dataset.price = price != null ? String(price) : '';
+    el.dataset.off = off != null ? String(off) : '';
+    el.dataset.pct = pct != null ? String(pct) : '';
+    el.dataset.reviews = reviews != null ? String(reviews) : '';
+    el.innerHTML =
+      `<a class="cover" href="${esc(url)}" target="_blank" rel="noopener">` +
+      `<div class="topline"><span class="badge ${badgeCls}">${esc(badgeText)}</span>${offHtml}</div>` +
+      `<h3>${esc(title)}</h3></a>` +
+      `<div class="prices"><span class="now">${esc(money(price))} AUD</span>${wasHtml}</div>` +
+      `<div class="chips">${chips.join('')}</div>` +
+      `<div class="links">` +
+      `<a class="buy" href="${esc(url)}" target="_blank" rel="noopener">Nintendo AU</a>` +
+      `<a class="steam" href="${steamHref}" target="_blank" rel="noopener">${steamLabel}</a>` +
+      `</div>`;
+    return el;
+  }
+
+  function collectGenres(deals) {
+    const counts = new Map();
+    deals.forEach((d) => {
+      (d.steam_genres || []).forEach((g) => {
+        const key = String(g);
+        counts.set(key, (counts.get(key) || 0) + 1);
+      });
+    });
+    return [...counts.entries()]
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+      .map(([name]) => name);
+  }
+
+  function wireGenreButtons(names) {
+    genreBtnsEl.innerHTML = '';
+    names.forEach((name) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'gbtn';
+      b.dataset.genre = name.toLowerCase();
+      b.textContent = name;
+      genreBtnsEl.appendChild(b);
+    });
+    gbtns = [...genreBtnsEl.querySelectorAll('.gbtn')];
+    gbtns.forEach((b) => b.addEventListener('click', () => {
+      const on = b.classList.contains('on');
+      gbtns.forEach((x) => x.classList.remove('on'));
+      genre = on ? '' : b.dataset.genre;
+      if (!on) b.classList.add('on');
+      apply();
+    }));
+  }
+
+  function num(el, key) { return parseFloat(el.dataset[key]) || 0; }
+
+  function sortCards(grid) {
+    const mode = sortEl.value;
+    [...grid.children].sort((a, b) => {
+      if (mode === 'price-asc') return num(a, 'price') - num(b, 'price');
+      if (mode === 'price-desc') return num(b, 'price') - num(a, 'price');
+      if (mode === 'off') return num(b, 'off') - num(a, 'off') || num(a, 'price') - num(b, 'price');
+      if (mode === 'reviews') return num(b, 'reviews') - num(a, 'reviews');
+      if (mode === 'title') return (a.dataset.title || '').localeCompare(b.dataset.title || '');
+      if (mode === 'op-first') {
+        const ar = a.dataset.rating === 'op' ? 0 : 1;
+        const br = b.dataset.rating === 'op' ? 0 : 1;
+        return ar - br || num(b, 'pct') - num(a, 'pct') || num(b, 'reviews') - num(a, 'reviews');
+      }
+      return num(b, 'pct') - num(a, 'pct') || num(b, 'reviews') - num(a, 'reviews');
+    }).forEach((el) => grid.appendChild(el));
+  }
+
+  function hasGenre(c, g) {
+    if (!g) return true;
+    return (c.dataset.genres || '').split(' | ').includes(g);
+  }
+
+  function apply() {
+    const term = q.value.trim().toLowerCase();
+    sortCards(rogueGrid);
+    sortCards(restGrid);
+    let shownR = 0, shownO = 0;
+    document.querySelectorAll('.card').forEach((c) => {
+      const flag = c.dataset.flag;
+      let ok = true;
+      if (rating !== 'all') ok = c.dataset.rating === rating;
+      if (ok && rogue === 'rogue') ok = flag === 'roguelike' || flag === 'roguelite' || flag === 'both';
+      if (ok && rogue === 'roguelike') ok = flag === 'roguelike' || flag === 'both';
+      if (ok && rogue === 'roguelite') ok = flag === 'roguelite' || flag === 'both';
+      if (ok && !hasGenre(c, genre)) ok = false;
+      if (ok && term && !(c.dataset.text || '').includes(term)) ok = false;
+      c.hidden = !ok;
+      if (ok) {
+        if (c.classList.contains('featured')) shownR++; else shownO++;
+      }
+    });
+    document.getElementById('rogue-count').textContent = shownR;
+    document.getElementById('rest-count').textContent = shownO;
+    document.getElementById('rogue-sec').hidden = shownR === 0;
+    document.getElementById('rest-sec').hidden = shownO === 0;
+    none.hidden = !(shownR === 0 && shownO === 0);
+    const bits = [];
+    if (rating !== 'all') bits.push(rating === 'op' ? 'OP' : 'VP');
+    if (rogue !== 'all') bits.push(rogue);
+    if (genre) bits.push(genre);
+    if (term) bits.push('“' + term + '”');
+    document.getElementById('active-count').textContent =
+      bits.length ? bits.join(' · ') : (shownR + shownO) + ' games';
+  }
+
+  function showWelcome() {
+    if (typeof welcome.showModal === 'function') welcome.showModal();
+    else welcome.setAttribute('open', '');
+  }
+  function hideWelcome() {
+    if (typeof welcome.close === 'function') welcome.close();
+    else welcome.removeAttribute('open');
+  }
+
+  function wireFilters() {
+    ratingPills = [...document.querySelectorAll('button[data-rating]')];
+    roguePills = [...document.querySelectorAll('button[data-rogue]')];
+    ratingPills.forEach((b) => b.addEventListener('click', () => {
+      ratingPills.forEach((x) => x.classList.remove('on'));
+      b.classList.add('on');
+      rating = b.dataset.rating;
+      apply();
+    }));
+    roguePills.forEach((b) => b.addEventListener('click', () => {
+      roguePills.forEach((x) => x.classList.remove('on'));
+      b.classList.add('on');
+      rogue = b.dataset.rogue;
+      apply();
+    }));
+    q.addEventListener('input', apply);
+    sortEl.addEventListener('change', apply);
+  }
+
+  function normalizePayload(data) {
+    if (data && data.meta && Array.isArray(data.deals)) return data;
+    if (data && Array.isArray(data.deals)) {
+      const meta = {};
+      Object.keys(data).forEach((k) => { if (k !== 'deals') meta[k] = data[k]; });
+      return { meta, deals: data.deals };
+    }
+    throw new Error('Unexpected deals.json shape');
+  }
+
+  function render(payload) {
+    const { meta, deals } = normalizePayload(payload);
+    const generated = meta.generated_utc;
+    const source = meta.source_url || SOURCE_FALLBACK;
+    const kept = meta.kept_count != null ? meta.kept_count : deals.length;
+    const when = formatMelbourne(generated);
+    const whenShort = formatMelbourneShort(generated);
+
+    document.title = whenShort
+      ? `Nintendo AU deals — ${whenShort}`
+      : 'Nintendo AU deals';
+
+    subtitle.innerHTML =
+      `${esc(when)} · ${esc(kept)} well-rated games · ` +
+      `<a href="${esc(source)}" target="_blank" rel="noopener">sale page</a>`;
+
+    document.getElementById('welcome-note').textContent =
+      `Snapshot: ${when} · ${kept} games kept from the sale list. Not affiliated with Nintendo or Steam.`;
+
+    wireGenreButtons(collectGenres(deals));
+
+    rogueGrid.innerHTML = '';
+    restGrid.innerHTML = '';
+    deals.forEach((d) => {
+      const card = buildCard(d);
+      if (isRogue(d.rogue_flag)) rogueGrid.appendChild(card);
+      else restGrid.appendChild(card);
+    });
+
+    loading.hidden = true;
+    apply();
+  }
+
+  wireFilters();
+  document.getElementById('welcome-ok').addEventListener('click', hideWelcome);
+  document.getElementById('welcome-hide').addEventListener('click', () => {
+    localStorage.setItem(WELCOME_KEY, '1');
+    hideWelcome();
+  });
+  aboutBtn.addEventListener('click', showWelcome);
+  welcome.addEventListener('click', (e) => {
+    if (e.target === welcome) hideWelcome();
+  });
+  if (localStorage.getItem(WELCOME_KEY) !== '1') showWelcome();
+
+  fetch('./deals.json', { cache: 'no-cache' })
+    .then((r) => {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(render)
+    .catch((err) => {
+      loading.classList.add('err');
+      loading.textContent = 'Failed to load deals.json: ' + err.message;
+      subtitle.textContent = 'Could not load snapshot';
+    });
+})();
+</script>
+</body>
+</html>
