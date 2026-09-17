@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_utc": "2026-09-16T18:07:58Z",
+    "generated_utc": "2026-09-17T18:09:07Z",
     "source_url": "https://store.nintendo.com.au/au/digital-downloads/current-offers",
     "scraped_offers": 1000,
-    "kept_count": 333,
-    "matched_to_steam": 602,
-    "unmatched_count": 398,
+    "kept_count": 336,
+    "matched_to_steam": 620,
+    "unmatched_count": 380,
     "rogue_flag_counts": {
-      "unknown": 40,
-      "neither": 255,
-      "roguelite": 28,
-      "both": 10
+      "unknown": 48,
+      "neither": 252,
+      "roguelite": 24,
+      "both": 12
     },
     "ranking": "% positive desc, review count desc, Overwhelmingly Positive before Very Positive",
     "notes": "Live Magento scrape of Nintendo AU Current Offers via headless Chrome. Steam via storesearch + appreviews + appdetails genres + SteamSpy tags. rogue_flag from significant SteamSpy tags (top~12 / ≥35% of top-tag votes) + known lists; Action Roguelike→roguelite; Traditional Roguelike→roguelike; both when both significant. Duplicate Steam apps collapsed to cheapest AU offer. OP/VP only."
@@ -26,7 +26,7 @@
       "steam_app_id": 2602230,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 100,
-      "steam_review_count": 457,
+      "steam_review_count": 458,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -45,7 +45,7 @@
       "steam_app_id": 1586800,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 99,
-      "steam_review_count": 6132,
+      "steam_review_count": 6135,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -76,6 +76,42 @@
       "rank": 2
     },
     {
+      "title": "Patrick's Parabox",
+      "steam_title": "Patrick's Parabox",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000047952",
+      "nintendo_price_aud": 14.75,
+      "nintendo_original_price_aud": 29.5,
+      "discount_percent": 50,
+      "steam_app_id": 1260520,
+      "steam_rating_label": "Overwhelmingly Positive",
+      "steam_percent_positive": 99,
+      "steam_review_count": 5828,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Casual",
+        "Indie",
+        "Strategy"
+      ],
+      "steamspy_tags": [
+        "Puzzle",
+        "Sokoban",
+        "Logic",
+        "Minimalist",
+        "Abstract",
+        "Singleplayer",
+        "2D",
+        "Indie",
+        "Difficult",
+        "Casual",
+        "Strategy",
+        "Psychological Horror"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 3
+    },
+    {
       "title": "A Castle Full of Cats",
       "steam_title": "A Castle Full of Cats",
       "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000067311",
@@ -85,7 +121,7 @@
       "steam_app_id": 2070550,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 99,
-      "steam_review_count": 4527,
+      "steam_review_count": 4528,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -108,7 +144,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 3
+      "rank": 4
     },
     {
       "title": "Sudocats",
@@ -120,7 +156,7 @@
       "steam_app_id": 1725640,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 99,
-      "steam_review_count": 1831,
+      "steam_review_count": 1832,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -143,42 +179,66 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 4
+      "rank": 5
     },
     {
-      "title": "BAD END THEATER",
-      "steam_title": "BAD END THEATER",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000086908",
-      "nintendo_price_aud": 9.74,
-      "nintendo_original_price_aud": 14.99,
-      "discount_percent": 35,
-      "steam_app_id": 1764390,
-      "steam_rating_label": "Overwhelmingly Positive",
-      "steam_percent_positive": 98,
-      "steam_review_count": 10052,
+      "title": "Woodo – Nintendo Switch™ 2 Edition - Endless Summer Edition",
+      "steam_title": "Woodo",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/bundles/70070000040633",
+      "nintendo_price_aud": 36.9,
+      "nintendo_original_price_aud": 41.0,
+      "discount_percent": 10,
+      "steam_app_id": 2572040,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 99,
+      "steam_review_count": 162,
       "match_confidence": "high",
       "fuzzy_score": 99,
-      "steam_genres": [],
+      "steam_genres": [
+        "Casual",
+        "Indie"
+      ],
+      "steamspy_tags": [],
+      "rogue_flag": "unknown",
+      "rogue_note": "no Steam tag data",
+      "rank": 6
+    },
+    {
+      "title": "Phoenix Wright: Ace Attorney Trilogy",
+      "steam_title": "Phoenix Wright: Ace Attorney Trilogy",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000015844",
+      "nintendo_price_aud": 13.18,
+      "nintendo_original_price_aud": 39.95,
+      "discount_percent": 67,
+      "steam_app_id": 787480,
+      "steam_rating_label": "Overwhelmingly Positive",
+      "steam_percent_positive": 98,
+      "steam_review_count": 45054,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Adventure"
+      ],
       "steamspy_tags": [
-        "Multiple Endings",
+        "Detective",
         "Visual Novel",
         "Story Rich",
-        "LGBTQ+",
-        "Choices Matter",
-        "Pixel Graphics",
-        "Choose Your Own Adventure",
-        "Cute",
-        "Romance",
-        "Simulation",
-        "Demons",
+        "Mystery",
+        "Great Soundtrack",
         "Anime",
-        "Fantasy",
-        "Stylized",
-        "Colorful"
+        "Singleplayer",
+        "Crime",
+        "Adventure",
+        "Puzzle",
+        "Point & Click",
+        "Funny",
+        "Classic",
+        "Cult Classic",
+        "Comedy"
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 5
+      "rank": 7
     },
     {
       "title": "Witch on the Holy Night",
@@ -190,7 +250,7 @@
       "steam_app_id": 2052410,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 98,
-      "steam_review_count": 8588,
+      "steam_review_count": 8593,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -213,7 +273,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 6
+      "rank": 8
     },
     {
       "title": "Tinykin",
@@ -225,7 +285,7 @@
       "steam_app_id": 1599020,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 98,
-      "steam_review_count": 4328,
+      "steam_review_count": 4329,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -252,7 +312,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 7
+      "rank": 9
     },
     {
       "title": "CATO: Buttered Cat",
@@ -264,7 +324,7 @@
       "steam_app_id": 1999520,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 98,
-      "steam_review_count": 3142,
+      "steam_review_count": 3143,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -287,7 +347,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 8
+      "rank": 10
     },
     {
       "title": "Terraria",
@@ -299,7 +359,7 @@
       "steam_app_id": 105600,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 97,
-      "steam_review_count": 1555495,
+      "steam_review_count": 1555692,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -327,7 +387,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 9
+      "rank": 11
     },
     {
       "title": "INSIDE",
@@ -339,7 +399,7 @@
       "steam_app_id": 304430,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 97,
-      "steam_review_count": 75935,
+      "steam_review_count": 75942,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -366,7 +426,29 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 10
+      "rank": 12
+    },
+    {
+      "title": "PRAGMATA",
+      "steam_title": "PRAGMATA",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000101666",
+      "nintendo_price_aud": 74.36,
+      "nintendo_original_price_aud": 92.95,
+      "discount_percent": 20,
+      "steam_app_id": 3357650,
+      "steam_rating_label": "Overwhelmingly Positive",
+      "steam_percent_positive": 97,
+      "steam_review_count": 52972,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Action",
+        "Adventure"
+      ],
+      "steamspy_tags": [],
+      "rogue_flag": "unknown",
+      "rogue_note": "no Steam tag data",
+      "rank": 13
     },
     {
       "title": "Doki Doki Literature Club Plus!",
@@ -378,7 +460,7 @@
       "steam_app_id": 1388880,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 97,
-      "steam_review_count": 32331,
+      "steam_review_count": 32341,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -404,7 +486,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 11
+      "rank": 14
     },
     {
       "title": "The Last Campfire",
@@ -416,7 +498,7 @@
       "steam_app_id": 990630,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 97,
-      "steam_review_count": 20560,
+      "steam_review_count": 20581,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -442,7 +524,46 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 12
+      "rank": 15
+    },
+    {
+      "title": "Touhou Luna Nights",
+      "steam_title": "Touhou Luna Nights",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000034662",
+      "nintendo_price_aud": 15.57,
+      "nintendo_original_price_aud": 25.95,
+      "discount_percent": 40,
+      "steam_app_id": 851100,
+      "steam_rating_label": "Overwhelmingly Positive",
+      "steam_percent_positive": 97,
+      "steam_review_count": 14964,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Action",
+        "Adventure",
+        "Indie"
+      ],
+      "steamspy_tags": [
+        "Metroidvania",
+        "Difficult",
+        "Side Scroller",
+        "Exploration",
+        "Bullet Hell",
+        "Platformer",
+        "Action-Adventure",
+        "RPG",
+        "Female Protagonist",
+        "2D",
+        "Time Manipulation",
+        "Controller",
+        "Action",
+        "Anime",
+        "Pixel Graphics"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 16
     },
     {
       "title": "POST VOID",
@@ -454,7 +575,7 @@
       "steam_app_id": 1285670,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 97,
-      "steam_review_count": 12397,
+      "steam_review_count": 12396,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -480,7 +601,7 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 13
+      "rank": 17
     },
     {
       "title": "WILD HEARTS S",
@@ -518,7 +639,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 14
+      "rank": 18
     },
     {
       "title": "Downwell",
@@ -530,7 +651,7 @@
       "steam_app_id": 360740,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 97,
-      "steam_review_count": 8622,
+      "steam_review_count": 8625,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -558,7 +679,45 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 15
+      "rank": 19
+    },
+    {
+      "title": "Mad Father",
+      "steam_title": "Mad Father",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000035385",
+      "nintendo_price_aud": 8.1,
+      "nintendo_original_price_aud": 13.5,
+      "discount_percent": 40,
+      "steam_app_id": 483980,
+      "steam_rating_label": "Overwhelmingly Positive",
+      "steam_percent_positive": 97,
+      "steam_review_count": 6789,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Adventure",
+        "Indie"
+      ],
+      "steamspy_tags": [
+        "RPGMaker",
+        "Horror",
+        "Psychological Horror",
+        "Anime",
+        "Pixel Graphics",
+        "2D",
+        "Exploration",
+        "Survival Horror",
+        "Story Rich",
+        "Adventure",
+        "Atmospheric",
+        "Puzzle",
+        "Female Protagonist",
+        "Violent",
+        "Indie"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 20
     },
     {
       "title": "inbento",
@@ -570,7 +729,7 @@
       "steam_app_id": 1567440,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 97,
-      "steam_review_count": 2965,
+      "steam_review_count": 2964,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -596,7 +755,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 16
+      "rank": 21
     },
     {
       "title": "A Tiny Sticker Tale",
@@ -608,7 +767,7 @@
       "steam_app_id": 2322180,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 97,
-      "steam_review_count": 673,
+      "steam_review_count": 674,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -631,7 +790,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 17
+      "rank": 22
     },
     {
       "title": "Cult of the Lamb: Heretic Edition",
@@ -650,7 +809,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 18
+      "rank": 23
     },
     {
       "title": "Gnomdom",
@@ -685,7 +844,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 19
+      "rank": 24
     },
     {
       "title": "Virtual Maid Streamer Ramie",
@@ -720,7 +879,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 20
+      "rank": 25
     },
     {
       "title": "DOOM",
@@ -732,7 +891,7 @@
       "steam_app_id": 379720,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 96,
-      "steam_review_count": 221810,
+      "steam_review_count": 221827,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -757,7 +916,26 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 21
+      "rank": 26
+    },
+    {
+      "title": "Resident Evil Requiem",
+      "steam_title": "Resident Evil Requiem",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000101676",
+      "nintendo_price_aud": 66.92,
+      "nintendo_original_price_aud": 107.95,
+      "discount_percent": 38,
+      "steam_app_id": 3764200,
+      "steam_rating_label": "Overwhelmingly Positive",
+      "steam_percent_positive": 96,
+      "steam_review_count": 184369,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [],
+      "steamspy_tags": [],
+      "rogue_flag": "unknown",
+      "rogue_note": "no Steam tag data",
+      "rank": 27
     },
     {
       "title": "DREDGE",
@@ -769,7 +947,7 @@
       "steam_app_id": 1562430,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 96,
-      "steam_review_count": 56976,
+      "steam_review_count": 56991,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -795,7 +973,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 22
+      "rank": 28
     },
     {
       "title": "Ultimate Chicken Horse",
@@ -807,7 +985,7 @@
       "steam_app_id": 386940,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 96,
-      "steam_review_count": 53553,
+      "steam_review_count": 53560,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -834,80 +1012,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 23
-    },
-    {
-      "title": "Shadow Tactics: Blades of the Shogun",
-      "steam_title": "Shadow Tactics: Blades of the Shogun",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000115083",
-      "nintendo_price_aud": 41.89,
-      "nintendo_original_price_aud": 64.45,
-      "discount_percent": 35,
-      "steam_app_id": 418240,
-      "steam_rating_label": "Overwhelmingly Positive",
-      "steam_percent_positive": 96,
-      "steam_review_count": 38461,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Indie",
-        "Strategy"
-      ],
-      "steamspy_tags": [
-        "Stealth",
-        "Strategy",
-        "Tactical",
-        "Ninja",
-        "Real Time Tactics",
-        "Singleplayer",
-        "Indie",
-        "Isometric",
-        "Assassin",
-        "Historical",
-        "Action",
-        "RTS",
-        "Difficult",
-        "Violent",
-        "Atmospheric"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 24
-    },
-    {
-      "title": "Thronefall",
-      "steam_title": "Thronefall",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000083989",
-      "nintendo_price_aud": 12.67,
-      "nintendo_original_price_aud": 19.5,
-      "discount_percent": 35,
-      "steam_app_id": 2239150,
-      "steam_rating_label": "Overwhelmingly Positive",
-      "steam_percent_positive": 96,
-      "steam_review_count": 23678,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [],
-      "steamspy_tags": [
-        "Tower Defense",
-        "Strategy",
-        "City Builder",
-        "Minimalist",
-        "Medieval",
-        "Action",
-        "Action RTS",
-        "Building",
-        "3D",
-        "Base-Building",
-        "Colorful",
-        "Isometric",
-        "Stylized",
-        "Fantasy",
-        "Combat"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 25
+      "rank": 29
     },
     {
       "title": "Streets of Rogue",
@@ -919,7 +1024,7 @@
       "steam_app_id": 512900,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 96,
-      "steam_review_count": 23062,
+      "steam_review_count": 23067,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -947,7 +1052,7 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 26
+      "rank": 30
     },
     {
       "title": "Yoku's Island Express",
@@ -985,7 +1090,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 27
+      "rank": 31
     },
     {
       "title": "Birth",
@@ -997,7 +1102,7 @@
       "steam_app_id": 1889040,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 96,
-      "steam_review_count": 4219,
+      "steam_review_count": 4223,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -1020,7 +1125,64 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 28
+      "rank": 32
+    },
+    {
+      "title": "Leafy Corner",
+      "steam_title": "Leafy Corner",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000117353",
+      "nintendo_price_aud": 9.99,
+      "nintendo_original_price_aud": 12.49,
+      "discount_percent": 20,
+      "steam_app_id": 3558600,
+      "steam_rating_label": "Overwhelmingly Positive",
+      "steam_percent_positive": 96,
+      "steam_review_count": 2492,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [],
+      "steamspy_tags": [],
+      "rogue_flag": "unknown",
+      "rogue_note": "no Steam tag data",
+      "rank": 33
+    },
+    {
+      "title": "My Brother Rabbit",
+      "steam_title": "My Brother Rabbit",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000014346",
+      "nintendo_price_aud": 2.25,
+      "nintendo_original_price_aud": 22.5,
+      "discount_percent": 90,
+      "steam_app_id": 855640,
+      "steam_rating_label": "Overwhelmingly Positive",
+      "steam_percent_positive": 96,
+      "steam_review_count": 2072,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Adventure",
+        "Casual",
+        "Indie"
+      ],
+      "steamspy_tags": [
+        "Adventure",
+        "Puzzle",
+        "Point & Click",
+        "Singleplayer",
+        "Great Soundtrack",
+        "2D",
+        "Story Rich",
+        "Hidden Object",
+        "Casual",
+        "Retro",
+        "Indie",
+        "Hand-drawn",
+        "Classic",
+        "Short"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 34
     },
     {
       "title": "Freedom Planet 2",
@@ -1059,26 +1221,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 29
-    },
-    {
-      "title": "Super Woden Rally Edge",
-      "steam_title": "Super Woden: Rally Edge",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000119035",
-      "nintendo_price_aud": 20.25,
-      "nintendo_original_price_aud": 22.5,
-      "discount_percent": 10,
-      "steam_app_id": 3218630,
-      "steam_rating_label": "Overwhelmingly Positive",
-      "steam_percent_positive": 96,
-      "steam_review_count": 1576,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [],
-      "steamspy_tags": [],
-      "rogue_flag": "unknown",
-      "rogue_note": "no Steam tag data",
-      "rank": 30
+      "rank": 35
     },
     {
       "title": "DRAINUS",
@@ -1111,7 +1254,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 31
+      "rank": 36
     },
     {
       "title": "Linelight",
@@ -1144,7 +1287,26 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 32
+      "rank": 37
+    },
+    {
+      "title": "Mega Man Star Force Legacy Collection",
+      "steam_title": "Mega Man Star Force Legacy Collection",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000104079",
+      "nintendo_price_aud": 44.96,
+      "nintendo_original_price_aud": 59.95,
+      "discount_percent": 25,
+      "steam_app_id": 3500390,
+      "steam_rating_label": "Overwhelmingly Positive",
+      "steam_percent_positive": 96,
+      "steam_review_count": 767,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [],
+      "steamspy_tags": [],
+      "rogue_flag": "unknown",
+      "rogue_note": "no Steam tag data",
+      "rank": 38
     },
     {
       "title": "Gecko Gods",
@@ -1167,7 +1329,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 33
+      "rank": 39
     },
     {
       "title": "Dream Town Island – Nintendo Switch™ 2 Edition",
@@ -1202,7 +1364,41 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 34
+      "rank": 40
+    },
+    {
+      "title": "Little Mouse's Encyclopedia",
+      "steam_title": "Little Mouse's Encyclopedia",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000038128",
+      "nintendo_price_aud": 2.99,
+      "nintendo_original_price_aud": 19.5,
+      "discount_percent": 85,
+      "steam_app_id": 424200,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 96,
+      "steam_review_count": 315,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Casual",
+        "Indie"
+      ],
+      "steamspy_tags": [
+        "Education",
+        "Nature",
+        "Family Friendly",
+        "Hand-drawn",
+        "Colorful",
+        "Point & Click",
+        "2D",
+        "Cute",
+        "Singleplayer",
+        "Casual",
+        "Indie"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 41
     },
     {
       "title": "Lil Gator Game: In the Dark",
@@ -1221,7 +1417,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 35
+      "rank": 42
     },
     {
       "title": "Children of Morta: Paws and Claws",
@@ -1245,7 +1441,7 @@
       "steamspy_tags": [],
       "rogue_flag": "roguelite",
       "rogue_note": "known title",
-      "rank": 36
+      "rank": 43
     },
     {
       "title": "Montabi",
@@ -1264,7 +1460,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 37
+      "rank": 44
     },
     {
       "title": "Teeto",
@@ -1276,14 +1472,14 @@
       "steam_app_id": 2783370,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 96,
-      "steam_review_count": 124,
+      "steam_review_count": 125,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 38
+      "rank": 45
     },
     {
       "title": "Howl",
@@ -1318,7 +1514,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 39
+      "rank": 46
     },
     {
       "title": "ASTLIBRA Revision",
@@ -1330,7 +1526,7 @@
       "steam_app_id": 1718570,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 95,
-      "steam_review_count": 31799,
+      "steam_review_count": 31807,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -1353,7 +1549,84 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 40
+      "rank": 47
+    },
+    {
+      "title": "Darkwood",
+      "steam_title": "Darkwood",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000011739",
+      "nintendo_price_aud": 5.49,
+      "nintendo_original_price_aud": 21.99,
+      "discount_percent": 75,
+      "steam_app_id": 274520,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 95,
+      "steam_review_count": 24982,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Action",
+        "Adventure",
+        "RPG",
+        "Strategy"
+      ],
+      "steamspy_tags": [
+        "Horror",
+        "Survival Horror",
+        "Top-Down",
+        "Atmospheric",
+        "Survival",
+        "Dark",
+        "Indie",
+        "Open World",
+        "Singleplayer",
+        "Lovecraftian",
+        "Exploration",
+        "RPG",
+        "Adventure",
+        "Crafting",
+        "Psychological Horror"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": "minor Rogue-* Steam tag ignored (not in top tags)",
+      "rank": 48
+    },
+    {
+      "title": "FINAL FANTASY IX",
+      "steam_title": "FINAL FANTASY IX",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000010581",
+      "nintendo_price_aud": 9.58,
+      "nintendo_original_price_aud": 31.95,
+      "discount_percent": 70,
+      "steam_app_id": 377840,
+      "steam_rating_label": "Overwhelmingly Positive",
+      "steam_percent_positive": 95,
+      "steam_review_count": 14335,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "RPG"
+      ],
+      "steamspy_tags": [
+        "JRPG",
+        "Story Rich",
+        "Great Soundtrack",
+        "Fantasy",
+        "RPG",
+        "Classic",
+        "Turn-Based Combat",
+        "Singleplayer",
+        "Adventure",
+        "Turn-Based",
+        "Atmospheric",
+        "Open World",
+        "Party-Based RPG",
+        "Funny",
+        "Cult Classic"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 49
     },
     {
       "title": "Easy Delivery Co.",
@@ -1365,14 +1638,86 @@
       "steam_app_id": 3293010,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 95,
-      "steam_review_count": 10428,
+      "steam_review_count": 10438,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 41
+      "rank": 50
+    },
+    {
+      "title": "FINAL FANTASY",
+      "steam_title": "FINAL FANTASY",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000056568",
+      "nintendo_price_aud": 10.77,
+      "nintendo_original_price_aud": 17.95,
+      "discount_percent": 40,
+      "steam_app_id": 1173770,
+      "steam_rating_label": "Overwhelmingly Positive",
+      "steam_percent_positive": 95,
+      "steam_review_count": 8740,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "RPG"
+      ],
+      "steamspy_tags": [
+        "JRPG",
+        "RPG",
+        "Turn-Based Combat",
+        "Pixel Graphics",
+        "Party-Based RPG",
+        "2D",
+        "Exploration",
+        "Fantasy",
+        "Class-Based",
+        "Retro",
+        "Singleplayer",
+        "Magic",
+        "Adventure",
+        "Nostalgia",
+        "Remake"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 51
+    },
+    {
+      "title": "PARANORMASIGHT: The Seven Mysteries of Honjo",
+      "steam_title": "PARANORMASIGHT: The Seven Mysteries of Honjo",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000060829",
+      "nintendo_price_aud": 14.97,
+      "nintendo_original_price_aud": 29.95,
+      "discount_percent": 50,
+      "steam_app_id": 2106840,
+      "steam_rating_label": "Overwhelmingly Positive",
+      "steam_percent_positive": 95,
+      "steam_review_count": 7255,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [],
+      "steamspy_tags": [
+        "Visual Novel",
+        "Adventure",
+        "Anime",
+        "Simulation",
+        "Horror",
+        "Text-Based",
+        "2D Platformer",
+        "Hand-drawn",
+        "Supernatural",
+        "1980s",
+        "Story Rich",
+        "Mystery",
+        "Retro",
+        "Multiple Endings",
+        "Singleplayer"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 52
     },
     {
       "title": "Agent A: A puzzle in disguise",
@@ -1384,7 +1729,7 @@
       "steam_app_id": 801480,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 95,
-      "steam_review_count": 6259,
+      "steam_review_count": 6258,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -1410,7 +1755,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 42
+      "rank": 53
     },
     {
       "title": "Kill It With Fire",
@@ -1422,7 +1767,7 @@
       "steam_app_id": 1179210,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 95,
-      "steam_review_count": 5493,
+      "steam_review_count": 5498,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -1450,7 +1795,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 43
+      "rank": 54
     },
     {
       "title": "Trails in the Sky 1st Chapter",
@@ -1462,18 +1807,14 @@
       "steam_app_id": 3375780,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 95,
-      "steam_review_count": 4932,
+      "steam_review_count": 4955,
       "match_confidence": "high",
       "fuzzy_score": 99,
-      "steam_genres": [
-        "Action",
-        "Adventure",
-        "RPG"
-      ],
+      "steam_genres": [],
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 44
+      "rank": 55
     },
     {
       "title": "Freedom Planet",
@@ -1511,7 +1852,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 45
+      "rank": 56
     },
     {
       "title": "Heavenly Bodies",
@@ -1551,7 +1892,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 46
+      "rank": 57
     },
     {
       "title": "Ape Out",
@@ -1563,7 +1904,7 @@
       "steam_app_id": 447150,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 95,
-      "steam_review_count": 4122,
+      "steam_review_count": 4121,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -1589,7 +1930,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 47
+      "rank": 58
     },
     {
       "title": "and Roger",
@@ -1601,14 +1942,14 @@
       "steam_app_id": 3308870,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 95,
-      "steam_review_count": 2776,
+      "steam_review_count": 2779,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 48
+      "rank": 59
     },
     {
       "title": "Suikoden I&II HD Remaster for Nintendo Switch™ 2 Gate Rune and Dunan Unification Wars",
@@ -1620,7 +1961,7 @@
       "steam_app_id": 1932640,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 95,
-      "steam_review_count": 2625,
+      "steam_review_count": 2626,
       "match_confidence": "high",
       "fuzzy_score": 94,
       "steam_genres": [],
@@ -1643,7 +1984,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 49
+      "rank": 60
     },
     {
       "title": "Cabernet",
@@ -1655,10 +1996,15 @@
       "steam_app_id": 2401410,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 95,
-      "steam_review_count": 2353,
+      "steam_review_count": 2355,
       "match_confidence": "high",
       "fuzzy_score": 99,
-      "steam_genres": [],
+      "steam_genres": [
+        "Adventure",
+        "Indie",
+        "RPG",
+        "Simulation"
+      ],
       "steamspy_tags": [
         "Singleplayer",
         "Female Protagonist",
@@ -1678,7 +2024,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 50
+      "rank": 61
     },
     {
       "title": "A Monster's Expedition",
@@ -1718,7 +2064,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 51
+      "rank": 62
     },
     {
       "title": "Max: The Curse of Brotherhood",
@@ -1752,7 +2098,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 52
+      "rank": 63
     },
     {
       "title": "Mutazione",
@@ -1790,7 +2136,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 53
+      "rank": 64
     },
     {
       "title": "Boomerang X",
@@ -1802,7 +2148,7 @@
       "steam_app_id": 1170060,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 95,
-      "steam_review_count": 1381,
+      "steam_review_count": 1382,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -1828,7 +2174,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 54
+      "rank": 65
     },
     {
       "title": "A Good Snowman is Hard to Build",
@@ -1865,7 +2211,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 55
+      "rank": 66
     },
     {
       "title": "Golf Peaks",
@@ -1877,7 +2223,7 @@
       "steam_app_id": 923260,
       "steam_rating_label": "Overwhelmingly Positive",
       "steam_percent_positive": 95,
-      "steam_review_count": 1151,
+      "steam_review_count": 1152,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -1904,7 +2250,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 56
+      "rank": 67
     },
     {
       "title": "Paper Trail",
@@ -1939,7 +2285,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 57
+      "rank": 68
     },
     {
       "title": "Rune Factory 3 Special",
@@ -1951,7 +2297,7 @@
       "steam_app_id": 2243710,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 95,
-      "steam_review_count": 875,
+      "steam_review_count": 878,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -1974,7 +2320,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 58
+      "rank": 69
     },
     {
       "title": "SPRAWL zero",
@@ -1986,14 +2332,52 @@
       "steam_app_id": 3748520,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 95,
-      "steam_review_count": 727,
+      "steam_review_count": 762,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 59
+      "rank": 70
+    },
+    {
+      "title": "Potato Flowers in Full Bloom",
+      "steam_title": "Potato Flowers in Full Bloom",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000049985",
+      "nintendo_price_aud": 16.65,
+      "nintendo_original_price_aud": 22.5,
+      "discount_percent": 26,
+      "steam_app_id": 1601280,
+      "steam_rating_label": "Overwhelmingly Positive",
+      "steam_percent_positive": 95,
+      "steam_review_count": 697,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Indie",
+        "RPG"
+      ],
+      "steamspy_tags": [
+        "RPG",
+        "Dungeon Crawler",
+        "Party-Based RPG",
+        "Turn-Based Combat",
+        "Cartoony",
+        "Fantasy",
+        "Singleplayer",
+        "Indie",
+        "Character Customization",
+        "Turn-Based",
+        "Cute",
+        "Class-Based",
+        "Exploration",
+        "Loot",
+        "Grid-Based Movement"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 71
     },
     {
       "title": "Astrologaster",
@@ -2032,7 +2416,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 60
+      "rank": 72
     },
     {
       "title": "Castle on the Coast",
@@ -2071,7 +2455,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 61
+      "rank": 73
     },
     {
       "title": "tiny Cats",
@@ -2106,7 +2490,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 62
+      "rank": 74
     },
     {
       "title": "Risk of Rain",
@@ -2118,7 +2502,7 @@
       "steam_app_id": 632360,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 94,
-      "steam_review_count": 352813,
+      "steam_review_count": 352844,
       "match_confidence": "high",
       "fuzzy_score": 94,
       "steam_genres": [
@@ -2144,7 +2528,7 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 63
+      "rank": 75
     },
     {
       "title": "Content Warning",
@@ -2156,7 +2540,7 @@
       "steam_app_id": 2881650,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 94,
-      "steam_review_count": 163414,
+      "steam_review_count": 163428,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -2179,7 +2563,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 64
+      "rank": 76
     },
     {
       "title": "NEEDY STREAMER OVERLOAD",
@@ -2191,7 +2575,7 @@
       "steam_app_id": 1451940,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 94,
-      "steam_review_count": 57948,
+      "steam_review_count": 57972,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -2217,7 +2601,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 65
+      "rank": 77
     },
     {
       "title": "Rain World",
@@ -2229,7 +2613,7 @@
       "steam_app_id": 312520,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 94,
-      "steam_review_count": 57279,
+      "steam_review_count": 57315,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -2256,7 +2640,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 66
+      "rank": 78
     },
     {
       "title": "SpeedRunners",
@@ -2268,7 +2652,7 @@
       "steam_app_id": 207140,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 94,
-      "steam_review_count": 37186,
+      "steam_review_count": 37189,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -2297,7 +2681,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 67
+      "rank": 79
     },
     {
       "title": "BioShock Remastered",
@@ -2309,7 +2693,7 @@
       "steam_app_id": 7670,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 94,
-      "steam_review_count": 32217,
+      "steam_review_count": 32218,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -2335,7 +2719,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 68
+      "rank": 80
     },
     {
       "title": "Clustertruck",
@@ -2347,7 +2731,7 @@
       "steam_app_id": 397950,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 94,
-      "steam_review_count": 18520,
+      "steam_review_count": 18526,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -2373,7 +2757,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 69
+      "rank": 81
     },
     {
       "title": "Cassette Beasts",
@@ -2385,7 +2769,7 @@
       "steam_app_id": 1321440,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 94,
-      "steam_review_count": 11114,
+      "steam_review_count": 11118,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -2411,7 +2795,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 70
+      "rank": 82
     },
     {
       "title": "Worms Armageddon: Anniversary Edition",
@@ -2423,7 +2807,7 @@
       "steam_app_id": 217200,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 94,
-      "steam_review_count": 10943,
+      "steam_review_count": 10946,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -2448,7 +2832,44 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 71
+      "rank": 83
+    },
+    {
+      "title": "The Great Ace Attorney Chronicles",
+      "steam_title": "The Great Ace Attorney Chronicles",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000024293",
+      "nintendo_price_aud": 23.98,
+      "nintendo_original_price_aud": 59.95,
+      "discount_percent": 60,
+      "steam_app_id": 1158850,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 94,
+      "steam_review_count": 9514,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Adventure"
+      ],
+      "steamspy_tags": [
+        "Visual Novel",
+        "Adventure",
+        "Detective",
+        "Anime",
+        "Mystery",
+        "Text-Based",
+        "3D",
+        "Story Rich",
+        "Drama",
+        "Choose Your Own Adventure",
+        "Steampunk",
+        "Historical",
+        "Retro",
+        "Conversation",
+        "Singleplayer"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 84
     },
     {
       "title": "Behind the Frame: The Finest Scenery",
@@ -2460,7 +2881,7 @@
       "steam_app_id": 1634150,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 94,
-      "steam_review_count": 7724,
+      "steam_review_count": 7725,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -2487,42 +2908,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 72
-    },
-    {
-      "title": "1000xRESIST – Nintendo Switch™ 2 Edition",
-      "steam_title": "1000xRESIST",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000132494",
-      "nintendo_price_aud": 17.7,
-      "nintendo_original_price_aud": 29.5,
-      "discount_percent": 40,
-      "steam_app_id": 1675830,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 94,
-      "steam_review_count": 7018,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [],
-      "steamspy_tags": [
-        "Female Protagonist",
-        "Thriller",
-        "Futuristic",
-        "Post-apocalyptic",
-        "3D",
-        "Story Rich",
-        "Sci-fi",
-        "Walking Simulator",
-        "Psychological Horror",
-        "Visual Novel",
-        "Anime",
-        "Narrative",
-        "Cinematic",
-        "Atmospheric",
-        "Multiple Endings"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 73
+      "rank": 85
     },
     {
       "title": "Gato Roboto",
@@ -2534,7 +2920,7 @@
       "steam_app_id": 916730,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 94,
-      "steam_review_count": 5255,
+      "steam_review_count": 5256,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -2561,7 +2947,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 74
+      "rank": 86
     },
     {
       "title": "Nocturnal",
@@ -2573,7 +2959,7 @@
       "steam_app_id": 1634080,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 94,
-      "steam_review_count": 5117,
+      "steam_review_count": 5121,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -2599,7 +2985,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 75
+      "rank": 87
     },
     {
       "title": "Bloodstained: Curse of the Moon",
@@ -2636,7 +3022,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 76
+      "rank": 88
     },
     {
       "title": "Story of Seasons: Grand Bazaar",
@@ -2648,14 +3034,14 @@
       "steam_app_id": 2508780,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 94,
-      "steam_review_count": 4061,
+      "steam_review_count": 4064,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 77
+      "rank": 89
     },
     {
       "title": "UnMetal",
@@ -2667,7 +3053,7 @@
       "steam_app_id": 1203710,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 94,
-      "steam_review_count": 3664,
+      "steam_review_count": 3668,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -2694,7 +3080,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 78
+      "rank": 90
     },
     {
       "title": "Rain World: Downpour",
@@ -2706,14 +3092,14 @@
       "steam_app_id": 1933390,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 94,
-      "steam_review_count": 2712,
+      "steam_review_count": 2714,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 79
+      "rank": 91
     },
     {
       "title": "Atelier Sophie 2: The Alchemist of the Mysterious Dream",
@@ -2750,7 +3136,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 80
+      "rank": 92
     },
     {
       "title": "Timelie",
@@ -2789,42 +3175,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 81
-    },
-    {
-      "title": "Tiny Terry's Turbo Trip",
-      "steam_title": "Tiny Terry's Turbo Trip",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000086533",
-      "nintendo_price_aud": 13.25,
-      "nintendo_original_price_aud": 26.5,
-      "discount_percent": 50,
-      "steam_app_id": 2238040,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 94,
-      "steam_review_count": 2257,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [],
-      "steamspy_tags": [
-        "Exploration",
-        "Adventure",
-        "Relaxing",
-        "Cute",
-        "Indie",
-        "Collectathon",
-        "Funny",
-        "Open World",
-        "Wholesome",
-        "Casual",
-        "Singleplayer",
-        "Family Friendly",
-        "Soundtrack",
-        "Colorful",
-        "Walking Simulator"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 82
+      "rank": 93
     },
     {
       "title": "KILL IT WITH FIRE! 2",
@@ -2859,7 +3210,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 83
+      "rank": 94
     },
     {
       "title": "Figment 2: Creed Valley",
@@ -2871,7 +3222,7 @@
       "steam_app_id": 1085220,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 94,
-      "steam_review_count": 1437,
+      "steam_review_count": 1436,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -2899,7 +3250,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 84
+      "rank": 95
     },
     {
       "title": "Lil' Guardsman",
@@ -2934,7 +3285,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 85
+      "rank": 96
     },
     {
       "title": "Dungeons of Dreadrock",
@@ -2969,7 +3320,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 86
+      "rank": 97
     },
     {
       "title": "Mindcop",
@@ -3008,7 +3359,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 87
+      "rank": 98
     },
     {
       "title": "Ultra Foodmess",
@@ -3046,7 +3397,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 88
+      "rank": 99
     },
     {
       "title": "The Legacy: The Tree of Might",
@@ -3072,7 +3423,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 89
+      "rank": 100
     },
     {
       "title": "Potion Craft: Alchemist Simulator",
@@ -3084,7 +3435,7 @@
       "steam_app_id": 1210320,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 93,
-      "steam_review_count": 44680,
+      "steam_review_count": 44688,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -3110,7 +3461,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 90
+      "rank": 101
     },
     {
       "title": "Bloodstained: Ritual of the Night",
@@ -3122,7 +3473,7 @@
       "steam_app_id": 692850,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 93,
-      "steam_review_count": 41708,
+      "steam_review_count": 41709,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -3149,7 +3500,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 91
+      "rank": 102
     },
     {
       "title": "DYNASTY WARRIORS: ORIGINS",
@@ -3161,7 +3512,7 @@
       "steam_app_id": 2384580,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 93,
-      "steam_review_count": 30181,
+      "steam_review_count": 30187,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -3184,81 +3535,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 92
-    },
-    {
-      "title": "Another Crab's Treasure",
-      "steam_title": "Another Crab's Treasure",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000051253",
-      "nintendo_price_aud": 17.99,
-      "nintendo_original_price_aud": 44.99,
-      "discount_percent": 60,
-      "steam_app_id": 1887840,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 93,
-      "steam_review_count": 21903,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [],
-      "steamspy_tags": [
-        "Souls-like",
-        "3D Platformer",
-        "Funny",
-        "Action RPG",
-        "Nonlinear",
-        "Atmospheric",
-        "Cartoony",
-        "Third Person",
-        "Action-Adventure",
-        "Dark Humor",
-        "RPG",
-        "Dark Fantasy",
-        "Cute",
-        "3D",
-        "Open World"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 93
-    },
-    {
-      "title": "Unrailed!",
-      "steam_title": "Unrailed!",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000029628",
-      "nintendo_price_aud": 4.04,
-      "nintendo_original_price_aud": 26.95,
-      "discount_percent": 85,
-      "steam_app_id": 1016920,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 93,
-      "steam_review_count": 19776,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Action",
-        "Casual",
-        "Indie"
-      ],
-      "steamspy_tags": [
-        "Multiplayer",
-        "Co-op",
-        "Online Co-Op",
-        "Local Co-Op",
-        "Casual",
-        "Trains",
-        "Local Multiplayer",
-        "Action",
-        "Procedural Generation",
-        "Indie",
-        "4 Player Local",
-        "Voxel",
-        "Family Friendly",
-        "Funny",
-        "Survival"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 94
+      "rank": 103
     },
     {
       "title": "Bad North",
@@ -3270,7 +3547,7 @@
       "steam_app_id": 688420,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 93,
-      "steam_review_count": 14310,
+      "steam_review_count": 14314,
       "match_confidence": "high",
       "fuzzy_score": 94,
       "steam_genres": [
@@ -3297,7 +3574,7 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 95
+      "rank": 104
     },
     {
       "title": "The Exit 8",
@@ -3309,7 +3586,7 @@
       "steam_app_id": 2653790,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 93,
-      "steam_review_count": 11583,
+      "steam_review_count": 11587,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -3332,7 +3609,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 96
+      "rank": 105
     },
     {
       "title": "Record of Lodoss War -Deedlit in Wonder Labyrinth-",
@@ -3344,7 +3621,7 @@
       "steam_app_id": 1203630,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 93,
-      "steam_review_count": 7441,
+      "steam_review_count": 7442,
       "match_confidence": "high",
       "fuzzy_score": 99.0,
       "steam_genres": [
@@ -3370,7 +3647,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 97
+      "rank": 106
     },
     {
       "title": "SpiderHeck",
@@ -3382,7 +3659,7 @@
       "steam_app_id": 1329500,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 93,
-      "steam_review_count": 6432,
+      "steam_review_count": 6435,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -3409,7 +3686,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 98
+      "rank": 107
     },
     {
       "title": "Killer Frequency",
@@ -3421,10 +3698,14 @@
       "steam_app_id": 1903620,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 93,
-      "steam_review_count": 6226,
+      "steam_review_count": 6227,
       "match_confidence": "high",
       "fuzzy_score": 99,
-      "steam_genres": [],
+      "steam_genres": [
+        "Adventure",
+        "Indie",
+        "Simulation"
+      ],
       "steamspy_tags": [
         "Adventure",
         "Horror",
@@ -3444,7 +3725,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 99
+      "rank": 108
     },
     {
       "title": "STORY OF SEASONS: Friends of Mineral Town",
@@ -3456,7 +3737,7 @@
       "steam_app_id": 978780,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 93,
-      "steam_review_count": 5770,
+      "steam_review_count": 5772,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -3483,7 +3764,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 100
+      "rank": 109
     },
     {
       "title": "FAR: Changing Tides",
@@ -3495,7 +3776,7 @@
       "steam_app_id": 1570010,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 93,
-      "steam_review_count": 5683,
+      "steam_review_count": 5684,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -3522,7 +3803,42 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 101
+      "rank": 110
+    },
+    {
+      "title": "Romancing SaGa 2: Revenge of the Seven – Nintendo Switch™ 2 Edition",
+      "steam_title": "Romancing SaGa 2: Revenge of the Seven",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000098266",
+      "nintendo_price_aud": 33.98,
+      "nintendo_original_price_aud": 84.95,
+      "discount_percent": 60,
+      "steam_app_id": 2455640,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 93,
+      "steam_review_count": 4776,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [],
+      "steamspy_tags": [
+        "JRPG",
+        "Tactical RPG",
+        "Party-Based RPG",
+        "3D",
+        "Controller",
+        "Story Rich",
+        "Lore-Rich",
+        "RPG",
+        "Fantasy",
+        "Third Person",
+        "Class-Based",
+        "Medieval",
+        "Remake",
+        "Singleplayer",
+        "Emotional"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 111
     },
     {
       "title": "Fate/EXTELLA LINK",
@@ -3559,7 +3875,42 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 102
+      "rank": 112
+    },
+    {
+      "title": "STAR OCEAN THE SECOND STORY R",
+      "steam_title": "STAR OCEAN THE SECOND STORY R",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000121078",
+      "nintendo_price_aud": 41.97,
+      "nintendo_original_price_aud": 69.95,
+      "discount_percent": 40,
+      "steam_app_id": 2238900,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 93,
+      "steam_review_count": 4013,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [],
+      "steamspy_tags": [
+        "RPG",
+        "JRPG",
+        "Pixel Graphics",
+        "Action RPG",
+        "Action",
+        "PvE",
+        "Story Rich",
+        "2D",
+        "Multiple Endings",
+        "2D Platformer",
+        "Fantasy",
+        "1990's",
+        "Space",
+        "Remake",
+        "Singleplayer"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 113
     },
     {
       "title": "Risk of Rain 2: Alloyed Collective",
@@ -3571,14 +3922,14 @@
       "steam_app_id": 2781620,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 93,
-      "steam_review_count": 3671,
+      "steam_review_count": 3670,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
       "steamspy_tags": [],
       "rogue_flag": "roguelite",
       "rogue_note": "known title",
-      "rank": 103
+      "rank": 114
     },
     {
       "title": "The Count Lucanor",
@@ -3617,7 +3968,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 104
+      "rank": 115
     },
     {
       "title": "Go-Go Town!",
@@ -3629,7 +3980,7 @@
       "steam_app_id": 2195120,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 93,
-      "steam_review_count": 2760,
+      "steam_review_count": 2759,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -3652,7 +4003,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 105
+      "rank": 116
     },
     {
       "title": "Pizza Possum",
@@ -3664,7 +4015,7 @@
       "steam_app_id": 1951230,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 93,
-      "steam_review_count": 2246,
+      "steam_review_count": 2245,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -3687,42 +4038,26 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 106
+      "rank": 117
     },
     {
-      "title": "Splasher",
-      "steam_title": "Splasher",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000000624",
-      "nintendo_price_aud": 2.2,
-      "nintendo_original_price_aud": 22.0,
-      "discount_percent": 90,
-      "steam_app_id": 446840,
+      "title": "Death Howl",
+      "steam_title": "Death Howl",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000100404",
+      "nintendo_price_aud": 22.5,
+      "nintendo_original_price_aud": 30.0,
+      "discount_percent": 25,
+      "steam_app_id": 2825880,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 93,
-      "steam_review_count": 1198,
+      "steam_review_count": 1492,
       "match_confidence": "high",
       "fuzzy_score": 99,
-      "steam_genres": [
-        "Action",
-        "Indie"
-      ],
-      "steamspy_tags": [
-        "Indie",
-        "Action",
-        "Platformer",
-        "Controller",
-        "Cartoon",
-        "2D",
-        "Difficult",
-        "Singleplayer",
-        "Great Soundtrack",
-        "Funny",
-        "Precision Platformer",
-        "2D Platformer"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 107
+      "steam_genres": [],
+      "steamspy_tags": [],
+      "rogue_flag": "unknown",
+      "rogue_note": "no Steam tag data",
+      "rank": 118
     },
     {
       "title": "Disc Room",
@@ -3761,7 +4096,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 108
+      "rank": 119
     },
     {
       "title": "Blaster Master Zero",
@@ -3773,7 +4108,7 @@
       "steam_app_id": 1034900,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 93,
-      "steam_review_count": 1101,
+      "steam_review_count": 1102,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -3794,7 +4129,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 109
+      "rank": 120
     },
     {
       "title": "Fight Crab",
@@ -3833,45 +4168,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 110
-    },
-    {
-      "title": "My Big Sister: Remastered",
-      "steam_title": "My Big Sister",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000084687",
-      "nintendo_price_aud": 4.79,
-      "nintendo_original_price_aud": 11.99,
-      "discount_percent": 60,
-      "steam_app_id": 733300,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 93,
-      "steam_review_count": 686,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Adventure",
-        "Indie"
-      ],
-      "steamspy_tags": [
-        "Indie",
-        "Adventure",
-        "Pixel Graphics",
-        "Horror",
-        "Story Rich",
-        "Psychological Horror",
-        "2D",
-        "Atmospheric",
-        "Singleplayer",
-        "Gore",
-        "Dark",
-        "Surreal",
-        "Violent",
-        "Casual",
-        "Difficult"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 111
+      "rank": 121
     },
     {
       "title": "Sudoku Classic",
@@ -3883,7 +4180,7 @@
       "steam_app_id": 1188330,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 93,
-      "steam_review_count": 493,
+      "steam_review_count": 492,
       "match_confidence": "high",
       "fuzzy_score": 100.0,
       "steam_genres": [
@@ -3899,7 +4196,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 112
+      "rank": 122
     },
     {
       "title": "The Forest Quartet",
@@ -3937,7 +4234,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 113
+      "rank": 123
     },
     {
       "title": "Mortal Kombat 11 Ultimate Add-On Bundle",
@@ -3958,7 +4255,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 114
+      "rank": 124
     },
     {
       "title": "RUN: The World In-Between",
@@ -3997,7 +4294,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 115
+      "rank": 125
     },
     {
       "title": "The Elder Scrolls V: Skyrim®",
@@ -4009,7 +4306,7 @@
       "steam_app_id": 489830,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 92,
-      "steam_review_count": 377521,
+      "steam_review_count": 377576,
       "match_confidence": "high",
       "fuzzy_score": 94,
       "steam_genres": [
@@ -4034,7 +4331,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 116
+      "rank": 126
     },
     {
       "title": "LIMBO",
@@ -4046,7 +4343,7 @@
       "steam_app_id": 48000,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 92,
-      "steam_review_count": 62109,
+      "steam_review_count": 62111,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -4073,7 +4370,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 117
+      "rank": 127
     },
     {
       "title": "Bright Memory: Infinite Gold Edition",
@@ -4085,7 +4382,7 @@
       "steam_app_id": 1178830,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 92,
-      "steam_review_count": 39871,
+      "steam_review_count": 39875,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -4111,7 +4408,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 118
+      "rank": 128
     },
     {
       "title": "Crash Bandicoot™ N. Sane Trilogy",
@@ -4123,7 +4420,7 @@
       "steam_app_id": 731490,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 92,
-      "steam_review_count": 22256,
+      "steam_review_count": 22266,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -4148,7 +4445,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 119
+      "rank": 129
     },
     {
       "title": "Red Dead Redemption",
@@ -4160,7 +4457,7 @@
       "steam_app_id": 2668510,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 92,
-      "steam_review_count": 21678,
+      "steam_review_count": 21702,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -4183,7 +4480,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 120
+      "rank": 130
     },
     {
       "title": "Haste",
@@ -4195,7 +4492,7 @@
       "steam_app_id": 1796470,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 92,
-      "steam_review_count": 14197,
+      "steam_review_count": 14201,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -4218,46 +4515,44 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 121
+      "rank": 131
     },
     {
-      "title": "Ken Follett's The Pillars of the Earth",
-      "steam_title": "Ken Follett's The Pillars of the Earth",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000036839",
-      "nintendo_price_aud": 2.4,
-      "nintendo_original_price_aud": 24.0,
-      "discount_percent": 90,
-      "steam_app_id": 234270,
+      "title": "OKAMI HD",
+      "steam_title": "Okami HD",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000006414",
+      "nintendo_price_aud": 12.47,
+      "nintendo_original_price_aud": 24.95,
+      "discount_percent": 50,
+      "steam_app_id": 587620,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 92,
-      "steam_review_count": 7605,
+      "steam_review_count": 10742,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
-        "Adventure",
-        "Casual",
-        "Indie"
+        "Adventure"
       ],
       "steamspy_tags": [
-        "Choices Matter",
         "Adventure",
-        "Story Rich",
-        "Visual Novel",
-        "Point & Click",
-        "Medieval",
-        "Indie",
-        "Interactive Fiction",
-        "Casual",
-        "Based On A Novel",
-        "Atmospheric",
-        "Singleplayer",
-        "Historical",
+        "Mythology",
         "Great Soundtrack",
-        "Violent"
+        "Story Rich",
+        "Singleplayer",
+        "Female Protagonist",
+        "Classic",
+        "Atmospheric",
+        "Cult Classic",
+        "Action",
+        "Stylized",
+        "Colorful",
+        "Open World",
+        "Fantasy",
+        "Action RPG"
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 122
+      "rank": 132
     },
     {
       "title": "Atomicrops",
@@ -4269,7 +4564,7 @@
       "steam_app_id": 757320,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 92,
-      "steam_review_count": 6341,
+      "steam_review_count": 6342,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -4295,7 +4590,7 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 123
+      "rank": 133
     },
     {
       "title": "Sakuna: Of Rice and Ruin",
@@ -4333,46 +4628,44 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 124
+      "rank": 134
     },
     {
-      "title": "MO:Astray",
-      "steam_title": "MO:Astray",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000023418",
-      "nintendo_price_aud": 10.5,
-      "nintendo_original_price_aud": 21.0,
-      "discount_percent": 50,
-      "steam_app_id": 1104660,
+      "title": "FINAL FANTASY VI",
+      "steam_title": "FINAL FANTASY VI",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000056593",
+      "nintendo_price_aud": 16.17,
+      "nintendo_original_price_aud": 26.95,
+      "discount_percent": 40,
+      "steam_app_id": 1173820,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 92,
-      "steam_review_count": 5060,
+      "steam_review_count": 5015,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
-        "Action",
-        "Adventure",
-        "Indie"
+        "RPG"
       ],
       "steamspy_tags": [
-        "Indie",
-        "Action",
-        "Adventure",
-        "Pixel Graphics",
-        "Puzzle-Platformer",
-        "Platformer",
-        "Sci-fi",
-        "Gore",
-        "Atmospheric",
-        "Singleplayer",
-        "Cute",
+        "RPG",
         "2D",
-        "Great Soundtrack",
-        "Story Rich",
-        "Violent"
+        "Singleplayer",
+        "JRPG",
+        "Adventure",
+        "Class-Based",
+        "Fantasy",
+        "Emotional",
+        "Exploration",
+        "Pixel Graphics",
+        "Lore-Rich",
+        "Nostalgia",
+        "Magic",
+        "Party-Based RPG",
+        "Turn-Based Combat"
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 125
+      "rank": 135
     },
     {
       "title": "DEEEER Simulator: Your Average Everyday Deer Game",
@@ -4412,7 +4705,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 126
+      "rank": 136
     },
     {
       "title": "Astrea: Six-Sided Oracles",
@@ -4447,42 +4740,7 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 127
-    },
-    {
-      "title": "Venba",
-      "steam_title": "Venba",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000057822",
-      "nintendo_price_aud": 5.62,
-      "nintendo_original_price_aud": 22.5,
-      "discount_percent": 75,
-      "steam_app_id": 1491670,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 92,
-      "steam_review_count": 3777,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [],
-      "steamspy_tags": [
-        "Cooking",
-        "Casual",
-        "Narrative",
-        "Puzzle",
-        "Female Protagonist",
-        "Stylized",
-        "1980s",
-        "Emotional",
-        "Conversation",
-        "Cinematic",
-        "Interactive Fiction",
-        "Visual Novel",
-        "Indie",
-        "Story Rich",
-        "Choices Matter"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 128
+      "rank": 137
     },
     {
       "title": "Die in the Dungeon",
@@ -4494,7 +4752,7 @@
       "steam_app_id": 2026820,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 92,
-      "steam_review_count": 3576,
+      "steam_review_count": 3578,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -4517,7 +4775,76 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 129
+      "rank": 138
+    },
+    {
+      "title": "FINAL FANTASY IV",
+      "steam_title": "FINAL FANTASY IV",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000056583",
+      "nintendo_price_aud": 16.17,
+      "nintendo_original_price_aud": 26.95,
+      "discount_percent": 40,
+      "steam_app_id": 1173800,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 92,
+      "steam_review_count": 3056,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "RPG"
+      ],
+      "steamspy_tags": [
+        "RPG",
+        "JRPG",
+        "Exploration",
+        "Party-Based RPG",
+        "2D",
+        "Lore-Rich",
+        "Turn-Based Combat",
+        "Story Rich",
+        "Class-Based",
+        "Fantasy",
+        "Pixel Graphics",
+        "Magic",
+        "Emotional",
+        "Adventure",
+        "Singleplayer"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 139
+    },
+    {
+      "title": "Kunitsu-Gami: Path of the Goddess",
+      "steam_title": "Kunitsu-Gami: Path of the Goddess",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000095326",
+      "nintendo_price_aud": 44.96,
+      "nintendo_original_price_aud": 59.95,
+      "discount_percent": 25,
+      "steam_app_id": 2510710,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 92,
+      "steam_review_count": 2551,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Action",
+        "Strategy"
+      ],
+      "steamspy_tags": [
+        "Action",
+        "Strategy",
+        "Tower Defense",
+        "3D",
+        "Mythology",
+        "Lore-Rich",
+        "Supernatural",
+        "Singleplayer",
+        "Hack and Slash"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 140
     },
     {
       "title": "Kathy Rain: Director's Cut",
@@ -4529,7 +4856,7 @@
       "steam_app_id": 1395030,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 92,
-      "steam_review_count": 1550,
+      "steam_review_count": 1551,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -4555,7 +4882,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 130
+      "rank": 141
     },
     {
       "title": "YOHANE THE PARHELION -BLAZE in the DEEPBLUE-",
@@ -4587,7 +4914,7 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 131
+      "rank": 142
     },
     {
       "title": "Forestrike",
@@ -4606,7 +4933,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 132
+      "rank": 143
     },
     {
       "title": "Darkarta: A Broken Heart Quest Collector's Edition",
@@ -4645,7 +4972,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 133
+      "rank": 144
     },
     {
       "title": "FAIRY TAIL: DUNGEONS",
@@ -4680,7 +5007,7 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 134
+      "rank": 145
     },
     {
       "title": "Anarcute",
@@ -4714,7 +5041,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 135
+      "rank": 146
     },
     {
       "title": "Atelier Rorona ~The Alchemist of Arland~ DX",
@@ -4751,7 +5078,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 136
+      "rank": 147
     },
     {
       "title": "Valfaris: Mecha Therion",
@@ -4766,7 +5093,10 @@
       "steam_review_count": 472,
       "match_confidence": "high",
       "fuzzy_score": 99,
-      "steam_genres": [],
+      "steam_genres": [
+        "Action",
+        "Indie"
+      ],
       "steamspy_tags": [
         "Action",
         "Shoot 'Em Up",
@@ -4786,42 +5116,45 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 137
+      "rank": 148
     },
     {
-      "title": "Arranger: A Role-Puzzling Adventure",
-      "steam_title": "Arranger: A Role-Puzzling Adventure",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000073757",
-      "nintendo_price_aud": 11.99,
-      "nintendo_original_price_aud": 29.99,
-      "discount_percent": 60,
-      "steam_app_id": 2596420,
+      "title": "What the Dub?!",
+      "steam_title": "What The Dub?!",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000038199",
+      "nintendo_price_aud": 4.99,
+      "nintendo_original_price_aud": 9.99,
+      "discount_percent": 50,
+      "steam_app_id": 1495860,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 92,
-      "steam_review_count": 414,
+      "steam_review_count": 425,
       "match_confidence": "high",
       "fuzzy_score": 99,
-      "steam_genres": [],
+      "steam_genres": [
+        "Casual",
+        "Indie"
+      ],
       "steamspy_tags": [
-        "Adventure",
-        "Puzzle",
-        "Singleplayer",
-        "Grid-Based Movement",
+        "Casual",
+        "Board Game",
+        "Trivia",
+        "Word Game",
         "2D",
-        "Exploration",
+        "3D",
+        "Cartoon",
+        "Cartoony",
+        "Cinematic",
+        "FMV",
         "Colorful",
-        "Minimalist",
-        "Atmospheric",
-        "Nature",
-        "Stylized",
-        "Relaxing",
         "Funny",
-        "Story Rich",
-        "RPG"
+        "Comedy",
+        "Parody ",
+        "PvE"
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 138
+      "rank": 149
     },
     {
       "title": "Rifftrax: The Game",
@@ -4836,7 +5169,10 @@
       "steam_review_count": 241,
       "match_confidence": "high",
       "fuzzy_score": 99,
-      "steam_genres": [],
+      "steam_genres": [
+        "Casual",
+        "Indie"
+      ],
       "steamspy_tags": [
         "Casual",
         "Board Game",
@@ -4856,42 +5192,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 139
-    },
-    {
-      "title": "What have you done, father?",
-      "steam_title": "What have you done, Father?",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000134777",
-      "nintendo_price_aud": 22.49,
-      "nintendo_original_price_aud": 24.99,
-      "discount_percent": 10,
-      "steam_app_id": 2584260,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 92,
-      "steam_review_count": 153,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [],
-      "steamspy_tags": [
-        "Adventure",
-        "Psychological Horror",
-        "Thriller",
-        "Noir",
-        "Mystery",
-        "Visual Novel",
-        "Horror",
-        "Walking Simulator",
-        "Exploration",
-        "3D",
-        "First-Person",
-        "Detective",
-        "Linear",
-        "Singleplayer",
-        "Narration"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 140
+      "rank": 150
     },
     {
       "title": "Demon Turf",
@@ -4930,7 +5231,26 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 141
+      "rank": 151
+    },
+    {
+      "title": "Airport Baggage Simulator",
+      "steam_title": "Airport Baggage Simulator",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000118985",
+      "nintendo_price_aud": 24.0,
+      "nintendo_original_price_aud": 30.0,
+      "discount_percent": 20,
+      "steam_app_id": 3887090,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 92,
+      "steam_review_count": 120,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [],
+      "steamspy_tags": [],
+      "rogue_flag": "unknown",
+      "rogue_note": "no Steam tag data",
+      "rank": 152
     },
     {
       "title": "UNTURNED",
@@ -4942,7 +5262,7 @@
       "steam_app_id": 304930,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 91,
-      "steam_review_count": 564628,
+      "steam_review_count": 564630,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -4971,7 +5291,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 142
+      "rank": 153
     },
     {
       "title": "DOOM® Eternal Deluxe Edition",
@@ -4983,7 +5303,7 @@
       "steam_app_id": 782330,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 91,
-      "steam_review_count": 220610,
+      "steam_review_count": 220619,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -5008,7 +5328,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 143
+      "rank": 154
     },
     {
       "title": "Ghostrunner",
@@ -5020,7 +5340,7 @@
       "steam_app_id": 1139900,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 91,
-      "steam_review_count": 66795,
+      "steam_review_count": 66809,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -5045,7 +5365,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 144
+      "rank": 155
     },
     {
       "title": "The Escapists 2",
@@ -5084,45 +5404,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 145
-    },
-    {
-      "title": "TerraTech",
-      "steam_title": "TerraTech",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000015529",
-      "nintendo_price_aud": 8.74,
-      "nintendo_original_price_aud": 34.99,
-      "discount_percent": 75,
-      "steam_app_id": 285920,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 91,
-      "steam_review_count": 24998,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Action",
-        "Indie"
-      ],
-      "steamspy_tags": [
-        "Building",
-        "Sandbox",
-        "Open World",
-        "Open World Survival Craft",
-        "Multiplayer",
-        "Robots",
-        "Crafting",
-        "Action",
-        "Survival",
-        "Adventure",
-        "Singleplayer",
-        "Exploration",
-        "Strategy",
-        "Early Access",
-        "Indie"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 146
+      "rank": 156
     },
     {
       "title": "BOKURA",
@@ -5134,7 +5416,7 @@
       "steam_app_id": 1801110,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 91,
-      "steam_review_count": 13041,
+      "steam_review_count": 13046,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -5157,7 +5439,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 147
+      "rank": 157
     },
     {
       "title": "Monster Sanctuary",
@@ -5169,7 +5451,7 @@
       "steam_app_id": 814370,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 91,
-      "steam_review_count": 12684,
+      "steam_review_count": 12687,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -5198,7 +5480,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 148
+      "rank": 158
     },
     {
       "title": "Nobody Saves the World",
@@ -5238,7 +5520,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 149
+      "rank": 159
     },
     {
       "title": "Gravity Circuit",
@@ -5250,7 +5532,7 @@
       "steam_app_id": 858710,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 91,
-      "steam_review_count": 6263,
+      "steam_review_count": 6267,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -5276,7 +5558,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 150
+      "rank": 160
     },
     {
       "title": "Ghost of a Tale",
@@ -5316,7 +5598,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 151
+      "rank": 161
     },
     {
       "title": "Curious Expedition",
@@ -5355,7 +5637,7 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 152
+      "rank": 162
     },
     {
       "title": "Guacamelee! 2",
@@ -5394,7 +5676,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 153
+      "rank": 163
     },
     {
       "title": "Heave Ho",
@@ -5430,7 +5712,82 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 154
+      "rank": 164
+    },
+    {
+      "title": "Cook, Serve, Delicious! 3?!",
+      "steam_title": "Cook, Serve, Delicious! 3?!",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000027338",
+      "nintendo_price_aud": 6.3,
+      "nintendo_original_price_aud": 25.2,
+      "discount_percent": 75,
+      "steam_app_id": 1000030,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 91,
+      "steam_review_count": 2309,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Action",
+        "Indie",
+        "Simulation",
+        "Strategy"
+      ],
+      "steamspy_tags": [
+        "Typing",
+        "Management",
+        "Difficult",
+        "Casual",
+        "Arcade",
+        "Strategy",
+        "2D",
+        "Funny",
+        "Simulation",
+        "Co-op",
+        "Comedy",
+        "Family Friendly",
+        "Action",
+        "Local Co-Op",
+        "Multiplayer"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 165
+    },
+    {
+      "title": "Monster Hunter Stories",
+      "steam_title": "Monster Hunter Stories",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000076858",
+      "nintendo_price_aud": 14.83,
+      "nintendo_original_price_aud": 44.95,
+      "discount_percent": 67,
+      "steam_app_id": 2356560,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 91,
+      "steam_review_count": 2132,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [],
+      "steamspy_tags": [
+        "RPG",
+        "JRPG",
+        "3D",
+        "Fantasy",
+        "PvP",
+        "Singleplayer",
+        "Multiplayer",
+        "Story Rich",
+        "Anime",
+        "Adventure",
+        "Exploration",
+        "Cartoony",
+        "Third Person",
+        "Dragons",
+        "Loot"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 166
     },
     {
       "title": "Adventure Time: Pirates of the Enchiridion",
@@ -5468,7 +5825,26 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 155
+      "rank": 167
+    },
+    {
+      "title": "BRAVELY DEFAULT FLYING FAIRY HD Remaster",
+      "steam_title": "BRAVELY DEFAULT FLYING FAIRY HD Remaster",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000095322",
+      "nintendo_price_aud": 38.46,
+      "nintendo_original_price_aud": 54.95,
+      "discount_percent": 30,
+      "steam_app_id": 2833580,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 91,
+      "steam_review_count": 905,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [],
+      "steamspy_tags": [],
+      "rogue_flag": "unknown",
+      "rogue_note": "no Steam tag data",
+      "rank": 168
     },
     {
       "title": "Atelier Escha & Logy: Alchemists of the Dusk Sky DX",
@@ -5505,66 +5881,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 156
-    },
-    {
-      "title": "Access Denied: Escape",
-      "steam_title": "Access Denied: Escape",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000084736",
-      "nintendo_price_aud": 3.99,
-      "nintendo_original_price_aud": 7.99,
-      "discount_percent": 50,
-      "steam_app_id": 2317300,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 91,
-      "steam_review_count": 293,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [],
-      "steamspy_tags": [
-        "Mystery",
-        "Atmospheric",
-        "Escape Room",
-        "Puzzle",
-        "Singleplayer",
-        "First-Person",
-        "Futuristic",
-        "Adventure",
-        "Realistic",
-        "Exploration",
-        "Cyberpunk",
-        "Controller",
-        "Linear",
-        "Multiple Endings",
-        "Indie"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 157
-    },
-    {
-      "title": "Streets of Rogue: Character Pack",
-      "steam_title": "Streets of Rogue Character Pack",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/aocs/70050000024419",
-      "nintendo_price_aud": 3.6,
-      "nintendo_original_price_aud": 9.0,
-      "discount_percent": 60,
-      "steam_app_id": 1285810,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 91,
-      "steam_review_count": 244,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Action",
-        "Adventure",
-        "Indie",
-        "RPG"
-      ],
-      "steamspy_tags": [],
-      "rogue_flag": "unknown",
-      "rogue_note": "no Steam tag data",
-      "rank": 158
+      "rank": 169
     },
     {
       "title": "Ufouria 2: The Saga",
@@ -5599,12 +5916,12 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 159
+      "rank": 170
     },
     {
       "title": "Heave Ho 2",
       "steam_title": "Heave Ho 2",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000113966",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000113972",
       "nintendo_price_aud": 11.99,
       "nintendo_original_price_aud": 15.0,
       "discount_percent": 20,
@@ -5618,7 +5935,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 160
+      "rank": 171
     },
     {
       "title": "Eden Genesis",
@@ -5653,7 +5970,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 161
+      "rank": 172
     },
     {
       "title": "World Cruise Story",
@@ -5685,7 +6002,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 162
+      "rank": 173
     },
     {
       "title": "Hogwarts Legacy",
@@ -5697,7 +6014,7 @@
       "steam_app_id": 990080,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 90,
-      "steam_review_count": 373451,
+      "steam_review_count": 373508,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -5724,7 +6041,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 163
+      "rank": 174
     },
     {
       "title": "Overcooked! 2",
@@ -5736,7 +6053,7 @@
       "steam_app_id": 728880,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 90,
-      "steam_review_count": 84327,
+      "steam_review_count": 84341,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -5763,46 +6080,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 164
-    },
-    {
-      "title": "Blasphemous",
-      "steam_title": "Blasphemous",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000007281",
-      "nintendo_price_aud": 9.37,
-      "nintendo_original_price_aud": 37.5,
-      "discount_percent": 75,
-      "steam_app_id": 774361,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 90,
-      "steam_review_count": 67266,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Action",
-        "Adventure",
-        "Indie"
-      ],
-      "steamspy_tags": [
-        "Metroidvania",
-        "Pixel Graphics",
-        "Souls-like",
-        "Dark Fantasy",
-        "Gore",
-        "2D",
-        "Violent",
-        "Action",
-        "Indie",
-        "Difficult",
-        "Platformer",
-        "Singleplayer",
-        "Blood",
-        "Adventure",
-        "Gothic"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 165
+      "rank": 175
     },
     {
       "title": "Risk of Rain Returns",
@@ -5814,7 +6092,7 @@
       "steam_app_id": 1337520,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 90,
-      "steam_review_count": 28712,
+      "steam_review_count": 28717,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -5839,7 +6117,26 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": "Action Roguelike present; classifying as roguelite",
-      "rank": 166
+      "rank": 176
+    },
+    {
+      "title": "Shape of Dreams",
+      "steam_title": "Shape of Dreams",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000118405",
+      "nintendo_price_aud": 30.0,
+      "nintendo_original_price_aud": 37.5,
+      "discount_percent": 20,
+      "steam_app_id": 2444750,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 90,
+      "steam_review_count": 20416,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [],
+      "steamspy_tags": [],
+      "rogue_flag": "unknown",
+      "rogue_note": "no Steam tag data",
+      "rank": 177
     },
     {
       "title": "The Escapists: Complete Edition",
@@ -5880,7 +6177,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": "minor Rogue-* Steam tag ignored (not in top tags)",
-      "rank": 167
+      "rank": 178
     },
     {
       "title": "Party Hard",
@@ -5892,7 +6189,7 @@
       "steam_app_id": 356570,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 90,
-      "steam_review_count": 12654,
+      "steam_review_count": 12659,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -5919,7 +6216,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 168
+      "rank": 179
     },
     {
       "title": "Axiom Verge",
@@ -5931,7 +6228,7 @@
       "steam_app_id": 332200,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 90,
-      "steam_review_count": 6621,
+      "steam_review_count": 6626,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -5958,7 +6255,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 169
+      "rank": 180
     },
     {
       "title": "Card Shark",
@@ -5970,7 +6267,7 @@
       "steam_app_id": 1371720,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 90,
-      "steam_review_count": 3238,
+      "steam_review_count": 3239,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -5997,7 +6294,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 170
+      "rank": 181
     },
     {
       "title": "OlliOlli World",
@@ -6009,7 +6306,7 @@
       "steam_app_id": 1190170,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 90,
-      "steam_review_count": 1855,
+      "steam_review_count": 1854,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -6036,7 +6333,42 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 171
+      "rank": 182
+    },
+    {
+      "title": "Farlands",
+      "steam_title": "Farlands",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000071474",
+      "nintendo_price_aud": 15.19,
+      "nintendo_original_price_aud": 18.99,
+      "discount_percent": 20,
+      "steam_app_id": 2252680,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 90,
+      "steam_review_count": 1745,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [],
+      "steamspy_tags": [
+        "Farming Sim",
+        "Building",
+        "Early Access",
+        "Crafting",
+        "Agriculture",
+        "Exploration",
+        "Life Sim",
+        "Cute",
+        "Indie",
+        "Fishing",
+        "2D",
+        "Casual",
+        "Collectathon",
+        "Relaxing",
+        "Space Sim"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 183
     },
     {
       "title": "Card-en-Ciel Nintendo Switch™ 2 Edition Upgrade Pack",
@@ -6071,7 +6403,7 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 172
+      "rank": 184
     },
     {
       "title": "Gunvolt Chronicles: Luminous Avenger iX",
@@ -6103,45 +6435,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 173
-    },
-    {
-      "title": "Doomsday Hunters",
-      "steam_title": "Doomsday Hunters",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000020834",
-      "nintendo_price_aud": 7.65,
-      "nintendo_original_price_aud": 25.5,
-      "discount_percent": 70,
-      "steam_app_id": 1175360,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 90,
-      "steam_review_count": 790,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Action",
-        "Indie"
-      ],
-      "steamspy_tags": [
-        "Arcade",
-        "Twin Stick Shooter",
-        "Difficult",
-        "Perma Death",
-        "Bullet Hell",
-        "Dungeon Crawler",
-        "Action Roguelike",
-        "2.5D",
-        "Post-apocalyptic",
-        "Cyberpunk",
-        "Pixel Graphics",
-        "Procedural Generation",
-        "Action",
-        "Rogue-lite",
-        "Rogue-like"
-      ],
-      "rogue_flag": "roguelite",
-      "rogue_note": null,
-      "rank": 174
+      "rank": 185
     },
     {
       "title": "Cosmic Express",
@@ -6178,7 +6472,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 175
+      "rank": 186
     },
     {
       "title": "Atelier Lulua ~The Scion of Arland~ Digital Deluxe Edition",
@@ -6215,7 +6509,31 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 176
+      "rank": 187
+    },
+    {
+      "title": "Streets of Rogue: Character Pack",
+      "steam_title": "Streets of Rogue Character Pack",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/aocs/70050000024419",
+      "nintendo_price_aud": 3.6,
+      "nintendo_original_price_aud": 9.0,
+      "discount_percent": 60,
+      "steam_app_id": 1285810,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 90,
+      "steam_review_count": 245,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Action",
+        "Adventure",
+        "Indie",
+        "RPG"
+      ],
+      "steamspy_tags": [],
+      "rogue_flag": "unknown",
+      "rogue_note": "no Steam tag data",
+      "rank": 188
     },
     {
       "title": "Grand Prix Story",
@@ -6248,7 +6566,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 177
+      "rank": 189
     },
     {
       "title": "Blossom Tales II: The Minotaur Prince",
@@ -6283,7 +6601,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 178
+      "rank": 190
     },
     {
       "title": "Snoopy & The Great Mystery Club",
@@ -6302,7 +6620,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 179
+      "rank": 191
     },
     {
       "title": "The Final Evolution of DEEEER",
@@ -6321,7 +6639,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 180
+      "rank": 192
     },
     {
       "title": "BioShock 2 Remastered",
@@ -6333,7 +6651,7 @@
       "steam_app_id": 8850,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 89,
-      "steam_review_count": 14979,
+      "steam_review_count": 14980,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -6358,7 +6676,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 181
+      "rank": 193
     },
     {
       "title": "The King is Watching",
@@ -6370,14 +6688,51 @@
       "steam_app_id": 2753900,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 89,
-      "steam_review_count": 10486,
+      "steam_review_count": 10498,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 182
+      "rank": 194
+    },
+    {
+      "title": "FINAL FANTASY XII THE ZODIAC AGE",
+      "steam_title": "FINAL FANTASY XII THE ZODIAC AGE",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000009745",
+      "nintendo_price_aud": 23.98,
+      "nintendo_original_price_aud": 79.95,
+      "discount_percent": 70,
+      "steam_app_id": 595520,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 89,
+      "steam_review_count": 10265,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "RPG"
+      ],
+      "steamspy_tags": [
+        "RPG",
+        "JRPG",
+        "Fantasy",
+        "Singleplayer",
+        "Story Rich",
+        "Great Soundtrack",
+        "Open World",
+        "Adventure",
+        "Exploration",
+        "Classic",
+        "Party-Based RPG",
+        "Real-Time with Pause",
+        "Third Person",
+        "Action",
+        "Anime"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 195
     },
     {
       "title": "CRISIS CORE –FINAL FANTASY VII– REUNION",
@@ -6389,7 +6744,7 @@
       "steam_app_id": 1608070,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 89,
-      "steam_review_count": 9025,
+      "steam_review_count": 9027,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -6415,7 +6770,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 183
+      "rank": 196
     },
     {
       "title": "Sherlock Holmes: Crimes and Punishments",
@@ -6427,7 +6782,7 @@
       "steam_app_id": 241260,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 89,
-      "steam_review_count": 8048,
+      "steam_review_count": 8049,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -6452,45 +6807,88 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 184
+      "rank": 197
     },
     {
-      "title": "The Night of the Rabbit",
-      "steam_title": "The Night of the Rabbit",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000044810",
-      "nintendo_price_aud": 2.99,
-      "nintendo_original_price_aud": 29.95,
-      "discount_percent": 90,
-      "steam_app_id": 230820,
+      "title": "Curious Expedition 2",
+      "steam_title": "Curious Expedition 2",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000019467",
+      "nintendo_price_aud": 15.0,
+      "nintendo_original_price_aud": 30.0,
+      "discount_percent": 50,
+      "steam_app_id": 1040230,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 89,
-      "steam_review_count": 3440,
+      "steam_review_count": 4148,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
         "Adventure",
-        "Indie"
+        "Indie",
+        "RPG",
+        "Simulation",
+        "Strategy"
       ],
       "steamspy_tags": [
         "Adventure",
-        "Point & Click",
+        "Simulation",
+        "Dynamic Narration",
+        "Alternate History",
+        "Hex Grid",
+        "Exploration",
+        "Survival",
+        "Rogue-lite",
+        "Dinosaurs",
+        "Turn-Based",
+        "Board Game",
+        "Rogue-like",
+        "Turn-Based Strategy",
+        "RPG",
+        "Strategy"
+      ],
+      "rogue_flag": "both",
+      "rogue_note": "both tags significant",
+      "rank": 198
+    },
+    {
+      "title": "The friends of Ringo Ishikawa",
+      "steam_title": "The friends of Ringo Ishikawa",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000015814",
+      "nintendo_price_aud": 13.77,
+      "nintendo_original_price_aud": 27.55,
+      "discount_percent": 50,
+      "steam_app_id": 846110,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 89,
+      "steam_review_count": 3177,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Action",
+        "Adventure",
         "Indie",
-        "Fantasy",
-        "Puzzle",
-        "Story Rich",
-        "Singleplayer",
+        "RPG"
+      ],
+      "steamspy_tags": [
+        "Action",
+        "Pixel Graphics",
+        "RPG",
+        "Beat 'em up",
         "Retro",
-        "Classic",
-        "Cult Classic",
+        "Adventure",
+        "Story Rich",
+        "Open World",
+        "2D",
         "Atmospheric",
-        "1990's",
-        "Great Soundtrack",
-        "Remake",
-        "Escape Room"
+        "Drama",
+        "Anime",
+        "Action RPG",
+        "Side Scroller",
+        "Martial Arts"
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 185
+      "rank": 199
     },
     {
       "title": "Cook, Serve, Delicious! 2!!",
@@ -6530,7 +6928,65 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 186
+      "rank": 200
+    },
+    {
+      "title": "DRAGON QUEST VII Reimagined",
+      "steam_title": "DRAGON QUEST VII Reimagined",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000098991",
+      "nintendo_price_aud": 64.96,
+      "nintendo_original_price_aud": 99.95,
+      "discount_percent": 35,
+      "steam_app_id": 2499860,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 89,
+      "steam_review_count": 2907,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [],
+      "steamspy_tags": [],
+      "rogue_flag": "unknown",
+      "rogue_note": "no Steam tag data",
+      "rank": 201
+    },
+    {
+      "title": "Down in Bermuda",
+      "steam_title": "Down in Bermuda",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000025047",
+      "nintendo_price_aud": 2.49,
+      "nintendo_original_price_aud": 24.99,
+      "discount_percent": 90,
+      "steam_app_id": 1107300,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 89,
+      "steam_review_count": 1665,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Adventure",
+        "Casual",
+        "Indie"
+      ],
+      "steamspy_tags": [
+        "Puzzle",
+        "Hidden Object",
+        "Point & Click",
+        "Adventure",
+        "Relaxing",
+        "Mystery",
+        "Story Rich",
+        "Cozy",
+        "Family Friendly",
+        "Wholesome",
+        "Detective",
+        "Escape Room",
+        "Cute",
+        "Isometric",
+        "Stylized"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 202
     },
     {
       "title": "BLADECHIMERA",
@@ -6565,7 +7021,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 187
+      "rank": 203
     },
     {
       "title": "Corpse Party",
@@ -6577,7 +7033,7 @@
       "steam_app_id": 251270,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 89,
-      "steam_review_count": 1401,
+      "steam_review_count": 1402,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -6604,7 +7060,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 188
+      "rank": 204
     },
     {
       "title": "Pan'orama",
@@ -6639,7 +7095,46 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 189
+      "rank": 205
+    },
+    {
+      "title": "Unspottable",
+      "steam_title": "Unspottable",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000036919",
+      "nintendo_price_aud": 9.0,
+      "nintendo_original_price_aud": 18.0,
+      "discount_percent": 50,
+      "steam_app_id": 1243960,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 89,
+      "steam_review_count": 777,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Casual",
+        "Indie",
+        "Strategy"
+      ],
+      "steamspy_tags": [
+        "Physics",
+        "Cartoon",
+        "Competitive",
+        "Party Game",
+        "Local Multiplayer",
+        "4 Player Local",
+        "Multiplayer",
+        "Party",
+        "Strategy",
+        "Casual",
+        "PvP",
+        "Robots",
+        "Artificial Intelligence",
+        "Action",
+        "Arcade"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 206
     },
     {
       "title": "Little Problems: A Cozy Detective Game",
@@ -6658,7 +7153,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 190
+      "rank": 207
     },
     {
       "title": "Hidden Cats in London",
@@ -6693,19 +7188,19 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 191
+      "rank": 208
     },
     {
-      "title": "Atelier Marie Remake: The Alchemist of Salburg Digital Deluxe Edition",
+      "title": "Atelier Marie Remake: The Alchemist of Salburg",
       "steam_title": "Atelier Marie Remake: The Alchemist of Salburg",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/bundles/70070000017204",
-      "nintendo_price_aud": 39.0,
-      "nintendo_original_price_aud": 97.5,
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000059383",
+      "nintendo_price_aud": 30.0,
+      "nintendo_original_price_aud": 75.0,
       "discount_percent": 60,
       "steam_app_id": 2138090,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 89,
-      "steam_review_count": 407,
+      "steam_review_count": 408,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -6728,7 +7223,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 192
+      "rank": 209
     },
     {
       "title": "Ritual of Raven",
@@ -6747,7 +7242,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 193
+      "rank": 210
     },
     {
       "title": "Atelier Ryza 2: Lost Legends & the Secret Fairy DX",
@@ -6766,7 +7261,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 194
+      "rank": 211
     },
     {
       "title": "STAB STAB STAB!",
@@ -6805,7 +7300,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 195
+      "rank": 212
     },
     {
       "title": "Cats Around Us: Black Cat",
@@ -6824,7 +7319,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 196
+      "rank": 213
     },
     {
       "title": "Hayfever",
@@ -6836,7 +7331,7 @@
       "steam_app_id": 1159450,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 89,
-      "steam_review_count": 65,
+      "steam_review_count": 66,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -6863,7 +7358,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 197
+      "rank": 214
     },
     {
       "title": "Dimensional Animals",
@@ -6898,7 +7393,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 198
+      "rank": 215
     },
     {
       "title": "Mortal Kombat 11",
@@ -6910,7 +7405,7 @@
       "steam_app_id": 976310,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 88,
-      "steam_review_count": 116301,
+      "steam_review_count": 116318,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -6935,7 +7430,84 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 199
+      "rank": 216
+    },
+    {
+      "title": "Thief Simulator",
+      "steam_title": "Thief Simulator",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000019817",
+      "nintendo_price_aud": 2.99,
+      "nintendo_original_price_aud": 29.99,
+      "discount_percent": 90,
+      "steam_app_id": 704850,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 88,
+      "steam_review_count": 39889,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Action",
+        "Adventure",
+        "Indie",
+        "Simulation"
+      ],
+      "steamspy_tags": [
+        "Simulation",
+        "Stealth",
+        "Singleplayer",
+        "Crime",
+        "First-Person",
+        "Open World",
+        "Adventure",
+        "Heist",
+        "Action",
+        "Indie",
+        "Co-op",
+        "Sandbox",
+        "Funny",
+        "Exploration",
+        "Realistic"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 217
+    },
+    {
+      "title": "FINAL FANTASY X/X-2 HD Remaster",
+      "steam_title": "FINAL FANTASY X/X-2 HD Remaster",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000113866",
+      "nintendo_price_aud": 47.97,
+      "nintendo_original_price_aud": 79.95,
+      "discount_percent": 40,
+      "steam_app_id": 359870,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 88,
+      "steam_review_count": 23631,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "RPG"
+      ],
+      "steamspy_tags": [
+        "JRPG",
+        "Turn-Based Combat",
+        "Story Rich",
+        "RPG",
+        "Great Soundtrack",
+        "Fantasy",
+        "Singleplayer",
+        "Classic",
+        "Adventure",
+        "Turn-Based",
+        "Romance",
+        "Atmospheric",
+        "Female Protagonist",
+        "Anime",
+        "Linear"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 218
     },
     {
       "title": "Children of Morta",
@@ -6947,7 +7519,7 @@
       "steam_app_id": 330020,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 88,
-      "steam_review_count": 23236,
+      "steam_review_count": 23248,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -6975,7 +7547,44 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 200
+      "rank": 219
+    },
+    {
+      "title": "FINAL FANTASY VIII Remastered",
+      "steam_title": "FINAL FANTASY VIII",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000019035",
+      "nintendo_price_aud": 11.98,
+      "nintendo_original_price_aud": 29.95,
+      "discount_percent": 60,
+      "steam_app_id": 39150,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 88,
+      "steam_review_count": 9512,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "RPG"
+      ],
+      "steamspy_tags": [
+        "JRPG",
+        "RPG",
+        "Classic",
+        "Singleplayer",
+        "Great Soundtrack",
+        "Turn-Based",
+        "Story Rich",
+        "Fantasy",
+        "Card Game",
+        "Sci-fi",
+        "Adventure",
+        "Open World",
+        "Retro",
+        "Nostalgia",
+        "Romance"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 220
     },
     {
       "title": "Urban Myth Dissolution Center",
@@ -6987,7 +7596,7 @@
       "steam_app_id": 2089600,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 88,
-      "steam_review_count": 6299,
+      "steam_review_count": 6302,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -7010,7 +7619,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 201
+      "rank": 221
     },
     {
       "title": "Refind Self: The Personality Test Game",
@@ -7022,7 +7631,7 @@
       "steam_app_id": 2514960,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 88,
-      "steam_review_count": 3784,
+      "steam_review_count": 3785,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -7045,7 +7654,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 202
+      "rank": 222
     },
     {
       "title": "Rune Factory: Guardians of Azuma",
@@ -7057,14 +7666,14 @@
       "steam_app_id": 2864560,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 88,
-      "steam_review_count": 3674,
+      "steam_review_count": 3678,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 203
+      "rank": 223
     },
     {
       "title": "7 Days to End with You",
@@ -7076,7 +7685,7 @@
       "steam_app_id": 1859280,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 88,
-      "steam_review_count": 3459,
+      "steam_review_count": 3461,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -7099,45 +7708,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 204
-    },
-    {
-      "title": "Anna's Quest",
-      "steam_title": "Anna's Quest",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000028345",
-      "nintendo_price_aud": 2.4,
-      "nintendo_original_price_aud": 24.0,
-      "discount_percent": 90,
-      "steam_app_id": 327220,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 88,
-      "steam_review_count": 2556,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Adventure",
-        "Indie"
-      ],
-      "steamspy_tags": [
-        "Adventure",
-        "Point & Click",
-        "Indie",
-        "Female Protagonist",
-        "Fantasy",
-        "Dark Humor",
-        "Singleplayer",
-        "Puzzle",
-        "Dark",
-        "Atmospheric",
-        "Comedy",
-        "2D",
-        "Story Rich",
-        "Horror",
-        "Funny"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 205
+      "rank": 224
     },
     {
       "title": "Rune Factory 4 Special",
@@ -7149,7 +7720,7 @@
       "steam_app_id": 1580240,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 88,
-      "steam_review_count": 2358,
+      "steam_review_count": 2362,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -7174,7 +7745,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 206
+      "rank": 225
     },
     {
       "title": "Astebreed",
@@ -7212,7 +7783,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 207
+      "rank": 226
     },
     {
       "title": "My Friend Peppa Pig - Complete Edition",
@@ -7227,7 +7798,9 @@
       "steam_review_count": 1355,
       "match_confidence": "high",
       "fuzzy_score": 99,
-      "steam_genres": [],
+      "steam_genres": [
+        "Adventure"
+      ],
       "steamspy_tags": [
         "Relaxing",
         "Family Friendly",
@@ -7247,7 +7820,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 208
+      "rank": 227
     },
     {
       "title": "Iris and the Giant",
@@ -7286,7 +7859,7 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 209
+      "rank": 228
     },
     {
       "title": "Tchia",
@@ -7325,7 +7898,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 210
+      "rank": 229
     },
     {
       "title": "Death Squared",
@@ -7363,44 +7936,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 211
-    },
-    {
-      "title": "Atelier Shallie: Alchemists of the Dusk Sea DX",
-      "steam_title": "Atelier Shallie: Alchemists of the Dusk Sea DX",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000021855",
-      "nintendo_price_aud": 24.0,
-      "nintendo_original_price_aud": 60.0,
-      "discount_percent": 60,
-      "steam_app_id": 1152320,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 88,
-      "steam_review_count": 275,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "RPG"
-      ],
-      "steamspy_tags": [
-        "RPG",
-        "Singleplayer",
-        "Cute",
-        "JRPG",
-        "Fantasy",
-        "Anime",
-        "Female Protagonist",
-        "Great Soundtrack",
-        "Adventure",
-        "Story Rich",
-        "Turn-Based Combat",
-        "Exploration",
-        "Simulation",
-        "Casual",
-        "Lore-Rich"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 212
+      "rank": 230
     },
     {
       "title": "Touken Ranbu Warriors",
@@ -7437,7 +7973,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 213
+      "rank": 231
     },
     {
       "title": "Before I Forget",
@@ -7475,7 +8011,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 214
+      "rank": 232
     },
     {
       "title": "PAW Patrol World",
@@ -7510,7 +8046,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 215
+      "rank": 233
     },
     {
       "title": "Atelier Ryza 3: Alchemist of the End & the Secret Key DX",
@@ -7529,42 +8065,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 216
-    },
-    {
-      "title": "Tin Hearts",
-      "steam_title": "Tin Hearts",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000036015",
-      "nintendo_price_aud": 6.0,
-      "nintendo_original_price_aud": 30.0,
-      "discount_percent": 80,
-      "steam_app_id": 1831700,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 88,
-      "steam_review_count": 120,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [],
-      "steamspy_tags": [
-        "Lemmings",
-        "Emotional",
-        "Adventure",
-        "Singleplayer",
-        "Puzzle",
-        "Puzzle-Platformer",
-        "Exploration",
-        "Immersive",
-        "Narrative",
-        "Platformer",
-        "First-Person",
-        "Steampunk",
-        "Interactive Fiction",
-        "3D",
-        "Story Rich"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 217
+      "rank": 234
     },
     {
       "title": "Binaries",
@@ -7601,42 +8102,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 218
-    },
-    {
-      "title": "The Nameless City",
-      "steam_title": "The Nameless City",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000086991",
-      "nintendo_price_aud": 6.0,
-      "nintendo_original_price_aud": 15.0,
-      "discount_percent": 60,
-      "steam_app_id": 2987830,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 88,
-      "steam_review_count": 57,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [],
-      "steamspy_tags": [
-        "Lovecraftian",
-        "Psychological Horror",
-        "Walking Simulator",
-        "Atmospheric",
-        "Singleplayer",
-        "Puzzle",
-        "Surreal",
-        "Dark",
-        "Retro",
-        "Casual",
-        "Adventure",
-        "Horror",
-        "Exploration",
-        "Psychological",
-        "First-Person"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 219
+      "rank": 235
     },
     {
       "title": "Golf With Your Friends - Ultimate Edition",
@@ -7648,7 +8114,7 @@
       "steam_app_id": 431240,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 87,
-      "steam_review_count": 75674,
+      "steam_review_count": 75689,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -7675,7 +8141,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 220
+      "rank": 236
     },
     {
       "title": "Jurassic World Evolution: Complete Edition",
@@ -7687,7 +8153,7 @@
       "steam_app_id": 648350,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 87,
-      "steam_review_count": 55292,
+      "steam_review_count": 55290,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -7713,7 +8179,46 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 221
+      "rank": 237
+    },
+    {
+      "title": "FINAL FANTASY VII REMAKE INTERGRADE",
+      "steam_title": "FINAL FANTASY VII REMAKE INTERGRADE",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000101699",
+      "nintendo_price_aud": 17.48,
+      "nintendo_original_price_aud": 69.95,
+      "discount_percent": 75,
+      "steam_app_id": 1462040,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 87,
+      "steam_review_count": 52676,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Action",
+        "Adventure",
+        "RPG"
+      ],
+      "steamspy_tags": [
+        "RPG",
+        "Action RPG",
+        "JRPG",
+        "Singleplayer",
+        "Action-Adventure",
+        "Party-Based RPG",
+        "Spectacle fighter",
+        "Third Person",
+        "Action",
+        "Controller",
+        "Adventure",
+        "3D",
+        "Fantasy",
+        "3D Platformer",
+        "Magic"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 238
     },
     {
       "title": "Cloudpunk",
@@ -7725,7 +8230,7 @@
       "steam_app_id": 746850,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 87,
-      "steam_review_count": 15487,
+      "steam_review_count": 15490,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -7752,7 +8257,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 222
+      "rank": 239
     },
     {
       "title": "Journey to the Savage Planet",
@@ -7790,7 +8295,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 223
+      "rank": 240
     },
     {
       "title": "Last Day of June",
@@ -7802,7 +8307,7 @@
       "steam_app_id": 635320,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 87,
-      "steam_review_count": 4706,
+      "steam_review_count": 4708,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -7828,7 +8333,46 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 224
+      "rank": 241
+    },
+    {
+      "title": "Old Man's Journey",
+      "steam_title": "Old Man's Journey",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000003543",
+      "nintendo_price_aud": 3.29,
+      "nintendo_original_price_aud": 16.45,
+      "discount_percent": 80,
+      "steam_app_id": 581270,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 87,
+      "steam_review_count": 4276,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Adventure",
+        "Casual",
+        "Indie"
+      ],
+      "steamspy_tags": [
+        "Adventure",
+        "Casual",
+        "Indie",
+        "Puzzle",
+        "Atmospheric",
+        "Point & Click",
+        "Story Rich",
+        "Hand-drawn",
+        "Great Soundtrack",
+        "2D",
+        "Stylized",
+        "Colorful",
+        "Singleplayer",
+        "Family Friendly",
+        "Drama"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 242
     },
     {
       "title": "FATAL FRAME II: Crimson Butterfly REMAKE",
@@ -7840,14 +8384,14 @@
       "steam_app_id": 3920610,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 87,
-      "steam_review_count": 4058,
+      "steam_review_count": 4065,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 225
+      "rank": 243
     },
     {
       "title": "DEEMO -Reborn-",
@@ -7885,7 +8429,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 226
+      "rank": 244
     },
     {
       "title": "Platform 8",
@@ -7897,7 +8441,7 @@
       "steam_app_id": 2903560,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 87,
-      "steam_review_count": 2873,
+      "steam_review_count": 2875,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -7920,45 +8464,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 227
-    },
-    {
-      "title": "The Dark Eye: Chains of Satinav",
-      "steam_title": "The Dark Eye: Chains of Satinav",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000023908",
-      "nintendo_price_aud": 2.99,
-      "nintendo_original_price_aud": 29.95,
-      "discount_percent": 90,
-      "steam_app_id": 203830,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 87,
-      "steam_review_count": 2558,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Adventure",
-        "Indie"
-      ],
-      "steamspy_tags": [
-        "Adventure",
-        "Point & Click",
-        "Singleplayer",
-        "Fantasy",
-        "Puzzle",
-        "Story Rich",
-        "Indie",
-        "Great Soundtrack",
-        "2D",
-        "Hand-drawn",
-        "Escape Room",
-        "Retro",
-        "Cult Classic",
-        "Medieval",
-        "Classic"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 228
+      "rank": 245
     },
     {
       "title": "Fresh Start",
@@ -7970,7 +8476,7 @@
       "steam_app_id": 1856030,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 87,
-      "steam_review_count": 2553,
+      "steam_review_count": 2557,
       "match_confidence": "high",
       "fuzzy_score": 94,
       "steam_genres": [],
@@ -7993,7 +8499,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 229
+      "rank": 246
     },
     {
       "title": "Unrailed 2: Back on Track – Nintendo Switch™ 2 Edition",
@@ -8005,7 +8511,7 @@
       "steam_app_id": 2211170,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 87,
-      "steam_review_count": 2142,
+      "steam_review_count": 2144,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -8028,7 +8534,7 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": "Action Roguelike present; classifying as roguelite",
-      "rank": 230
+      "rank": 247
     },
     {
       "title": "Fruitbus",
@@ -8040,7 +8546,7 @@
       "steam_app_id": 2484130,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 87,
-      "steam_review_count": 1160,
+      "steam_review_count": 1161,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -8063,7 +8569,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 231
+      "rank": 248
     },
     {
       "title": "Contra: Operation Galuga",
@@ -8098,42 +8604,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 232
-    },
-    {
-      "title": "SENRAN KAGURA Peach Ball",
-      "steam_title": "SENRAN KAGURA Peach Ball",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000018075",
-      "nintendo_price_aud": 7.49,
-      "nintendo_original_price_aud": 49.95,
-      "discount_percent": 85,
-      "steam_app_id": 1074080,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 87,
-      "steam_review_count": 838,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Casual"
-      ],
-      "steamspy_tags": [
-        "Sexual Content",
-        "Pinball",
-        "Anime",
-        "Casual",
-        "Nudity",
-        "Mature",
-        "Female Protagonist",
-        "Funny",
-        "Singleplayer",
-        "Cute",
-        "Hentai",
-        "Arcade",
-        "Visual Novel"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 233
+      "rank": 249
     },
     {
       "title": "SNK VS. CAPCOM SVC CHAOS",
@@ -8164,7 +8635,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 234
+      "rank": 250
     },
     {
       "title": "Eastward: Octopia",
@@ -8183,7 +8654,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 235
+      "rank": 251
     },
     {
       "title": "Star Overdrive",
@@ -8202,44 +8673,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 236
-    },
-    {
-      "title": "Carpathian Night Starring Bela Lugosi",
-      "steam_title": "Carpathian Night Starring Bela Lugosi",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000042598",
-      "nintendo_price_aud": 14.47,
-      "nintendo_original_price_aud": 24.95,
-      "discount_percent": 42,
-      "steam_app_id": 1445740,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 87,
-      "steam_review_count": 97,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Action"
-      ],
-      "steamspy_tags": [
-        "Action-Adventure",
-        "2D Platformer",
-        "Character Action Game",
-        "Singleplayer",
-        "Side Scroller",
-        "Horror",
-        "Pixel Graphics",
-        "2D",
-        "Gothic",
-        "Vampire",
-        "Werewolves",
-        "Zombies",
-        "Demons",
-        "Adventure",
-        "Atmospheric"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 237
+      "rank": 252
     },
     {
       "title": "Elevator Action™ -Returns- S-Tribute",
@@ -8271,7 +8705,42 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 238
+      "rank": 253
+    },
+    {
+      "title": "In His Time",
+      "steam_title": "In His Time",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000076345",
+      "nintendo_price_aud": 1.7,
+      "nintendo_original_price_aud": 8.5,
+      "discount_percent": 80,
+      "steam_app_id": 2361610,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 87,
+      "steam_review_count": 63,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [],
+      "steamspy_tags": [
+        "Puzzle-Platformer",
+        "Visual Novel",
+        "2D",
+        "Adventure",
+        "Story Rich",
+        "Singleplayer",
+        "Atmospheric",
+        "Indie",
+        "Platformer",
+        "Dark",
+        "Drama",
+        "Controller",
+        "Short",
+        "Exploration",
+        "Casual"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 254
     },
     {
       "title": "Sid Meier’s Civilization VI",
@@ -8283,7 +8752,7 @@
       "steam_app_id": 289070,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 86,
-      "steam_review_count": 379129,
+      "steam_review_count": 379170,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -8308,7 +8777,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 239
+      "rank": 255
     },
     {
       "title": "L.A. Noire",
@@ -8320,7 +8789,7 @@
       "steam_app_id": 110800,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 86,
-      "steam_review_count": 36899,
+      "steam_review_count": 36903,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -8346,7 +8815,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 240
+      "rank": 256
     },
     {
       "title": "Hello Neighbor",
@@ -8358,7 +8827,7 @@
       "steam_app_id": 521890,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 86,
-      "steam_review_count": 32844,
+      "steam_review_count": 32868,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -8385,7 +8854,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 241
+      "rank": 257
     },
     {
       "title": "Neon Abyss",
@@ -8425,121 +8894,7 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 242
-    },
-    {
-      "title": "Deponia Collection",
-      "steam_title": "Deponia",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/bundles/70070000014044",
-      "nintendo_price_aud": 5.99,
-      "nintendo_original_price_aud": 59.95,
-      "discount_percent": 90,
-      "steam_app_id": 214340,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 86,
-      "steam_review_count": 14644,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Adventure",
-        "Indie"
-      ],
-      "steamspy_tags": [
-        "Adventure",
-        "Point & Click",
-        "Comedy",
-        "Puzzle",
-        "Singleplayer",
-        "Funny",
-        "Indie",
-        "Story Rich",
-        "2D",
-        "Dark Humor",
-        "Great Soundtrack",
-        "Hand-drawn",
-        "Escape Room",
-        "Steampunk",
-        "Classic"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 243
-    },
-    {
-      "title": "Operation: Tango",
-      "steam_title": "Operation: Tango",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000075136",
-      "nintendo_price_aud": 7.23,
-      "nintendo_original_price_aud": 28.95,
-      "discount_percent": 75,
-      "steam_app_id": 1335790,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 86,
-      "steam_review_count": 8898,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Adventure",
-        "Casual"
-      ],
-      "steamspy_tags": [
-        "Online Co-Op",
-        "Puzzle",
-        "Co-op Campaign",
-        "Adventure",
-        "Co-op",
-        "Casual",
-        "Multiplayer",
-        "Hacking",
-        "Wholesome",
-        "Family Friendly",
-        "Female Protagonist",
-        "Detective",
-        "Investigation",
-        "Futuristic",
-        "Cyberpunk"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 244
-    },
-    {
-      "title": "AER Memories of Old",
-      "steam_title": "AER Memories of Old",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000019049",
-      "nintendo_price_aud": 1.5,
-      "nintendo_original_price_aud": 15.0,
-      "discount_percent": 90,
-      "steam_app_id": 331870,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 86,
-      "steam_review_count": 7737,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Adventure",
-        "Indie"
-      ],
-      "steamspy_tags": [
-        "Adventure",
-        "Exploration",
-        "Indie",
-        "Relaxing",
-        "Open World",
-        "Atmospheric",
-        "Female Protagonist",
-        "Flight",
-        "Singleplayer",
-        "Great Soundtrack",
-        "Third Person",
-        "Experience",
-        "Puzzle",
-        "Nature",
-        "Colorful"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 245
+      "rank": 258
     },
     {
       "title": "WARRIORS OROCHI 4 Ultimate Deluxe Edition",
@@ -8551,7 +8906,7 @@
       "steam_app_id": 831560,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 86,
-      "steam_review_count": 5607,
+      "steam_review_count": 5609,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -8576,7 +8931,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 246
+      "rank": 259
     },
     {
       "title": "Crash Bandicoot™ 4: It’s About Time",
@@ -8588,7 +8943,7 @@
       "steam_app_id": 1378990,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 86,
-      "steam_review_count": 4158,
+      "steam_review_count": 4167,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -8613,7 +8968,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 247
+      "rank": 260
     },
     {
       "title": "Caravan SandWitch",
@@ -8625,7 +8980,7 @@
       "steam_app_id": 1582650,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 86,
-      "steam_review_count": 3923,
+      "steam_review_count": 3928,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -8652,7 +9007,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 248
+      "rank": 261
     },
     {
       "title": "ScourgeBringer",
@@ -8691,123 +9046,82 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 249
+      "rank": 262
     },
     {
-      "title": "Bulb Boy",
-      "steam_title": "Bulb Boy",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000000996",
-      "nintendo_price_aud": 2.6,
-      "nintendo_original_price_aud": 10.4,
+      "title": "Eiyuden Chronicle: Rising",
+      "steam_title": "Eiyuden Chronicle: Rising",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000044260",
+      "nintendo_price_aud": 5.74,
+      "nintendo_original_price_aud": 22.99,
       "discount_percent": 75,
-      "steam_app_id": 390290,
+      "steam_app_id": 1658290,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 86,
-      "steam_review_count": 2274,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Adventure",
-        "Indie"
-      ],
-      "steamspy_tags": [
-        "Adventure",
-        "Indie",
-        "Point & Click",
-        "Horror",
-        "Dark",
-        "Singleplayer",
-        "Dark Humor",
-        "Gore",
-        "Puzzle",
-        "Cute",
-        "Atmospheric",
-        "Surreal",
-        "2D",
-        "Psychological Horror",
-        "Short"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 250
-    },
-    {
-      "title": "Fling to the Finish",
-      "steam_title": "Fling to the Finish",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000067259",
-      "nintendo_price_aud": 9.73,
-      "nintendo_original_price_aud": 32.45,
-      "discount_percent": 70,
-      "steam_app_id": 1054430,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 86,
-      "steam_review_count": 1413,
+      "steam_review_count": 2491,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
         "Action",
-        "Casual",
+        "Adventure",
         "Indie",
-        "Racing"
+        "RPG"
       ],
       "steamspy_tags": [
-        "Physics",
-        "Party Game",
-        "Multiplayer",
-        "Casual",
-        "Online Co-Op",
-        "Racing",
-        "Competitive",
-        "Local Co-Op",
-        "Combat Racing",
-        "Local Multiplayer",
-        "Platformer",
-        "Family Friendly",
-        "3D",
+        "Action RPG",
+        "Adventure",
+        "RPG",
+        "JRPG",
+        "Action-Adventure",
+        "2.5D",
+        "Dungeon Crawler",
+        "Action",
+        "Pixel Graphics",
+        "Singleplayer",
         "Indie",
-        "Action"
+        "Story Rich",
+        "Side Scroller",
+        "Casual",
+        "Arcade"
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 251
+      "rank": 263
     },
     {
-      "title": "Inkulinati",
-      "steam_title": "Inkulinati",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000074047",
-      "nintendo_price_aud": 10.8,
-      "nintendo_original_price_aud": 36.0,
-      "discount_percent": 70,
-      "steam_app_id": 957960,
+      "title": "WARRIORS: Abyss",
+      "steam_title": "WARRIORS: Abyss",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000087147",
+      "nintendo_price_aud": 15.0,
+      "nintendo_original_price_aud": 37.5,
+      "discount_percent": 60,
+      "steam_app_id": 3178350,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 86,
-      "steam_review_count": 1222,
+      "steam_review_count": 2339,
       "match_confidence": "high",
       "fuzzy_score": 99,
-      "steam_genres": [
-        "Indie",
-        "Strategy"
-      ],
+      "steam_genres": [],
       "steamspy_tags": [
-        "Medieval",
-        "Turn-Based Strategy",
-        "Turn-Based Tactics",
+        "Action",
+        "Musou",
+        "Action Roguelike",
+        "Hack and Slash",
+        "Action RPG",
         "Rogue-lite",
-        "Turn-Based",
-        "Funny",
-        "Deckbuilding",
-        "Dark Humor",
-        "Hand-drawn",
-        "2D",
-        "PvP",
-        "Stylized",
-        "Strategy RPG",
-        "PvE",
-        "Historical"
+        "RPG",
+        "Historical",
+        "Rogue-like",
+        "Martial Arts",
+        "3D",
+        "Dark Fantasy",
+        "Top-Down",
+        "Singleplayer",
+        "Third Person"
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 252
+      "rank": 264
     },
     {
       "title": "inKONBINI: One Store. Many Stories",
@@ -8819,49 +9133,14 @@
       "steam_app_id": 2723430,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 86,
-      "steam_review_count": 1092,
+      "steam_review_count": 1094,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 253
-    },
-    {
-      "title": "Cattle Country",
-      "steam_title": "Cattle Country",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000090808",
-      "nintendo_price_aud": 25.86,
-      "nintendo_original_price_aud": 36.95,
-      "discount_percent": 30,
-      "steam_app_id": 2818150,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 86,
-      "steam_review_count": 383,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [],
-      "steamspy_tags": [
-        "Exploration",
-        "Farming Sim",
-        "Wholesome",
-        "Western",
-        "Cozy",
-        "RPG",
-        "Sandbox",
-        "Life Sim",
-        "Pixel Graphics",
-        "Character Customization",
-        "Romance",
-        "2D",
-        "Crafting",
-        "Hunting",
-        "Cute"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 254
+      "rank": 265
     },
     {
       "title": "7Days Origins",
@@ -8901,139 +9180,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 255
-    },
-    {
-      "title": "Hidden Cats in Berlin",
-      "steam_title": "Hidden Cats in Berlin",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000081776",
-      "nintendo_price_aud": 1.5,
-      "nintendo_original_price_aud": 5.99,
-      "discount_percent": 75,
-      "steam_app_id": 2736480,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 86,
-      "steam_review_count": 239,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [],
-      "steamspy_tags": [
-        "Cats",
-        "Hidden Object",
-        "Relaxing",
-        "Cozy",
-        "Wholesome",
-        "Cute",
-        "Family Friendly",
-        "Colorful",
-        "Funny",
-        "Cartoony",
-        "Hand-drawn",
-        "Puzzle",
-        "Point & Click",
-        "Casual",
-        "Singleplayer"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 256
-    },
-    {
-      "title": "Ayo the Clown",
-      "steam_title": "Ayo the Clown",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000040046",
-      "nintendo_price_aud": 4.95,
-      "nintendo_original_price_aud": 24.75,
-      "discount_percent": 80,
-      "steam_app_id": 1114900,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 86,
-      "steam_review_count": 94,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Action",
-        "Adventure",
-        "Indie"
-      ],
-      "steamspy_tags": [
-        "Platformer",
-        "Action-Adventure",
-        "Adventure",
-        "Action",
-        "Indie",
-        "Cute",
-        "Funny",
-        "Family Friendly",
-        "Side Scroller",
-        "Cartoony",
-        "Colorful",
-        "2.5D",
-        "Crowdfunded",
-        "2D Platformer",
-        "3D Platformer"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 257
-    },
-    {
-      "title": "Onirike",
-      "steam_title": "Onirike",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000038053",
-      "nintendo_price_aud": 3.37,
-      "nintendo_original_price_aud": 22.5,
-      "discount_percent": 85,
-      "steam_app_id": 1229270,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 86,
-      "steam_review_count": 76,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Action",
-        "Adventure",
-        "Indie"
-      ],
-      "steamspy_tags": [
-        "Action",
-        "Adventure",
-        "3D Platformer",
-        "Puzzle",
-        "Exploration",
-        "Action-Adventure",
-        "Dark Fantasy",
-        "Open World",
-        "Platformer",
-        "Narration",
-        "Puzzle-Platformer",
-        "Indie",
-        "Conversation",
-        "Sandbox",
-        "Story Rich"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 258
-    },
-    {
-      "title": "Bulb Boy 2: Jar of Despair",
-      "steam_title": "Bulb Boy 2: Jar of Despair",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000105739",
-      "nintendo_price_aud": 11.99,
-      "nintendo_original_price_aud": 19.99,
-      "discount_percent": 40,
-      "steam_app_id": 1717400,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 86,
-      "steam_review_count": 58,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [],
-      "steamspy_tags": [],
-      "rogue_flag": "unknown",
-      "rogue_note": "no Steam tag data",
-      "rank": 259
+      "rank": 266
     },
     {
       "title": "No Man's Sky – Nintendo Switch™ 2 Edition",
@@ -9045,7 +9192,7 @@
       "steam_app_id": 275850,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 85,
-      "steam_review_count": 418570,
+      "steam_review_count": 418864,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -9071,7 +9218,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 260
+      "rank": 267
     },
     {
       "title": "XCOM® 2 Collection",
@@ -9083,7 +9230,7 @@
       "steam_app_id": 268500,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 85,
-      "steam_review_count": 109554,
+      "steam_review_count": 109562,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -9108,7 +9255,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 261
+      "rank": 268
     },
     {
       "title": "Graveyard Keeper",
@@ -9120,7 +9267,7 @@
       "steam_app_id": 599140,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 85,
-      "steam_review_count": 55542,
+      "steam_review_count": 55572,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -9148,7 +9295,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 262
+      "rank": 269
     },
     {
       "title": "Worms W.M.D",
@@ -9160,7 +9307,7 @@
       "steam_app_id": 327030,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 85,
-      "steam_review_count": 14940,
+      "steam_review_count": 14942,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -9186,7 +9333,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 263
+      "rank": 270
     },
     {
       "title": "Dungeon of the Endless",
@@ -9226,7 +9373,7 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 264
+      "rank": 271
     },
     {
       "title": "Fabledom",
@@ -9238,10 +9385,14 @@
       "steam_app_id": 1651560,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 85,
-      "steam_review_count": 7865,
+      "steam_review_count": 7868,
       "match_confidence": "high",
       "fuzzy_score": 99,
-      "steam_genres": [],
+      "steam_genres": [
+        "Casual",
+        "Simulation",
+        "Strategy"
+      ],
       "steamspy_tags": [
         "City Builder",
         "Relaxing",
@@ -9261,7 +9412,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 265
+      "rank": 272
     },
     {
       "title": "Anodyne",
@@ -9301,42 +9452,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 266
-    },
-    {
-      "title": "KIBORG",
-      "steam_title": "KIBORG",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000079976",
-      "nintendo_price_aud": 26.25,
-      "nintendo_original_price_aud": 37.5,
-      "discount_percent": 30,
-      "steam_app_id": 2405060,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 85,
-      "steam_review_count": 1411,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [],
-      "steamspy_tags": [
-        "Action Roguelike",
-        "Action RPG",
-        "Beat 'em up",
-        "Hack and Slash",
-        "Difficult",
-        "Third Person",
-        "Combat",
-        "Shooter",
-        "Violent",
-        "Robots",
-        "Rogue-like",
-        "Procedural Generation",
-        "Singleplayer",
-        "Character Action Game",
-        "3D"
-      ],
-      "rogue_flag": "roguelite",
-      "rogue_note": "Action Roguelike present; classifying as roguelite",
-      "rank": 267
+      "rank": 273
     },
     {
       "title": "Gunbrella",
@@ -9374,7 +9490,35 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 268
+      "rank": 274
+    },
+    {
+      "title": "Fly O'Clock",
+      "steam_title": "Fly O'Clock",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000012750",
+      "nintendo_price_aud": 2.1,
+      "nintendo_original_price_aud": 3.0,
+      "discount_percent": 30,
+      "steam_app_id": 490820,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 85,
+      "steam_review_count": 605,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Action",
+        "Casual",
+        "Indie"
+      ],
+      "steamspy_tags": [
+        "Indie",
+        "Casual",
+        "Action",
+        "Pixel Graphics"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 275
     },
     {
       "title": "Forest Camp Story",
@@ -9409,7 +9553,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 269
+      "rank": 276
     },
     {
       "title": "Eastward",
@@ -9421,7 +9565,7 @@
       "steam_app_id": 977880,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 84,
-      "steam_review_count": 16624,
+      "steam_review_count": 16627,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -9449,7 +9593,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 270
+      "rank": 277
     },
     {
       "title": "Faeria",
@@ -9490,7 +9634,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 271
+      "rank": 278
     },
     {
       "title": "Rubber Bandits",
@@ -9502,7 +9646,7 @@
       "steam_app_id": 1206610,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 84,
-      "steam_review_count": 7203,
+      "steam_review_count": 7204,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -9529,7 +9673,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 272
+      "rank": 279
     },
     {
       "title": "F1® Manager 2024",
@@ -9541,7 +9685,7 @@
       "steam_app_id": 2591280,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 84,
-      "steam_review_count": 7000,
+      "steam_review_count": 7002,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -9564,7 +9708,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 273
+      "rank": 280
     },
     {
       "title": "Spirit of the North",
@@ -9576,7 +9720,7 @@
       "steam_app_id": 1213700,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 84,
-      "steam_review_count": 6621,
+      "steam_review_count": 6625,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -9603,7 +9747,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 274
+      "rank": 281
     },
     {
       "title": "Duke Nukem 3D: 20th Anniversary World Tour",
@@ -9641,7 +9785,46 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 275
+      "rank": 282
+    },
+    {
+      "title": "Hand of Fate 2",
+      "steam_title": "Hand of Fate 2",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000001861",
+      "nintendo_price_aud": 5.99,
+      "nintendo_original_price_aud": 29.99,
+      "discount_percent": 80,
+      "steam_app_id": 456670,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 84,
+      "steam_review_count": 5818,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Action",
+        "Indie",
+        "RPG"
+      ],
+      "steamspy_tags": [
+        "RPG",
+        "Roguelike Deckbuilder",
+        "Card Game",
+        "Action",
+        "Deckbuilding",
+        "Rogue-lite",
+        "Indie",
+        "Action Roguelike",
+        "Singleplayer",
+        "Board Game",
+        "Fantasy",
+        "Rogue-like",
+        "Dungeon Crawler",
+        "Hack and Slash",
+        "Choices Matter"
+      ],
+      "rogue_flag": "roguelite",
+      "rogue_note": null,
+      "rank": 283
     },
     {
       "title": "Moonstone Island",
@@ -9653,10 +9836,14 @@
       "steam_app_id": 1658150,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 84,
-      "steam_review_count": 5068,
+      "steam_review_count": 5069,
       "match_confidence": "high",
       "fuzzy_score": 99,
-      "steam_genres": [],
+      "steam_genres": [
+        "Adventure",
+        "Indie",
+        "RPG"
+      ],
       "steamspy_tags": [
         "Creature Collector",
         "Deckbuilding",
@@ -9676,7 +9863,46 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 276
+      "rank": 284
+    },
+    {
+      "title": "I Am Future: Cozy Apocalypse Survival",
+      "steam_title": "I Am Future: Cozy Apocalypse Survival",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000094993",
+      "nintendo_price_aud": 20.99,
+      "nintendo_original_price_aud": 34.99,
+      "discount_percent": 40,
+      "steam_app_id": 1658040,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 84,
+      "steam_review_count": 4682,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Indie",
+        "RPG",
+        "Simulation"
+      ],
+      "steamspy_tags": [
+        "Casual",
+        "Singleplayer",
+        "Farming Sim",
+        "RPG",
+        "Agriculture",
+        "Simulation",
+        "Crafting",
+        "Sandbox",
+        "Building",
+        "Indie",
+        "Open World",
+        "Life Sim",
+        "Adventure",
+        "Relaxing",
+        "Exploration"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 285
     },
     {
       "title": "Black Skylands",
@@ -9688,7 +9914,7 @@
       "steam_app_id": 1143810,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 84,
-      "steam_review_count": 4509,
+      "steam_review_count": 4510,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -9716,7 +9942,46 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 277
+      "rank": 286
+    },
+    {
+      "title": "Despot's Game",
+      "steam_title": "Despot's Game: Dystopian Battle Simulator",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000049021",
+      "nintendo_price_aud": 7.49,
+      "nintendo_original_price_aud": 29.99,
+      "discount_percent": 75,
+      "steam_app_id": 1227280,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 84,
+      "steam_review_count": 3357,
+      "match_confidence": "high",
+      "fuzzy_score": 94,
+      "steam_genres": [
+        "Indie",
+        "RPG",
+        "Strategy"
+      ],
+      "steamspy_tags": [
+        "Auto Battler",
+        "Pixel Graphics",
+        "Rogue-like",
+        "Tactical",
+        "Indie",
+        "RPG",
+        "Turn-Based Tactics",
+        "2D",
+        "Dark Humor",
+        "Rogue-lite",
+        "Singleplayer",
+        "Strategy",
+        "Adventure",
+        "Survival",
+        "Asynchronous Multiplayer"
+      ],
+      "rogue_flag": "both",
+      "rogue_note": "both tags significant",
+      "rank": 287
     },
     {
       "title": "DEAD OR SCHOOL",
@@ -9755,7 +10020,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 278
+      "rank": 288
     },
     {
       "title": "No More Heroes",
@@ -9767,7 +10032,7 @@
       "steam_app_id": 1420290,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 84,
-      "steam_review_count": 2721,
+      "steam_review_count": 2724,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -9792,7 +10057,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 279
+      "rank": 289
     },
     {
       "title": "Solateria",
@@ -9804,14 +10069,14 @@
       "steam_app_id": 2947280,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 84,
-      "steam_review_count": 741,
+      "steam_review_count": 742,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 280
+      "rank": 290
     },
     {
       "title": "Maid Cafe on Electric Street",
@@ -9823,7 +10088,7 @@
       "steam_app_id": 1789030,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 84,
-      "steam_review_count": 736,
+      "steam_review_count": 737,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -9846,7 +10111,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 281
+      "rank": 291
     },
     {
       "title": "Everafter Falls",
@@ -9858,7 +10123,7 @@
       "steam_app_id": 1416960,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 84,
-      "steam_review_count": 734,
+      "steam_review_count": 735,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -9888,7 +10153,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 282
+      "rank": 292
     },
     {
       "title": "Terra Memoria",
@@ -9923,7 +10188,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 283
+      "rank": 293
     },
     {
       "title": "Paw Patrol: On a Roll!",
@@ -9960,45 +10225,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 284
-    },
-    {
-      "title": "Zombie Rollerz: Pinball Heroes",
-      "steam_title": "Zombie Rollerz: Pinball Heroes",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000048074",
-      "nintendo_price_aud": 2.3,
-      "nintendo_original_price_aud": 23.0,
-      "discount_percent": 90,
-      "steam_app_id": 915230,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 84,
-      "steam_review_count": 401,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Action",
-        "Indie"
-      ],
-      "steamspy_tags": [
-        "Pinball",
-        "Zombies",
-        "Rogue-lite",
-        "Indie",
-        "Shoot 'Em Up",
-        "Action",
-        "Simulation",
-        "Arcade",
-        "Controller",
-        "Rogue-like",
-        "Character Customization",
-        "Action Roguelike",
-        "Singleplayer",
-        "Casual",
-        "Physics"
-      ],
-      "rogue_flag": "roguelite",
-      "rogue_note": null,
-      "rank": 285
+      "rank": 294
     },
     {
       "title": "Madshot",
@@ -10036,42 +10263,45 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 286
+      "rank": 295
     },
     {
-      "title": "Hidden Cats in Santa's Realm",
-      "steam_title": "Hidden Cats in Santa's Realm",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000088207",
-      "nintendo_price_aud": 1.5,
-      "nintendo_original_price_aud": 5.99,
-      "discount_percent": 75,
-      "steam_app_id": 1726750,
+      "title": "KAMIKO",
+      "steam_title": "KAMIKO",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000000397",
+      "nintendo_price_aud": 2.6,
+      "nintendo_original_price_aud": 6.5,
+      "discount_percent": 60,
+      "steam_app_id": 1022480,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 84,
-      "steam_review_count": 274,
+      "steam_review_count": 228,
       "match_confidence": "high",
       "fuzzy_score": 99,
-      "steam_genres": [],
+      "steam_genres": [
+        "Action",
+        "Adventure"
+      ],
       "steamspy_tags": [
-        "Casual",
-        "Controller",
-        "Nonlinear",
-        "Hand-drawn",
-        "Hidden Object",
-        "Family Friendly",
-        "Cats",
-        "Short",
-        "Wholesome",
+        "Action",
+        "Hack and Slash",
+        "Pixel Graphics",
+        "Top-Down",
+        "Fantasy",
         "Cute",
-        "Relaxing",
-        "Cozy",
-        "Funny",
-        "Cartoony",
-        "Fantasy"
+        "Casual",
+        "Lore-Rich",
+        "Colorful",
+        "Female Protagonist",
+        "2D",
+        "Action-Adventure",
+        "Arcade",
+        "Singleplayer",
+        "Indie"
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 287
+      "rank": 296
     },
     {
       "title": "League of Enthusiastic Losers",
@@ -10106,7 +10336,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 288
+      "rank": 297
     },
     {
       "title": "A Little Golf Journey",
@@ -10145,7 +10375,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 289
+      "rank": 298
     },
     {
       "title": "Final Frontier Story",
@@ -10164,7 +10394,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 290
+      "rank": 299
     },
     {
       "title": "Portal Knights",
@@ -10176,7 +10406,7 @@
       "steam_app_id": 374040,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 83,
-      "steam_review_count": 22369,
+      "steam_review_count": 22370,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -10203,7 +10433,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 291
+      "rank": 300
     },
     {
       "title": "Spellcaster University",
@@ -10241,7 +10471,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 292
+      "rank": 301
     },
     {
       "title": "Star Renegades",
@@ -10253,7 +10483,7 @@
       "steam_app_id": 651670,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 83,
-      "steam_review_count": 3076,
+      "steam_review_count": 3077,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -10282,102 +10512,46 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 293
+      "rank": 302
     },
     {
-      "title": "They Bleed Pixels",
-      "steam_title": "They Bleed Pixels",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000028524",
-      "nintendo_price_aud": 3.15,
-      "nintendo_original_price_aud": 22.5,
-      "discount_percent": 86,
-      "steam_app_id": 211260,
+      "title": "Hakoniwa Explorer Plus",
+      "steam_title": "Hakoniwa Explorer Plus",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000027551",
+      "nintendo_price_aud": 7.2,
+      "nintendo_original_price_aud": 18.0,
+      "discount_percent": 60,
+      "steam_app_id": 705280,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 83,
-      "steam_review_count": 2551,
+      "steam_review_count": 609,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
         "Action",
-        "Indie"
-      ],
-      "steamspy_tags": [
-        "Platformer",
-        "Difficult",
-        "Lovecraftian",
-        "Pixel Graphics",
-        "Gore",
-        "Female Protagonist",
-        "Precision Platformer",
-        "2D Platformer",
-        "Blood",
-        "Hack and Slash",
-        "Cute",
-        "Action",
-        "Gothic",
-        "Singleplayer",
-        "Beat 'em up"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 294
-    },
-    {
-      "title": "Dead Synchronicity: Tomorrow Comes Today",
-      "steam_title": "Dead Synchronicity: Tomorrow Comes Today",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000000912",
-      "nintendo_price_aud": 2.25,
-      "nintendo_original_price_aud": 22.5,
-      "discount_percent": 90,
-      "steam_app_id": 339190,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 83,
-      "steam_review_count": 1636,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Adventure",
-        "Indie"
-      ],
-      "steamspy_tags": [
-        "Adventure",
-        "Point & Click",
         "Indie",
+        "RPG"
+      ],
+      "steamspy_tags": [
+        "Hack and Slash",
+        "Sexual Content",
+        "Nudity",
+        "Hentai",
+        "Dungeon Crawler",
+        "Isometric",
+        "Exploration",
+        "Action RPG",
+        "Comedy",
+        "Action-Adventure",
+        "RPG",
         "2D",
-        "Post-apocalyptic",
-        "Story Rich",
-        "Great Soundtrack",
-        "Atmospheric",
-        "Mystery",
-        "Kickstarter",
-        "Horror",
-        "Dark",
-        "1990's",
-        "Mature",
-        "Singleplayer"
+        "Cute",
+        "Voxel",
+        "Top-Down"
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 295
-    },
-    {
-      "title": "ASTLIBRA Gaiden: The Cave of Phantom Mist",
-      "steam_title": "ASTLIBRA Gaiden: The Cave of Phantom Mist",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000079266",
-      "nintendo_price_aud": 11.64,
-      "nintendo_original_price_aud": 14.55,
-      "discount_percent": 20,
-      "steam_app_id": 2669360,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 83,
-      "steam_review_count": 1376,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [],
-      "steamspy_tags": [],
-      "rogue_flag": "unknown",
-      "rogue_note": "no Steam tag data",
-      "rank": 296
+      "rank": 303
     },
     {
       "title": "SAMURAI SHODOWN NEOGEO COLLECTION",
@@ -10410,79 +10584,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 297
-    },
-    {
-      "title": "Cute Bite",
-      "steam_title": "Cute Bite",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000076491",
-      "nintendo_price_aud": 9.19,
-      "nintendo_original_price_aud": 22.99,
-      "discount_percent": 60,
-      "steam_app_id": 1586960,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 83,
-      "steam_review_count": 127,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Simulation"
-      ],
-      "steamspy_tags": [
-        "Vampire",
-        "Life Sim",
-        "Female Protagonist",
-        "Character Customization",
-        "Simulation",
-        "LGBTQ+",
-        "Dark Fantasy",
-        "Anime",
-        "Visual Novel",
-        "Choices Matter",
-        "Multiple Endings",
-        "Turn-Based Combat",
-        "Cute",
-        "Singleplayer",
-        "RPG"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 298
-    },
-    {
-      "title": "SOULVARS",
-      "steam_title": "SOULVARS",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000061876",
-      "nintendo_price_aud": 2.54,
-      "nintendo_original_price_aud": 25.45,
-      "discount_percent": 90,
-      "steam_app_id": 2087910,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 83,
-      "steam_review_count": 108,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [],
-      "steamspy_tags": [
-        "JRPG",
-        "Deckbuilding",
-        "Pixel Graphics",
-        "Turn-Based Combat",
-        "Cyberpunk",
-        "Card Game",
-        "RPG",
-        "2D",
-        "Anime",
-        "Adventure",
-        "Tactical RPG",
-        "CRPG",
-        "Collectathon",
-        "Sci-fi",
-        "Dungeon Crawler"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 299
+      "rank": 304
     },
     {
       "title": "Deadzone: Rogue",
@@ -10494,7 +10596,7 @@
       "steam_app_id": 3228590,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 82,
-      "steam_review_count": 16658,
+      "steam_review_count": 16664,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -10517,7 +10619,7 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 300
+      "rank": 305
     },
     {
       "title": "Gloomhaven - Gold Edition",
@@ -10529,7 +10631,7 @@
       "steam_app_id": 780290,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 82,
-      "steam_review_count": 16113,
+      "steam_review_count": 16114,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -10556,7 +10658,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 301
+      "rank": 306
     },
     {
       "title": "Jotunnslayer: Hordes of Hel",
@@ -10568,7 +10670,7 @@
       "steam_app_id": 2820820,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 82,
-      "steam_review_count": 7763,
+      "steam_review_count": 7764,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
@@ -10591,7 +10693,7 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 302
+      "rank": 307
     },
     {
       "title": "Punch Club 2: Fast Forward",
@@ -10603,7 +10705,7 @@
       "steam_app_id": 1161590,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 82,
-      "steam_review_count": 4567,
+      "steam_review_count": 4570,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -10633,7 +10735,26 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 303
+      "rank": 308
+    },
+    {
+      "title": "Tales of the Shire: A The Lord of The Rings™ Game",
+      "steam_title": "Tales of the Shire: A The Lord of The Rings™ Game",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000076840",
+      "nintendo_price_aud": 29.95,
+      "nintendo_original_price_aud": 49.95,
+      "discount_percent": 40,
+      "steam_app_id": 2016460,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 82,
+      "steam_review_count": 3795,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [],
+      "steamspy_tags": [],
+      "rogue_flag": "unknown",
+      "rogue_note": "no Steam tag data",
+      "rank": 309
     },
     {
       "title": "Sherlock Holmes The Awakened – Deluxe Edition",
@@ -10668,7 +10789,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 304
+      "rank": 310
     },
     {
       "title": "Valfaris",
@@ -10680,7 +10801,7 @@
       "steam_app_id": 600130,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 82,
-      "steam_review_count": 2833,
+      "steam_review_count": 2835,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -10706,42 +10827,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 305
-    },
-    {
-      "title": "Touhou Danmaku Kagura Phantasia Lost",
-      "steam_title": "Touhou Danmaku Kagura Phantasia Lost",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000079925",
-      "nintendo_price_aud": 15.0,
-      "nintendo_original_price_aud": 30.0,
-      "discount_percent": 50,
-      "steam_app_id": 2190220,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 82,
-      "steam_review_count": 2491,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [],
-      "steamspy_tags": [
-        "Music",
-        "Action",
-        "Rhythm",
-        "Adventure",
-        "Faith",
-        "Visual Novel",
-        "Anime",
-        "2D",
-        "Cute",
-        "Female Protagonist",
-        "Fantasy",
-        "Singleplayer",
-        "Indie",
-        "Casual",
-        "Post-apocalyptic"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 306
+      "rank": 311
     },
     {
       "title": "Amber Isle - Deluxe Edition",
@@ -10756,7 +10842,13 @@
       "steam_review_count": 2098,
       "match_confidence": "high",
       "fuzzy_score": 99,
-      "steam_genres": [],
+      "steam_genres": [
+        "Adventure",
+        "Casual",
+        "Indie",
+        "RPG",
+        "Simulation"
+      ],
       "steamspy_tags": [
         "Dinosaurs",
         "Crafting",
@@ -10776,7 +10868,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 307
+      "rank": 312
     },
     {
       "title": "SAMURAI WARRIORS 5 Digital Deluxe Edition",
@@ -10809,7 +10901,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 308
+      "rank": 313
     },
     {
       "title": "PictoQuest",
@@ -10837,7 +10929,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 309
+      "rank": 314
     },
     {
       "title": "Yono and the Celestial Elephants",
@@ -10867,7 +10959,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 310
+      "rank": 315
     },
     {
       "title": "The Last Case of John Morley",
@@ -10886,46 +10978,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 311
-    },
-    {
-      "title": "Tiny Thor",
-      "steam_title": "Tiny Thor",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000065429",
-      "nintendo_price_aud": 5.9,
-      "nintendo_original_price_aud": 29.5,
-      "discount_percent": 80,
-      "steam_app_id": 541310,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 82,
-      "steam_review_count": 289,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Action",
-        "Adventure",
-        "Indie"
-      ],
-      "steamspy_tags": [
-        "Soundtrack",
-        "Precision Platformer",
-        "Vikings",
-        "2D Platformer",
-        "Pixel Graphics",
-        "Collectathon",
-        "Old School",
-        "Unforgiving",
-        "Linear",
-        "Platformer",
-        "Side Scroller",
-        "1980s",
-        "Retro",
-        "Arcade",
-        "2D"
-      ],
-      "rogue_flag": "neither",
-      "rogue_note": null,
-      "rank": 312
+      "rank": 316
     },
     {
       "title": "A Gummy's Life",
@@ -10966,7 +11019,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 313
+      "rank": 317
     },
     {
       "title": "Borderlands 3 Ultimate Edition",
@@ -10978,7 +11031,7 @@
       "steam_app_id": 397540,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 81,
-      "steam_review_count": 163998,
+      "steam_review_count": 164011,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -11004,7 +11057,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 314
+      "rank": 318
     },
     {
       "title": "Moonlighter",
@@ -11016,7 +11069,7 @@
       "steam_app_id": 606150,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 81,
-      "steam_review_count": 24430,
+      "steam_review_count": 24441,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -11043,7 +11096,7 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 315
+      "rank": 319
     },
     {
       "title": "Hello Neighbor 2",
@@ -11055,7 +11108,7 @@
       "steam_app_id": 1321680,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 81,
-      "steam_review_count": 5874,
+      "steam_review_count": 5881,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [
@@ -11082,7 +11135,47 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 316
+      "rank": 320
+    },
+    {
+      "title": "Death's Gambit: Afterlife",
+      "steam_title": "Death's Gambit: Afterlife",
+      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000043150",
+      "nintendo_price_aud": 14.99,
+      "nintendo_original_price_aud": 29.99,
+      "discount_percent": 50,
+      "steam_app_id": 356650,
+      "steam_rating_label": "Very Positive",
+      "steam_percent_positive": 81,
+      "steam_review_count": 5590,
+      "match_confidence": "high",
+      "fuzzy_score": 99,
+      "steam_genres": [
+        "Action",
+        "Adventure",
+        "Indie",
+        "RPG"
+      ],
+      "steamspy_tags": [
+        "Souls-like",
+        "Metroidvania",
+        "RPG",
+        "Pixel Graphics",
+        "Dark Fantasy",
+        "Action",
+        "2D",
+        "Indie",
+        "Adventure",
+        "Platformer",
+        "Difficult",
+        "Action RPG",
+        "Singleplayer",
+        "Side Scroller",
+        "Atmospheric"
+      ],
+      "rogue_flag": "neither",
+      "rogue_note": null,
+      "rank": 321
     },
     {
       "title": "Grow: Song of The Evertree",
@@ -11121,7 +11214,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 317
+      "rank": 322
     },
     {
       "title": "Revita",
@@ -11161,7 +11254,7 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 318
+      "rank": 323
     },
     {
       "title": "MotoGP™22",
@@ -11176,7 +11269,11 @@
       "steam_review_count": 1632,
       "match_confidence": "high",
       "fuzzy_score": 99,
-      "steam_genres": [],
+      "steam_genres": [
+        "Racing",
+        "Simulation",
+        "Sports"
+      ],
       "steamspy_tags": [
         "Racing",
         "Simulation",
@@ -11194,7 +11291,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 319
+      "rank": 324
     },
     {
       "title": "Yooka-Laylee and the Impossible Lair",
@@ -11232,44 +11329,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 320
-    },
-    {
-      "title": "GoNNER",
-      "steam_title": "GoNNER",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000000426",
-      "nintendo_price_aud": 2.59,
-      "nintendo_original_price_aud": 12.99,
-      "discount_percent": 80,
-      "steam_app_id": 437570,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 81,
-      "steam_review_count": 1348,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [
-        "Indie"
-      ],
-      "steamspy_tags": [
-        "Rogue-lite",
-        "Indie",
-        "Action Roguelike",
-        "Platformer",
-        "Shooter",
-        "Singleplayer",
-        "Difficult",
-        "Great Soundtrack",
-        "2D",
-        "Procedural Generation",
-        "Action",
-        "Perma Death",
-        "Cute",
-        "Atmospheric",
-        "Side Scroller"
-      ],
-      "rogue_flag": "roguelite",
-      "rogue_note": null,
-      "rank": 321
+      "rank": 325
     },
     {
       "title": "Dandara: Trials of Fear Edition",
@@ -11306,7 +11366,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 322
+      "rank": 326
     },
     {
       "title": "SHUTEN ORDER",
@@ -11318,14 +11378,14 @@
       "steam_app_id": 3216500,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 81,
-      "steam_review_count": 850,
+      "steam_review_count": 852,
       "match_confidence": "high",
       "fuzzy_score": 99,
       "steam_genres": [],
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 323
+      "rank": 327
     },
     {
       "title": "Double Kick Heroes",
@@ -11363,42 +11423,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 324
-    },
-    {
-      "title": "The Land Beneath Us",
-      "steam_title": "The Land Beneath Us",
-      "nintendo_url": "https://ec.nintendo.com/AU/en/titles/70010000071934",
-      "nintendo_price_aud": 10.12,
-      "nintendo_original_price_aud": 22.5,
-      "discount_percent": 55,
-      "steam_app_id": 2131010,
-      "steam_rating_label": "Very Positive",
-      "steam_percent_positive": 81,
-      "steam_review_count": 270,
-      "match_confidence": "high",
-      "fuzzy_score": 99,
-      "steam_genres": [],
-      "steamspy_tags": [
-        "Action Roguelike",
-        "Turn-Based Tactics",
-        "Dungeon Crawler",
-        "Procedural Generation",
-        "Rogue-lite",
-        "Pixel Graphics",
-        "Action",
-        "2D",
-        "Mystery Dungeon",
-        "Turn-Based Strategy",
-        "Dark Comedy",
-        "Rhythm",
-        "Strategy",
-        "Controller",
-        "Turn-Based Combat"
-      ],
-      "rogue_flag": "roguelite",
-      "rogue_note": null,
-      "rank": 325
+      "rank": 328
     },
     {
       "title": "Paper io 2: Complete Edition",
@@ -11430,7 +11455,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 326
+      "rank": 329
     },
     {
       "title": "Beholgar 2",
@@ -11449,7 +11474,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 327
+      "rank": 330
     },
     {
       "title": "Baby Shark™: Sing & Swim Party",
@@ -11484,7 +11509,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 328
+      "rank": 331
     },
     {
       "title": "Guts & Glory",
@@ -11496,7 +11521,7 @@
       "steam_app_id": 537340,
       "steam_rating_label": "Very Positive",
       "steam_percent_positive": 80,
-      "steam_review_count": 2819,
+      "steam_review_count": 2820,
       "match_confidence": "medium",
       "fuzzy_score": 84.6,
       "steam_genres": [
@@ -11524,7 +11549,7 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 329
+      "rank": 332
     },
     {
       "title": "Help Will Come Tomorrow",
@@ -11563,7 +11588,7 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 330
+      "rank": 333
     },
     {
       "title": "Mortal Kombat 11: Aftermath Expansion",
@@ -11584,7 +11609,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 331
+      "rank": 334
     },
     {
       "title": "Atelier Ryza: Ever Darkness & the Secret Hideout DX",
@@ -11603,7 +11628,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 332
+      "rank": 335
     },
     {
       "title": "Mortal Kombat 11 Kombat Pack 2",
@@ -11624,7 +11649,7 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 333
+      "rank": 336
     }
   ]
 }
