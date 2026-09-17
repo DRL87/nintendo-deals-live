@@ -10,7 +10,8 @@
     "build-deals": "python3 scripts/build_deals.py",
     "serve": "npx serve public -p 3000",
     "deploy": "npx --yes wrangler pages deploy public --project-name=nintendo-deals",
-    "serve:py": "python3 -m http.server 3000 --directory public"
+    "serve:py": "python3 -m http.server 3000 --directory public",
+    "enrich-ends": "python3 scripts/enrich_dekudeals_ends.py"
   },
   "engines": {
     "node": ">=18"

@@ -13,7 +13,16 @@
       "both": 12
     },
     "ranking": "% positive desc, review count desc, Overwhelmingly Positive before Very Positive",
-    "notes": "Live Magento scrape of Nintendo AU Current Offers via headless Chrome. Steam via storesearch + appreviews + appdetails genres + SteamSpy tags. rogue_flag from significant SteamSpy tags (top~12 / ≥35% of top-tag votes) + known lists; Action Roguelike→roguelite; Traditional Roguelike→roguelike; both when both significant. Duplicate Steam apps collapsed to cheapest AU offer. OP/VP only."
+    "notes": "Live Magento scrape of Nintendo AU Current Offers via headless Chrome. Steam via storesearch + appreviews + appdetails genres + SteamSpy tags. rogue_flag from significant SteamSpy tags (top~12 / ≥35% of top-tag votes) + known lists; Action Roguelike→roguelite; Traditional Roguelike→roguelike; both when both significant. Duplicate Steam apps collapsed to cheapest AU offer. OP/VP only.",
+    "dekudeals_ends": {
+      "attempted": 336,
+      "matched": 299,
+      "match_rate": 0.8899,
+      "source": "https://www.dekudeals.com/ (AU locale)",
+      "note": "Sale end dates from DekuDeals Australia when the item page contains the Nintendo title/bundle id. Incomplete; not from the Nintendo listing itself.",
+      "enriched_utc": "2026-09-17T22:40:03Z",
+      "elapsed_sec": 217.9
+    }
   },
   "deals": [
     {
@@ -33,7 +42,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 1
+      "rank": 1,
+      "sale_ends_at": "2026-10-08T23:59:59+11:00",
+      "sale_ends_label": "Ends 8 Oct"
     },
     {
       "title": "Lil Gator Game",
@@ -73,7 +84,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 2
+      "rank": 2,
+      "sale_ends_at": "2026-10-13T23:59:59+11:00",
+      "sale_ends_label": "Ends 13 Oct"
     },
     {
       "title": "Patrick's Parabox",
@@ -109,7 +122,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 3
+      "rank": 3,
+      "sale_ends_at": "2026-10-02T23:59:59+10:00",
+      "sale_ends_label": "Ends 2 Oct"
     },
     {
       "title": "A Castle Full of Cats",
@@ -144,7 +159,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 4
+      "rank": 4,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "Sudocats",
@@ -238,7 +255,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 7
+      "rank": 7,
+      "sale_ends_at": "2026-10-15T23:59:59+11:00",
+      "sale_ends_label": "Ends 15 Oct"
     },
     {
       "title": "Witch on the Holy Night",
@@ -312,7 +331,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 9
+      "rank": 9,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "CATO: Buttered Cat",
@@ -347,7 +368,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 10
+      "rank": 10,
+      "sale_ends_at": "2026-10-08T23:59:59+11:00",
+      "sale_ends_label": "Ends 8 Oct"
     },
     {
       "title": "Terraria",
@@ -387,7 +410,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 11
+      "rank": 11,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "INSIDE",
@@ -426,7 +451,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 12
+      "rank": 12,
+      "sale_ends_at": "2026-09-20T23:59:59+10:00",
+      "sale_ends_label": "Ends 20 Sep"
     },
     {
       "title": "PRAGMATA",
@@ -448,7 +475,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 13
+      "rank": 13,
+      "sale_ends_at": "2026-10-15T23:59:59+11:00",
+      "sale_ends_label": "Ends 15 Oct"
     },
     {
       "title": "Doki Doki Literature Club Plus!",
@@ -486,7 +515,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 14
+      "rank": 14,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "The Last Campfire",
@@ -524,7 +555,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 15
+      "rank": 15,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "Touhou Luna Nights",
@@ -563,7 +596,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 16
+      "rank": 16,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "POST VOID",
@@ -639,7 +674,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 18
+      "rank": 18,
+      "sale_ends_at": "2026-09-28T23:59:59+10:00",
+      "sale_ends_label": "Ends 28 Sep"
     },
     {
       "title": "Downwell",
@@ -679,7 +716,9 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 19
+      "rank": 19,
+      "sale_ends_at": "2026-10-05T23:59:59+11:00",
+      "sale_ends_label": "Ends 5 Oct"
     },
     {
       "title": "Mad Father",
@@ -717,7 +756,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 20
+      "rank": 20,
+      "sale_ends_at": "2026-10-08T23:59:59+11:00",
+      "sale_ends_label": "Ends 8 Oct"
     },
     {
       "title": "inbento",
@@ -755,7 +796,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 21
+      "rank": 21,
+      "sale_ends_at": "2026-10-07T23:59:59+11:00",
+      "sale_ends_label": "Ends 7 Oct"
     },
     {
       "title": "A Tiny Sticker Tale",
@@ -790,7 +833,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 22
+      "rank": 22,
+      "sale_ends_at": "2026-09-21T23:59:59+10:00",
+      "sale_ends_label": "Ends 21 Sep"
     },
     {
       "title": "Cult of the Lamb: Heretic Edition",
@@ -809,7 +854,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 23
+      "rank": 23,
+      "sale_ends_at": "2026-10-05T23:59:59+11:00",
+      "sale_ends_label": "Ends 5 Oct"
     },
     {
       "title": "Gnomdom",
@@ -844,7 +891,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 24
+      "rank": 24,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "Virtual Maid Streamer Ramie",
@@ -879,7 +928,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 25
+      "rank": 25,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "DOOM",
@@ -916,7 +967,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 26
+      "rank": 26,
+      "sale_ends_at": "2026-09-25T23:59:59+10:00",
+      "sale_ends_label": "Ends 25 Sep"
     },
     {
       "title": "Resident Evil Requiem",
@@ -935,7 +988,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 27
+      "rank": 27,
+      "sale_ends_at": "2026-10-15T23:59:59+11:00",
+      "sale_ends_label": "Ends 15 Oct"
     },
     {
       "title": "DREDGE",
@@ -973,7 +1028,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 28
+      "rank": 28,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "Ultimate Chicken Horse",
@@ -1012,7 +1069,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 29
+      "rank": 29,
+      "sale_ends_at": "2026-09-19T23:36:45.987906+10:00",
+      "sale_ends_label": "Ends 19 Sep 11:36pm"
     },
     {
       "title": "Streets of Rogue",
@@ -1052,7 +1111,9 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 30
+      "rank": 30,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Yoku's Island Express",
@@ -1090,7 +1151,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 31
+      "rank": 31,
+      "sale_ends_at": "2026-10-10T23:59:59+11:00",
+      "sale_ends_label": "Ends 10 Oct"
     },
     {
       "title": "Birth",
@@ -1125,7 +1188,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 32
+      "rank": 32,
+      "sale_ends_at": "2026-09-29T23:59:59+10:00",
+      "sale_ends_label": "Ends 29 Sep"
     },
     {
       "title": "Leafy Corner",
@@ -1144,7 +1209,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 33
+      "rank": 33,
+      "sale_ends_at": "2026-10-01T23:59:59+10:00",
+      "sale_ends_label": "Ends 1 Oct"
     },
     {
       "title": "My Brother Rabbit",
@@ -1182,7 +1249,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 34
+      "rank": 34,
+      "sale_ends_at": "2026-10-12T23:59:59+11:00",
+      "sale_ends_label": "Ends 12 Oct"
     },
     {
       "title": "Freedom Planet 2",
@@ -1221,7 +1290,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 35
+      "rank": 35,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "DRAINUS",
@@ -1254,7 +1325,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 36
+      "rank": 36,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "Linelight",
@@ -1287,7 +1360,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 37
+      "rank": 37,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Mega Man Star Force Legacy Collection",
@@ -1306,7 +1381,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 38
+      "rank": 38,
+      "sale_ends_at": "2026-10-15T23:59:59+11:00",
+      "sale_ends_label": "Ends 15 Oct"
     },
     {
       "title": "Gecko Gods",
@@ -1398,7 +1475,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 41
+      "rank": 41,
+      "sale_ends_at": "2026-09-29T23:59:59+10:00",
+      "sale_ends_label": "Ends 29 Sep"
     },
     {
       "title": "Lil Gator Game: In the Dark",
@@ -1417,7 +1496,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 42
+      "rank": 42,
+      "sale_ends_at": "2026-10-13T23:59:59+11:00",
+      "sale_ends_label": "Ends 13 Oct"
     },
     {
       "title": "Children of Morta: Paws and Claws",
@@ -1441,7 +1522,9 @@
       "steamspy_tags": [],
       "rogue_flag": "roguelite",
       "rogue_note": "known title",
-      "rank": 43
+      "rank": 43,
+      "sale_ends_at": "2026-09-18T23:36:54.739698+10:00",
+      "sale_ends_label": "Ends 18 Sep 11:36pm"
     },
     {
       "title": "Montabi",
@@ -1460,7 +1543,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 44
+      "rank": 44,
+      "sale_ends_at": "2026-10-01T23:59:59+10:00",
+      "sale_ends_label": "Ends 1 Oct"
     },
     {
       "title": "Teeto",
@@ -1479,7 +1564,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 45
+      "rank": 45,
+      "sale_ends_at": "2026-10-10T23:59:59+11:00",
+      "sale_ends_label": "Ends 10 Oct"
     },
     {
       "title": "Howl",
@@ -1514,7 +1601,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 46
+      "rank": 46,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "ASTLIBRA Revision",
@@ -1549,7 +1638,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 47
+      "rank": 47,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "Darkwood",
@@ -1589,7 +1680,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": "minor Rogue-* Steam tag ignored (not in top tags)",
-      "rank": 48
+      "rank": 48,
+      "sale_ends_at": "2026-10-08T23:59:59+11:00",
+      "sale_ends_label": "Ends 8 Oct"
     },
     {
       "title": "FINAL FANTASY IX",
@@ -1626,7 +1719,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 49
+      "rank": 49,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Easy Delivery Co.",
@@ -1645,7 +1740,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 50
+      "rank": 50,
+      "sale_ends_at": "2026-09-28T23:59:59+10:00",
+      "sale_ends_label": "Ends 28 Sep"
     },
     {
       "title": "FINAL FANTASY",
@@ -1682,7 +1779,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 51
+      "rank": 51,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "PARANORMASIGHT: The Seven Mysteries of Honjo",
@@ -1717,7 +1816,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 52
+      "rank": 52,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Agent A: A puzzle in disguise",
@@ -1755,7 +1856,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 53
+      "rank": 53,
+      "sale_ends_at": "2026-09-26T23:59:59+10:00",
+      "sale_ends_label": "Ends 26 Sep"
     },
     {
       "title": "Kill It With Fire",
@@ -1795,7 +1898,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 54
+      "rank": 54,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Trails in the Sky 1st Chapter",
@@ -1814,7 +1919,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 55
+      "rank": 55,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "Freedom Planet",
@@ -1852,7 +1959,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 56
+      "rank": 56,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "Heavenly Bodies",
@@ -1892,7 +2001,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 57
+      "rank": 57,
+      "sale_ends_at": "2026-10-10T23:59:59+11:00",
+      "sale_ends_label": "Ends 10 Oct"
     },
     {
       "title": "Ape Out",
@@ -1930,7 +2041,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 58
+      "rank": 58,
+      "sale_ends_at": "2026-10-05T23:59:59+11:00",
+      "sale_ends_label": "Ends 5 Oct"
     },
     {
       "title": "and Roger",
@@ -1949,7 +2062,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 59
+      "rank": 59,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Suikoden I&II HD Remaster for Nintendo Switch™ 2 Gate Rune and Dunan Unification Wars",
@@ -2024,7 +2139,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 61
+      "rank": 61,
+      "sale_ends_at": "2026-10-01T23:59:59+10:00",
+      "sale_ends_label": "Ends 1 Oct"
     },
     {
       "title": "A Monster's Expedition",
@@ -2064,7 +2181,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 62
+      "rank": 62,
+      "sale_ends_at": "2026-10-02T23:59:59+10:00",
+      "sale_ends_label": "Ends 2 Oct"
     },
     {
       "title": "Max: The Curse of Brotherhood",
@@ -2098,7 +2217,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 63
+      "rank": 63,
+      "sale_ends_at": "2026-10-06T23:59:59+11:00",
+      "sale_ends_label": "Ends 6 Oct"
     },
     {
       "title": "Mutazione",
@@ -2136,7 +2257,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 64
+      "rank": 64,
+      "sale_ends_at": "2026-10-01T23:59:59+10:00",
+      "sale_ends_label": "Ends 1 Oct"
     },
     {
       "title": "Boomerang X",
@@ -2174,7 +2297,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 65
+      "rank": 65,
+      "sale_ends_at": "2026-10-05T23:59:59+11:00",
+      "sale_ends_label": "Ends 5 Oct"
     },
     {
       "title": "A Good Snowman is Hard to Build",
@@ -2211,7 +2336,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 66
+      "rank": 66,
+      "sale_ends_at": "2026-10-02T23:59:59+10:00",
+      "sale_ends_label": "Ends 2 Oct"
     },
     {
       "title": "Golf Peaks",
@@ -2250,7 +2377,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 67
+      "rank": 67,
+      "sale_ends_at": "2026-10-07T23:59:59+11:00",
+      "sale_ends_label": "Ends 7 Oct"
     },
     {
       "title": "Paper Trail",
@@ -2285,7 +2414,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 68
+      "rank": 68,
+      "sale_ends_at": "2026-10-05T23:59:59+11:00",
+      "sale_ends_label": "Ends 5 Oct"
     },
     {
       "title": "Rune Factory 3 Special",
@@ -2339,7 +2470,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 70
+      "rank": 70,
+      "sale_ends_at": "2026-09-21T23:59:59+10:00",
+      "sale_ends_label": "Ends 21 Sep"
     },
     {
       "title": "Potato Flowers in Full Bloom",
@@ -2416,7 +2549,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 72
+      "rank": 72,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Castle on the Coast",
@@ -2455,7 +2590,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 73
+      "rank": 73,
+      "sale_ends_at": "2026-09-19T23:37:13.595212+10:00",
+      "sale_ends_label": "Ends 19 Sep 11:37pm"
     },
     {
       "title": "tiny Cats",
@@ -2490,7 +2627,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 74
+      "rank": 74,
+      "sale_ends_at": "2026-09-25T23:59:59+10:00",
+      "sale_ends_label": "Ends 25 Sep"
     },
     {
       "title": "Risk of Rain",
@@ -2528,7 +2667,9 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 75
+      "rank": 75,
+      "sale_ends_at": "2026-09-20T23:59:59+10:00",
+      "sale_ends_label": "Ends 20 Sep"
     },
     {
       "title": "Content Warning",
@@ -2563,7 +2704,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 76
+      "rank": 76,
+      "sale_ends_at": "2026-10-05T23:59:59+11:00",
+      "sale_ends_label": "Ends 5 Oct"
     },
     {
       "title": "NEEDY STREAMER OVERLOAD",
@@ -2640,7 +2783,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 78
+      "rank": 78,
+      "sale_ends_at": "2026-10-01T23:59:59+10:00",
+      "sale_ends_label": "Ends 1 Oct"
     },
     {
       "title": "SpeedRunners",
@@ -2681,7 +2826,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 79
+      "rank": 79,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "BioShock Remastered",
@@ -2719,7 +2866,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 80
+      "rank": 80,
+      "sale_ends_at": "2026-09-20T23:59:59+10:00",
+      "sale_ends_label": "Ends 20 Sep"
     },
     {
       "title": "Clustertruck",
@@ -2757,7 +2906,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 81
+      "rank": 81,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Cassette Beasts",
@@ -2795,7 +2946,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 82
+      "rank": 82,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Worms Armageddon: Anniversary Edition",
@@ -2832,7 +2985,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 83
+      "rank": 83,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "The Great Ace Attorney Chronicles",
@@ -2869,7 +3024,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 84
+      "rank": 84,
+      "sale_ends_at": "2026-10-15T23:59:59+11:00",
+      "sale_ends_label": "Ends 15 Oct"
     },
     {
       "title": "Behind the Frame: The Finest Scenery",
@@ -2908,7 +3065,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 85
+      "rank": 85,
+      "sale_ends_at": "2026-10-01T23:59:59+10:00",
+      "sale_ends_label": "Ends 1 Oct"
     },
     {
       "title": "Gato Roboto",
@@ -2947,7 +3106,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 86
+      "rank": 86,
+      "sale_ends_at": "2026-10-05T23:59:59+11:00",
+      "sale_ends_label": "Ends 5 Oct"
     },
     {
       "title": "Nocturnal",
@@ -2985,7 +3146,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 87
+      "rank": 87,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Bloodstained: Curse of the Moon",
@@ -3022,7 +3185,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 88
+      "rank": 88,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Story of Seasons: Grand Bazaar",
@@ -3041,7 +3206,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 89
+      "rank": 89,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "UnMetal",
@@ -3080,7 +3247,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 90
+      "rank": 90,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Rain World: Downpour",
@@ -3099,7 +3268,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 91
+      "rank": 91,
+      "sale_ends_at": "2026-10-01T23:59:59+10:00",
+      "sale_ends_label": "Ends 1 Oct"
     },
     {
       "title": "Atelier Sophie 2: The Alchemist of the Mysterious Dream",
@@ -3136,7 +3307,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 92
+      "rank": 92,
+      "sale_ends_at": "2026-09-28T23:59:59+10:00",
+      "sale_ends_label": "Ends 28 Sep"
     },
     {
       "title": "Timelie",
@@ -3175,7 +3348,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 93
+      "rank": 93,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "KILL IT WITH FIRE! 2",
@@ -3210,7 +3385,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 94
+      "rank": 94,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Figment 2: Creed Valley",
@@ -3250,7 +3427,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 95
+      "rank": 95,
+      "sale_ends_at": "2026-10-01T23:59:59+10:00",
+      "sale_ends_label": "Ends 1 Oct"
     },
     {
       "title": "Lil' Guardsman",
@@ -3285,7 +3464,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 96
+      "rank": 96,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Dungeons of Dreadrock",
@@ -3359,7 +3540,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 98
+      "rank": 98,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Ultra Foodmess",
@@ -3397,7 +3580,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 99
+      "rank": 99,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "The Legacy: The Tree of Might",
@@ -3461,7 +3646,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 101
+      "rank": 101,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Bloodstained: Ritual of the Night",
@@ -3500,7 +3687,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 102
+      "rank": 102,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "DYNASTY WARRIORS: ORIGINS",
@@ -3535,7 +3724,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 103
+      "rank": 103,
+      "sale_ends_at": "2026-09-28T23:59:59+10:00",
+      "sale_ends_label": "Ends 28 Sep"
     },
     {
       "title": "Bad North",
@@ -3574,7 +3765,9 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 104
+      "rank": 104,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "The Exit 8",
@@ -3609,7 +3802,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 105
+      "rank": 105,
+      "sale_ends_at": "2026-10-05T23:59:59+11:00",
+      "sale_ends_label": "Ends 5 Oct"
     },
     {
       "title": "Record of Lodoss War -Deedlit in Wonder Labyrinth-",
@@ -3647,7 +3842,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 106
+      "rank": 106,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "SpiderHeck",
@@ -3686,7 +3883,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 107
+      "rank": 107,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Killer Frequency",
@@ -3725,7 +3924,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 108
+      "rank": 108,
+      "sale_ends_at": "2026-10-10T23:59:59+11:00",
+      "sale_ends_label": "Ends 10 Oct"
     },
     {
       "title": "STORY OF SEASONS: Friends of Mineral Town",
@@ -3764,7 +3965,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 109
+      "rank": 109,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "FAR: Changing Tides",
@@ -3803,7 +4006,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 110
+      "rank": 110,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "Romancing SaGa 2: Revenge of the Seven – Nintendo Switch™ 2 Edition",
@@ -3875,7 +4080,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 112
+      "rank": 112,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "STAR OCEAN THE SECOND STORY R",
@@ -3910,7 +4117,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 113
+      "rank": 113,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Risk of Rain 2: Alloyed Collective",
@@ -3929,7 +4138,9 @@
       "steamspy_tags": [],
       "rogue_flag": "roguelite",
       "rogue_note": "known title",
-      "rank": 114
+      "rank": 114,
+      "sale_ends_at": "2026-09-20T23:59:59+10:00",
+      "sale_ends_label": "Ends 20 Sep"
     },
     {
       "title": "The Count Lucanor",
@@ -3968,7 +4179,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 115
+      "rank": 115,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Go-Go Town!",
@@ -4003,7 +4216,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 116
+      "rank": 116,
+      "sale_ends_at": "2026-09-21T23:59:59+10:00",
+      "sale_ends_label": "Ends 21 Sep"
     },
     {
       "title": "Pizza Possum",
@@ -4038,7 +4253,9 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 117
+      "rank": 117,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Death Howl",
@@ -4057,7 +4274,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 118
+      "rank": 118,
+      "sale_ends_at": "2026-09-18T23:37:41.708463+10:00",
+      "sale_ends_label": "Ends 18 Sep 11:37pm"
     },
     {
       "title": "Disc Room",
@@ -4096,7 +4315,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 119
+      "rank": 119,
+      "sale_ends_at": "2026-10-05T23:59:59+11:00",
+      "sale_ends_label": "Ends 5 Oct"
     },
     {
       "title": "Blaster Master Zero",
@@ -4129,7 +4350,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 120
+      "rank": 120,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Fight Crab",
@@ -4168,7 +4391,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 121
+      "rank": 121,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Sudoku Classic",
@@ -4196,7 +4421,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 122
+      "rank": 122,
+      "sale_ends_at": "2026-09-18T23:37:44.311491+10:00",
+      "sale_ends_label": "Ends 18 Sep 11:37pm"
     },
     {
       "title": "The Forest Quartet",
@@ -4234,7 +4461,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 123
+      "rank": 123,
+      "sale_ends_at": "2026-10-06T23:59:59+11:00",
+      "sale_ends_label": "Ends 6 Oct"
     },
     {
       "title": "Mortal Kombat 11 Ultimate Add-On Bundle",
@@ -4255,7 +4484,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 124
+      "rank": 124,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "RUN: The World In-Between",
@@ -4331,7 +4562,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 126
+      "rank": 126,
+      "sale_ends_at": "2026-09-25T23:59:59+10:00",
+      "sale_ends_label": "Ends 25 Sep"
     },
     {
       "title": "LIMBO",
@@ -4370,7 +4603,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 127
+      "rank": 127,
+      "sale_ends_at": "2026-09-20T23:59:59+10:00",
+      "sale_ends_label": "Ends 20 Sep"
     },
     {
       "title": "Bright Memory: Infinite Gold Edition",
@@ -4408,7 +4643,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 128
+      "rank": 128,
+      "sale_ends_at": "2026-10-08T23:59:59+11:00",
+      "sale_ends_label": "Ends 8 Oct"
     },
     {
       "title": "Crash Bandicoot™ N. Sane Trilogy",
@@ -4480,7 +4717,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 130
+      "rank": 130,
+      "sale_ends_at": "2026-09-20T23:59:59+10:00",
+      "sale_ends_label": "Ends 20 Sep"
     },
     {
       "title": "Haste",
@@ -4552,7 +4791,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 132
+      "rank": 132,
+      "sale_ends_at": "2026-10-15T23:59:59+11:00",
+      "sale_ends_label": "Ends 15 Oct"
     },
     {
       "title": "Atomicrops",
@@ -4590,7 +4831,9 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 133
+      "rank": 133,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Sakuna: Of Rice and Ruin",
@@ -4628,7 +4871,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 134
+      "rank": 134,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "FINAL FANTASY VI",
@@ -4665,7 +4910,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 135
+      "rank": 135,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "DEEEER Simulator: Your Average Everyday Deer Game",
@@ -4705,7 +4952,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 136
+      "rank": 136,
+      "sale_ends_at": "2026-10-08T23:59:59+11:00",
+      "sale_ends_label": "Ends 8 Oct"
     },
     {
       "title": "Astrea: Six-Sided Oracles",
@@ -4740,7 +4989,9 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 137
+      "rank": 137,
+      "sale_ends_at": "2026-10-01T23:59:59+10:00",
+      "sale_ends_label": "Ends 1 Oct"
     },
     {
       "title": "Die in the Dungeon",
@@ -4775,7 +5026,9 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 138
+      "rank": 138,
+      "sale_ends_at": "2026-10-01T23:59:59+10:00",
+      "sale_ends_label": "Ends 1 Oct"
     },
     {
       "title": "FINAL FANTASY IV",
@@ -4812,7 +5065,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 139
+      "rank": 139,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Kunitsu-Gami: Path of the Goddess",
@@ -4844,7 +5099,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 140
+      "rank": 140,
+      "sale_ends_at": "2026-10-15T23:59:59+11:00",
+      "sale_ends_label": "Ends 15 Oct"
     },
     {
       "title": "Kathy Rain: Director's Cut",
@@ -4882,7 +5139,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 141
+      "rank": 141,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "YOHANE THE PARHELION -BLAZE in the DEEPBLUE-",
@@ -4914,7 +5173,9 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 142
+      "rank": 142,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Forestrike",
@@ -4933,7 +5194,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 143
+      "rank": 143,
+      "sale_ends_at": "2026-10-05T23:59:59+11:00",
+      "sale_ends_label": "Ends 5 Oct"
     },
     {
       "title": "Darkarta: A Broken Heart Quest Collector's Edition",
@@ -4972,7 +5235,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 144
+      "rank": 144,
+      "sale_ends_at": "2026-09-28T23:59:59+10:00",
+      "sale_ends_label": "Ends 28 Sep"
     },
     {
       "title": "FAIRY TAIL: DUNGEONS",
@@ -5007,7 +5272,9 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 145
+      "rank": 145,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Anarcute",
@@ -5041,7 +5308,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 146
+      "rank": 146,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Atelier Rorona ~The Alchemist of Arland~ DX",
@@ -5078,7 +5347,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 147
+      "rank": 147,
+      "sale_ends_at": "2026-09-28T23:59:59+10:00",
+      "sale_ends_label": "Ends 28 Sep"
     },
     {
       "title": "Valfaris: Mecha Therion",
@@ -5116,7 +5387,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 148
+      "rank": 148,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "What the Dub?!",
@@ -5154,7 +5427,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 149
+      "rank": 149,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Rifftrax: The Game",
@@ -5192,7 +5467,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 150
+      "rank": 150,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Demon Turf",
@@ -5231,7 +5508,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 151
+      "rank": 151,
+      "sale_ends_at": "2026-10-13T23:59:59+11:00",
+      "sale_ends_label": "Ends 13 Oct"
     },
     {
       "title": "Airport Baggage Simulator",
@@ -5250,7 +5529,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 152
+      "rank": 152,
+      "sale_ends_at": "2026-10-04T23:59:59+11:00",
+      "sale_ends_label": "Ends 4 Oct"
     },
     {
       "title": "UNTURNED",
@@ -5291,7 +5572,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 153
+      "rank": 153,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "DOOM® Eternal Deluxe Edition",
@@ -5328,7 +5611,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 154
+      "rank": 154,
+      "sale_ends_at": "2026-09-25T23:59:59+10:00",
+      "sale_ends_label": "Ends 25 Sep"
     },
     {
       "title": "Ghostrunner",
@@ -5365,7 +5650,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 155
+      "rank": 155,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "The Escapists 2",
@@ -5404,7 +5691,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 156
+      "rank": 156,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "BOKURA",
@@ -5439,7 +5728,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 157
+      "rank": 157,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Monster Sanctuary",
@@ -5480,7 +5771,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 158
+      "rank": 158,
+      "sale_ends_at": "2026-10-10T23:59:59+11:00",
+      "sale_ends_label": "Ends 10 Oct"
     },
     {
       "title": "Nobody Saves the World",
@@ -5520,7 +5813,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 159
+      "rank": 159,
+      "sale_ends_at": "2026-10-04T23:59:59+11:00",
+      "sale_ends_label": "Ends 4 Oct"
     },
     {
       "title": "Gravity Circuit",
@@ -5558,7 +5853,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 160
+      "rank": 160,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Ghost of a Tale",
@@ -5598,7 +5895,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 161
+      "rank": 161,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Curious Expedition",
@@ -5637,7 +5936,9 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 162
+      "rank": 162,
+      "sale_ends_at": "2026-09-19T23:38:09.240028+10:00",
+      "sale_ends_label": "Ends 19 Sep 11:38pm"
     },
     {
       "title": "Guacamelee! 2",
@@ -5676,7 +5977,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 163
+      "rank": 163,
+      "sale_ends_at": "2026-10-05T23:59:59+11:00",
+      "sale_ends_label": "Ends 5 Oct"
     },
     {
       "title": "Heave Ho",
@@ -5712,7 +6015,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 164
+      "rank": 164,
+      "sale_ends_at": "2026-10-05T23:59:59+11:00",
+      "sale_ends_label": "Ends 5 Oct"
     },
     {
       "title": "Cook, Serve, Delicious! 3?!",
@@ -5752,7 +6057,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 165
+      "rank": 165,
+      "sale_ends_at": "2026-10-01T23:59:59+10:00",
+      "sale_ends_label": "Ends 1 Oct"
     },
     {
       "title": "Monster Hunter Stories",
@@ -5787,7 +6094,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 166
+      "rank": 166,
+      "sale_ends_at": "2026-10-15T23:59:59+11:00",
+      "sale_ends_label": "Ends 15 Oct"
     },
     {
       "title": "Adventure Time: Pirates of the Enchiridion",
@@ -5825,7 +6134,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 167
+      "rank": 167,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "BRAVELY DEFAULT FLYING FAIRY HD Remaster",
@@ -5844,7 +6155,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 168
+      "rank": 168,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Atelier Escha & Logy: Alchemists of the Dusk Sky DX",
@@ -5881,7 +6194,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 169
+      "rank": 169,
+      "sale_ends_at": "2026-09-28T23:59:59+10:00",
+      "sale_ends_label": "Ends 28 Sep"
     },
     {
       "title": "Ufouria 2: The Saga",
@@ -5916,7 +6231,9 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 170
+      "rank": 170,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "Heave Ho 2",
@@ -5935,7 +6252,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 171
+      "rank": 171,
+      "sale_ends_at": "2026-10-05T23:59:59+11:00",
+      "sale_ends_label": "Ends 5 Oct"
     },
     {
       "title": "Eden Genesis",
@@ -5970,7 +6289,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 172
+      "rank": 172,
+      "sale_ends_at": "2026-10-14T23:59:59+11:00",
+      "sale_ends_label": "Ends 14 Oct"
     },
     {
       "title": "World Cruise Story",
@@ -6002,7 +6323,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 173
+      "rank": 173,
+      "sale_ends_at": "2026-09-29T23:59:59+10:00",
+      "sale_ends_label": "Ends 29 Sep"
     },
     {
       "title": "Hogwarts Legacy",
@@ -6041,7 +6364,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 174
+      "rank": 174,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Overcooked! 2",
@@ -6080,7 +6405,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 175
+      "rank": 175,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "Risk of Rain Returns",
@@ -6117,7 +6444,9 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": "Action Roguelike present; classifying as roguelite",
-      "rank": 176
+      "rank": 176,
+      "sale_ends_at": "2026-09-20T23:59:59+10:00",
+      "sale_ends_label": "Ends 20 Sep"
     },
     {
       "title": "Shape of Dreams",
@@ -6136,7 +6465,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 177
+      "rank": 177,
+      "sale_ends_at": "2026-10-01T23:59:59+10:00",
+      "sale_ends_label": "Ends 1 Oct"
     },
     {
       "title": "The Escapists: Complete Edition",
@@ -6177,7 +6508,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": "minor Rogue-* Steam tag ignored (not in top tags)",
-      "rank": 178
+      "rank": 178,
+      "sale_ends_at": "2026-10-10T23:59:59+11:00",
+      "sale_ends_label": "Ends 10 Oct"
     },
     {
       "title": "Party Hard",
@@ -6216,7 +6549,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 179
+      "rank": 179,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Axiom Verge",
@@ -6255,7 +6590,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 180
+      "rank": 180,
+      "sale_ends_at": "2026-10-01T23:59:59+10:00",
+      "sale_ends_label": "Ends 1 Oct"
     },
     {
       "title": "Card Shark",
@@ -6294,7 +6631,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 181
+      "rank": 181,
+      "sale_ends_at": "2026-10-05T23:59:59+11:00",
+      "sale_ends_label": "Ends 5 Oct"
     },
     {
       "title": "OlliOlli World",
@@ -6333,7 +6672,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 182
+      "rank": 182,
+      "sale_ends_at": "2026-09-20T23:59:59+10:00",
+      "sale_ends_label": "Ends 20 Sep"
     },
     {
       "title": "Farlands",
@@ -6368,7 +6709,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 183
+      "rank": 183,
+      "sale_ends_at": "2026-10-15T23:59:59+11:00",
+      "sale_ends_label": "Ends 15 Oct"
     },
     {
       "title": "Card-en-Ciel Nintendo Switch™ 2 Edition Upgrade Pack",
@@ -6435,7 +6778,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 185
+      "rank": 185,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Cosmic Express",
@@ -6472,7 +6817,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 186
+      "rank": 186,
+      "sale_ends_at": "2026-10-02T23:59:59+10:00",
+      "sale_ends_label": "Ends 2 Oct"
     },
     {
       "title": "Atelier Lulua ~The Scion of Arland~ Digital Deluxe Edition",
@@ -6509,7 +6856,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 187
+      "rank": 187,
+      "sale_ends_at": "2026-09-28T23:59:59+10:00",
+      "sale_ends_label": "Ends 28 Sep"
     },
     {
       "title": "Streets of Rogue: Character Pack",
@@ -6533,7 +6882,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 188
+      "rank": 188,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Grand Prix Story",
@@ -6566,7 +6917,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 189
+      "rank": 189,
+      "sale_ends_at": "2026-09-29T23:59:59+10:00",
+      "sale_ends_label": "Ends 29 Sep"
     },
     {
       "title": "Blossom Tales II: The Minotaur Prince",
@@ -6601,7 +6954,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 190
+      "rank": 190,
+      "sale_ends_at": "2026-10-13T23:59:59+11:00",
+      "sale_ends_label": "Ends 13 Oct"
     },
     {
       "title": "Snoopy & The Great Mystery Club",
@@ -6620,7 +6975,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 191
+      "rank": 191,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "The Final Evolution of DEEEER",
@@ -6676,7 +7033,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 193
+      "rank": 193,
+      "sale_ends_at": "2026-09-20T23:59:59+10:00",
+      "sale_ends_label": "Ends 20 Sep"
     },
     {
       "title": "The King is Watching",
@@ -6695,7 +7054,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 194
+      "rank": 194,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "FINAL FANTASY XII THE ZODIAC AGE",
@@ -6732,7 +7093,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 195
+      "rank": 195,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "CRISIS CORE –FINAL FANTASY VII– REUNION",
@@ -6770,7 +7133,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 196
+      "rank": 196,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "Sherlock Holmes: Crimes and Punishments",
@@ -6807,7 +7172,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 197
+      "rank": 197,
+      "sale_ends_at": "2026-10-06T23:59:59+11:00",
+      "sale_ends_label": "Ends 6 Oct"
     },
     {
       "title": "Curious Expedition 2",
@@ -6848,7 +7215,9 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 198
+      "rank": 198,
+      "sale_ends_at": "2026-09-19T23:38:32.492246+10:00",
+      "sale_ends_label": "Ends 19 Sep 11:38pm"
     },
     {
       "title": "The friends of Ringo Ishikawa",
@@ -6888,7 +7257,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 199
+      "rank": 199,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Cook, Serve, Delicious! 2!!",
@@ -6928,7 +7299,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 200
+      "rank": 200,
+      "sale_ends_at": "2026-10-01T23:59:59+10:00",
+      "sale_ends_label": "Ends 1 Oct"
     },
     {
       "title": "DRAGON QUEST VII Reimagined",
@@ -6947,7 +7320,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 201
+      "rank": 201,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Down in Bermuda",
@@ -6986,7 +7361,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 202
+      "rank": 202,
+      "sale_ends_at": "2026-09-26T23:59:59+10:00",
+      "sale_ends_label": "Ends 26 Sep"
     },
     {
       "title": "BLADECHIMERA",
@@ -7060,7 +7437,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 204
+      "rank": 204,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "Pan'orama",
@@ -7095,7 +7474,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 205
+      "rank": 205,
+      "sale_ends_at": "2026-09-29T23:59:59+10:00",
+      "sale_ends_label": "Ends 29 Sep"
     },
     {
       "title": "Unspottable",
@@ -7134,7 +7515,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 206
+      "rank": 206,
+      "sale_ends_at": "2026-10-06T23:59:59+11:00",
+      "sale_ends_label": "Ends 6 Oct"
     },
     {
       "title": "Little Problems: A Cozy Detective Game",
@@ -7153,7 +7536,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 207
+      "rank": 207,
+      "sale_ends_at": "2026-09-20T23:59:59+10:00",
+      "sale_ends_label": "Ends 20 Sep"
     },
     {
       "title": "Hidden Cats in London",
@@ -7188,7 +7573,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 208
+      "rank": 208,
+      "sale_ends_at": "2026-10-04T23:59:59+11:00",
+      "sale_ends_label": "Ends 4 Oct"
     },
     {
       "title": "Atelier Marie Remake: The Alchemist of Salburg",
@@ -7223,7 +7610,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 209
+      "rank": 209,
+      "sale_ends_at": "2026-09-28T23:59:59+10:00",
+      "sale_ends_label": "Ends 28 Sep"
     },
     {
       "title": "Ritual of Raven",
@@ -7242,7 +7631,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 210
+      "rank": 210,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "Atelier Ryza 2: Lost Legends & the Secret Fairy DX",
@@ -7261,7 +7652,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 211
+      "rank": 211,
+      "sale_ends_at": "2026-09-28T23:59:59+10:00",
+      "sale_ends_label": "Ends 28 Sep"
     },
     {
       "title": "STAB STAB STAB!",
@@ -7300,7 +7693,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 212
+      "rank": 212,
+      "sale_ends_at": "2026-10-02T23:59:59+10:00",
+      "sale_ends_label": "Ends 2 Oct"
     },
     {
       "title": "Cats Around Us: Black Cat",
@@ -7319,7 +7714,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 213
+      "rank": 213,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Hayfever",
@@ -7358,7 +7755,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 214
+      "rank": 214,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Dimensional Animals",
@@ -7393,7 +7792,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 215
+      "rank": 215,
+      "sale_ends_at": "2026-10-06T23:59:59+11:00",
+      "sale_ends_label": "Ends 6 Oct"
     },
     {
       "title": "Mortal Kombat 11",
@@ -7430,7 +7831,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 216
+      "rank": 216,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Thief Simulator",
@@ -7470,7 +7873,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 217
+      "rank": 217,
+      "sale_ends_at": "2026-10-12T23:59:59+11:00",
+      "sale_ends_label": "Ends 12 Oct"
     },
     {
       "title": "FINAL FANTASY X/X-2 HD Remaster",
@@ -7507,7 +7912,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 218
+      "rank": 218,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Children of Morta",
@@ -7547,7 +7954,9 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 219
+      "rank": 219,
+      "sale_ends_at": "2026-09-18T23:38:45.826833+10:00",
+      "sale_ends_label": "Ends 18 Sep 11:38pm"
     },
     {
       "title": "FINAL FANTASY VIII Remastered",
@@ -7619,7 +8028,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 221
+      "rank": 221,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "Refind Self: The Personality Test Game",
@@ -7654,7 +8065,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 222
+      "rank": 222,
+      "sale_ends_at": "2026-10-08T23:59:59+11:00",
+      "sale_ends_label": "Ends 8 Oct"
     },
     {
       "title": "Rune Factory: Guardians of Azuma",
@@ -7673,7 +8086,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 223
+      "rank": 223,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "7 Days to End with You",
@@ -7708,7 +8123,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 224
+      "rank": 224,
+      "sale_ends_at": "2026-10-08T23:59:59+11:00",
+      "sale_ends_label": "Ends 8 Oct"
     },
     {
       "title": "Rune Factory 4 Special",
@@ -7745,7 +8162,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 225
+      "rank": 225,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "Astebreed",
@@ -7783,7 +8202,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 226
+      "rank": 226,
+      "sale_ends_at": "2026-10-08T23:59:59+11:00",
+      "sale_ends_label": "Ends 8 Oct"
     },
     {
       "title": "My Friend Peppa Pig - Complete Edition",
@@ -7820,7 +8241,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 227
+      "rank": 227,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "Iris and the Giant",
@@ -7859,7 +8282,9 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 228
+      "rank": 228,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Tchia",
@@ -7898,7 +8323,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 229
+      "rank": 229,
+      "sale_ends_at": "2026-10-12T23:59:59+11:00",
+      "sale_ends_label": "Ends 12 Oct"
     },
     {
       "title": "Death Squared",
@@ -7936,7 +8363,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 230
+      "rank": 230,
+      "sale_ends_at": "2026-09-28T23:59:59+10:00",
+      "sale_ends_label": "Ends 28 Sep"
     },
     {
       "title": "Touken Ranbu Warriors",
@@ -7973,7 +8402,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 231
+      "rank": 231,
+      "sale_ends_at": "2026-09-28T23:59:59+10:00",
+      "sale_ends_label": "Ends 28 Sep"
     },
     {
       "title": "Before I Forget",
@@ -8011,7 +8442,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 232
+      "rank": 232,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "PAW Patrol World",
@@ -8046,7 +8479,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 233
+      "rank": 233,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "Atelier Ryza 3: Alchemist of the End & the Secret Key DX",
@@ -8065,7 +8500,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 234
+      "rank": 234,
+      "sale_ends_at": "2026-09-28T23:59:59+10:00",
+      "sale_ends_label": "Ends 28 Sep"
     },
     {
       "title": "Binaries",
@@ -8102,7 +8539,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 235
+      "rank": 235,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Golf With Your Friends - Ultimate Edition",
@@ -8141,7 +8580,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 236
+      "rank": 236,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "Jurassic World Evolution: Complete Edition",
@@ -8179,7 +8620,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 237
+      "rank": 237,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "FINAL FANTASY VII REMAKE INTERGRADE",
@@ -8218,7 +8661,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 238
+      "rank": 238,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Cloudpunk",
@@ -8257,7 +8702,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 239
+      "rank": 239,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Journey to the Savage Planet",
@@ -8295,7 +8742,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 240
+      "rank": 240,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Last Day of June",
@@ -8333,7 +8782,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 241
+      "rank": 241,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Old Man's Journey",
@@ -8372,7 +8823,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 242
+      "rank": 242,
+      "sale_ends_at": "2026-10-12T23:59:59+11:00",
+      "sale_ends_label": "Ends 12 Oct"
     },
     {
       "title": "FATAL FRAME II: Crimson Butterfly REMAKE",
@@ -8391,7 +8844,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 243
+      "rank": 243,
+      "sale_ends_at": "2026-09-20T23:59:59+10:00",
+      "sale_ends_label": "Ends 20 Sep"
     },
     {
       "title": "DEEMO -Reborn-",
@@ -8429,7 +8884,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 244
+      "rank": 244,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Platform 8",
@@ -8464,7 +8921,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 245
+      "rank": 245,
+      "sale_ends_at": "2026-10-05T23:59:59+11:00",
+      "sale_ends_label": "Ends 5 Oct"
     },
     {
       "title": "Fresh Start",
@@ -8569,7 +9028,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 248
+      "rank": 248,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Contra: Operation Galuga",
@@ -8604,7 +9065,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 249
+      "rank": 249,
+      "sale_ends_at": "2026-09-21T23:59:59+10:00",
+      "sale_ends_label": "Ends 21 Sep"
     },
     {
       "title": "SNK VS. CAPCOM SVC CHAOS",
@@ -8635,7 +9098,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 250
+      "rank": 250,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "Eastward: Octopia",
@@ -8654,7 +9119,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 251
+      "rank": 251,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "Star Overdrive",
@@ -8673,7 +9140,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 252
+      "rank": 252,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Elevator Action™ -Returns- S-Tribute",
@@ -8740,7 +9209,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 254
+      "rank": 254,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Sid Meier’s Civilization VI",
@@ -8777,7 +9248,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 255
+      "rank": 255,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "L.A. Noire",
@@ -8854,7 +9327,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 257
+      "rank": 257,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Neon Abyss",
@@ -8894,7 +9369,9 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 258
+      "rank": 258,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "WARRIORS OROCHI 4 Ultimate Deluxe Edition",
@@ -9007,7 +9484,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 261
+      "rank": 261,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "ScourgeBringer",
@@ -9046,7 +9525,9 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 262
+      "rank": 262,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Eiyuden Chronicle: Rising",
@@ -9086,7 +9567,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 263
+      "rank": 263,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "WARRIORS: Abyss",
@@ -9121,7 +9604,9 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 264
+      "rank": 264,
+      "sale_ends_at": "2026-09-28T23:59:59+10:00",
+      "sale_ends_label": "Ends 28 Sep"
     },
     {
       "title": "inKONBINI: One Store. Many Stories",
@@ -9140,7 +9625,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 265
+      "rank": 265,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "7Days Origins",
@@ -9180,7 +9667,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 266
+      "rank": 266,
+      "sale_ends_at": "2026-09-19T23:39:17.103952+10:00",
+      "sale_ends_label": "Ends 19 Sep 11:39pm"
     },
     {
       "title": "No Man's Sky – Nintendo Switch™ 2 Edition",
@@ -9255,7 +9744,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 268
+      "rank": 268,
+      "sale_ends_at": "2026-09-20T23:59:59+10:00",
+      "sale_ends_label": "Ends 20 Sep"
     },
     {
       "title": "Graveyard Keeper",
@@ -9295,7 +9786,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 269
+      "rank": 269,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Worms W.M.D",
@@ -9373,7 +9866,9 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 271
+      "rank": 271,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Fabledom",
@@ -9412,7 +9907,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 272
+      "rank": 272,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Anodyne",
@@ -9452,7 +9949,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 273
+      "rank": 273,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "Gunbrella",
@@ -9593,7 +10092,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 277
+      "rank": 277,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "Faeria",
@@ -9634,7 +10135,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 278
+      "rank": 278,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Rubber Bandits",
@@ -9673,7 +10176,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 279
+      "rank": 279,
+      "sale_ends_at": "2026-10-06T23:59:59+11:00",
+      "sale_ends_label": "Ends 6 Oct"
     },
     {
       "title": "F1® Manager 2024",
@@ -9708,7 +10213,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 280
+      "rank": 280,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "Spirit of the North",
@@ -9747,7 +10254,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 281
+      "rank": 281,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Duke Nukem 3D: 20th Anniversary World Tour",
@@ -9785,7 +10294,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 282
+      "rank": 282,
+      "sale_ends_at": "2026-09-20T23:59:59+10:00",
+      "sale_ends_label": "Ends 20 Sep"
     },
     {
       "title": "Hand of Fate 2",
@@ -9824,7 +10335,9 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 283
+      "rank": 283,
+      "sale_ends_at": "2026-10-01T23:59:59+10:00",
+      "sale_ends_label": "Ends 1 Oct"
     },
     {
       "title": "Moonstone Island",
@@ -9863,7 +10376,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 284
+      "rank": 284,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "I Am Future: Cozy Apocalypse Survival",
@@ -9902,7 +10417,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 285
+      "rank": 285,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Black Skylands",
@@ -9942,7 +10459,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 286
+      "rank": 286,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Despot's Game",
@@ -9981,7 +10500,9 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 287
+      "rank": 287,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "DEAD OR SCHOOL",
@@ -10020,7 +10541,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 288
+      "rank": 288,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "No More Heroes",
@@ -10057,7 +10580,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 289
+      "rank": 289,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "Solateria",
@@ -10076,7 +10601,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 290
+      "rank": 290,
+      "sale_ends_at": "2026-09-21T23:59:59+10:00",
+      "sale_ends_label": "Ends 21 Sep"
     },
     {
       "title": "Maid Cafe on Electric Street",
@@ -10111,7 +10638,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 291
+      "rank": 291,
+      "sale_ends_at": "2026-10-08T23:59:59+11:00",
+      "sale_ends_label": "Ends 8 Oct"
     },
     {
       "title": "Everafter Falls",
@@ -10153,7 +10682,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 292
+      "rank": 292,
+      "sale_ends_at": "2026-10-01T23:59:59+10:00",
+      "sale_ends_label": "Ends 1 Oct"
     },
     {
       "title": "Terra Memoria",
@@ -10188,7 +10719,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 293
+      "rank": 293,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Paw Patrol: On a Roll!",
@@ -10225,7 +10758,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 294
+      "rank": 294,
+      "sale_ends_at": "2026-09-20T23:59:59+10:00",
+      "sale_ends_label": "Ends 20 Sep"
     },
     {
       "title": "Madshot",
@@ -10263,7 +10798,9 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 295
+      "rank": 295,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "KAMIKO",
@@ -10301,7 +10838,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 296
+      "rank": 296,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "League of Enthusiastic Losers",
@@ -10336,7 +10875,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 297
+      "rank": 297,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "A Little Golf Journey",
@@ -10375,7 +10916,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 298
+      "rank": 298,
+      "sale_ends_at": "2026-10-13T23:59:59+11:00",
+      "sale_ends_label": "Ends 13 Oct"
     },
     {
       "title": "Final Frontier Story",
@@ -10394,7 +10937,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 299
+      "rank": 299,
+      "sale_ends_at": "2026-09-29T23:59:59+10:00",
+      "sale_ends_label": "Ends 29 Sep"
     },
     {
       "title": "Portal Knights",
@@ -10433,7 +10978,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 300
+      "rank": 300,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Spellcaster University",
@@ -10471,7 +11018,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 301
+      "rank": 301,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "Star Renegades",
@@ -10512,7 +11061,9 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 302
+      "rank": 302,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Hakoniwa Explorer Plus",
@@ -10551,7 +11102,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 303
+      "rank": 303,
+      "sale_ends_at": "2026-10-08T23:59:59+11:00",
+      "sale_ends_label": "Ends 8 Oct"
     },
     {
       "title": "SAMURAI SHODOWN NEOGEO COLLECTION",
@@ -10584,7 +11137,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 304
+      "rank": 304,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "Deadzone: Rogue",
@@ -10619,7 +11174,9 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 305
+      "rank": 305,
+      "sale_ends_at": "2026-09-25T23:59:59+10:00",
+      "sale_ends_label": "Ends 25 Sep"
     },
     {
       "title": "Gloomhaven - Gold Edition",
@@ -10658,7 +11215,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 306
+      "rank": 306,
+      "sale_ends_at": "2026-09-23T23:59:59+10:00",
+      "sale_ends_label": "Ends 23 Sep"
     },
     {
       "title": "Jotunnslayer: Hordes of Hel",
@@ -10693,7 +11252,9 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 307
+      "rank": 307,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Punch Club 2: Fast Forward",
@@ -10735,7 +11296,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 308
+      "rank": 308,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Tales of the Shire: A The Lord of The Rings™ Game",
@@ -10789,7 +11352,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 310
+      "rank": 310,
+      "sale_ends_at": "2026-09-18T23:39:45.997016+10:00",
+      "sale_ends_label": "Ends 18 Sep 11:39pm"
     },
     {
       "title": "Valfaris",
@@ -10827,7 +11392,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 311
+      "rank": 311,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     },
     {
       "title": "Amber Isle - Deluxe Edition",
@@ -10868,7 +11435,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 312
+      "rank": 312,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "SAMURAI WARRIORS 5 Digital Deluxe Edition",
@@ -10901,7 +11470,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 313
+      "rank": 313,
+      "sale_ends_at": "2026-09-28T23:59:59+10:00",
+      "sale_ends_label": "Ends 28 Sep"
     },
     {
       "title": "PictoQuest",
@@ -10929,7 +11500,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 314
+      "rank": 314,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Yono and the Celestial Elephants",
@@ -10959,7 +11532,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 315
+      "rank": 315,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "The Last Case of John Morley",
@@ -10978,7 +11553,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 316
+      "rank": 316,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "A Gummy's Life",
@@ -11019,7 +11596,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 317
+      "rank": 317,
+      "sale_ends_at": "2026-09-20T23:59:59+10:00",
+      "sale_ends_label": "Ends 20 Sep"
     },
     {
       "title": "Borderlands 3 Ultimate Edition",
@@ -11057,7 +11636,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 318
+      "rank": 318,
+      "sale_ends_at": "2026-09-20T23:59:59+10:00",
+      "sale_ends_label": "Ends 20 Sep"
     },
     {
       "title": "Moonlighter",
@@ -11096,7 +11677,9 @@
       ],
       "rogue_flag": "roguelite",
       "rogue_note": null,
-      "rank": 319
+      "rank": 319,
+      "sale_ends_at": "2026-09-18T23:39:51.474407+10:00",
+      "sale_ends_label": "Ends 18 Sep 11:39pm"
     },
     {
       "title": "Hello Neighbor 2",
@@ -11135,7 +11718,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 320
+      "rank": 320,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Death's Gambit: Afterlife",
@@ -11175,7 +11760,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 321
+      "rank": 321,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Grow: Song of The Evertree",
@@ -11214,7 +11801,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 322
+      "rank": 322,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Revita",
@@ -11329,7 +11918,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 325
+      "rank": 325,
+      "sale_ends_at": "2026-10-13T23:59:59+11:00",
+      "sale_ends_label": "Ends 13 Oct"
     },
     {
       "title": "Dandara: Trials of Fear Edition",
@@ -11385,7 +11976,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 327
+      "rank": 327,
+      "sale_ends_at": "2026-09-18T23:39:57.318420+10:00",
+      "sale_ends_label": "Ends 18 Sep 11:39pm"
     },
     {
       "title": "Double Kick Heroes",
@@ -11423,7 +12016,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 328
+      "rank": 328,
+      "sale_ends_at": "2026-09-24T23:59:59+10:00",
+      "sale_ends_label": "Ends 24 Sep"
     },
     {
       "title": "Paper io 2: Complete Edition",
@@ -11455,7 +12050,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 329
+      "rank": 329,
+      "sale_ends_at": "2026-09-27T23:59:59+10:00",
+      "sale_ends_label": "Ends 27 Sep"
     },
     {
       "title": "Beholgar 2",
@@ -11474,7 +12071,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 330
+      "rank": 330,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Baby Shark™: Sing & Swim Party",
@@ -11549,7 +12148,9 @@
       ],
       "rogue_flag": "neither",
       "rogue_note": null,
-      "rank": 332
+      "rank": 332,
+      "sale_ends_at": "2026-09-30T23:59:59+10:00",
+      "sale_ends_label": "Ends 30 Sep"
     },
     {
       "title": "Help Will Come Tomorrow",
@@ -11588,7 +12189,9 @@
       ],
       "rogue_flag": "both",
       "rogue_note": "both tags significant",
-      "rank": 333
+      "rank": 333,
+      "sale_ends_at": "2026-09-19T23:40:01.392639+10:00",
+      "sale_ends_label": "Ends 19 Sep 11:40pm"
     },
     {
       "title": "Mortal Kombat 11: Aftermath Expansion",
@@ -11628,7 +12231,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 335
+      "rank": 335,
+      "sale_ends_at": "2026-09-28T23:59:59+10:00",
+      "sale_ends_label": "Ends 28 Sep"
     },
     {
       "title": "Mortal Kombat 11 Kombat Pack 2",
@@ -11649,7 +12254,9 @@
       "steamspy_tags": [],
       "rogue_flag": "unknown",
       "rogue_note": "no Steam tag data",
-      "rank": 336
+      "rank": 336,
+      "sale_ends_at": "2026-09-22T23:59:59+10:00",
+      "sale_ends_label": "Ends 22 Sep"
     }
   ]
 }

@@ -41,6 +41,19 @@ Matching uses public store endpoints only (no Steam Web API key):
 
 Optional: [SteamSpy](https://steamspy.com/) tags for `rogue_flag` (also no key). Prices stay **AUD**; buy links stay **`ec.nintendo.com` AU**.
 
+
+### Sale end dates (DekuDeals AU)
+
+After `deals.json` is built, `scripts/enrich_dekudeals_ends.py` best-effort enriches each deal with:
+
+| Field | Meaning |
+|-------|---------|
+| `sale_ends_at` | ISO timestamp (Australia/Melbourne end-of-day for date-only strings) |
+| `sale_ends_label` | Short display string, e.g. `Ends 8 Oct` |
+
+It opens a DekuDeals AU session (`GET https://www.dekudeals.com/` then `POST /locale` with `country=au`), slugifies each title to `/items/{slug}`, and **only** accepts a page when the HTML contains the Nintendo id from `nintendo_url` (`/titles|bundles|aocs/700…`). Misses are skipped quietly; if DekuDeals fails, the snapshot still publishes without dates. Coverage is incomplete and **not** from the Nintendo listing itself.
+
+
 ## Local development
 
 ```bash

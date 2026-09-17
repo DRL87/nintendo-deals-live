@@ -34,4 +34,16 @@ const py = pythonBin();
 run('node', [path.join('scripts', 'scrape_pages.js')]);
 run(py, [path.join('scripts', 'parse_offers.py')]);
 run(py, [path.join('scripts', 'build_deals.py')]);
+// DekuDeals AU sale end dates — best-effort; never fail the snapshot.
+{
+  console.log(`\n>>> ${py} scripts/enrich_dekudeals_ends.py`);
+  const r = spawnSync(py, [path.join('scripts', 'enrich_dekudeals_ends.py')], {
+    cwd: ROOT,
+    stdio: 'inherit',
+    env: process.env,
+  });
+  if (r.status !== 0) {
+    console.warn('enrich_dekudeals_ends failed; publishing deals without sale end dates');
+  }
+}
 console.log('\nPipeline complete → public/deals.json');

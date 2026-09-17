@@ -326,6 +326,17 @@
     font-variant-numeric: tabular-nums;
   }
 
+  .ends {
+    margin-top: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--gold, #e8c56a);
+    letter-spacing: 0.01em;
+  }
+  .ends.soon {
+    color: #ffb4a2;
+  }
+
   /* —— Chips —— */
   .chips { display: flex; flex-wrap: wrap; gap: 5px; }
   .chip {
@@ -540,6 +551,7 @@
       <li>Daily scrape of the Australian Nintendo store Current Offers page (GitHub Actions + Chrome — not Cloudflare Workers).</li>
       <li>Matched each title to Steam, then kept only games rated <strong>Overwhelmingly Positive</strong> or <strong>Very Positive</strong>.</li>
       <li>Prices, discounts, and “Nintendo AU” links come from the AU eShop. Steam % / review counts are a quality filter, not a Nintendo score.</li>
+      <li>Sale end dates (when shown) come from <strong>DekuDeals AU</strong>, matched by Nintendo title id. Coverage is incomplete and is not from the Nintendo listing itself.</li>
       <li>Steam genres and tags are shown on each card. Use the Roguelike / lite filters if you want those games only.</li>
     </ul>
     <p><strong>How to use it</strong></p>
@@ -582,6 +594,7 @@
             <option value="price-desc">Price: high to low</option>
             <option value="off">Biggest discount</option>
             <option value="title">Title A–Z</option>
+            <option value="ends">Ending soon</option>
           </select>
         </div>
         <p class="group-label">Steam rating</p>
@@ -611,7 +624,7 @@
   <div class="grid" id="deals-grid"></div>
 </section>
 <p class="wrap empty" id="none" hidden>No games match that filter.</p>
-<footer class="wrap">Steam ratings are a quality filter, not a Nintendo score. Prices are AUD from the AU eShop. Rating and rogue filters stack. Snapshot updates about once a day.</footer>
+<footer class="wrap">Steam ratings are a quality filter, not a Nintendo score. Prices are AUD from the AU eShop. Rating and rogue filters stack. Sale end dates from DekuDeals AU when available (may be incomplete). Snapshot updates about once a day.</footer>
 
 <script>
 (function () {
@@ -700,6 +713,28 @@
     return x.includes('rogue');
   }
 
+
+  function endsLabel(deal) {
+    if (deal.sale_ends_label) return deal.sale_ends_label;
+    if (!deal.sale_ends_at) return '';
+    try {
+      const d = new Date(deal.sale_ends_at);
+      if (Number.isNaN(d.getTime())) return '';
+      const short = new Intl.DateTimeFormat('en-AU', {
+        timeZone: 'Australia/Melbourne', day: 'numeric', month: 'short',
+      }).format(d);
+      return 'Ends ' + short;
+    } catch (e) { return ''; }
+  }
+
+  function endsSoon(iso) {
+    if (!iso) return false;
+    const t = Date.parse(iso);
+    if (Number.isNaN(t)) return false;
+    const hours = (t - Date.now()) / 36e5;
+    return hours >= 0 && hours <= 72;
+  }
+
   function buildCard(deal) {
     const flag = deal.rogue_flag || 'unknown';
     const rk = ratingKey(deal.steam_rating_label);
@@ -752,11 +787,18 @@
     el.dataset.off = off != null ? String(off) : '';
     el.dataset.pct = pct != null ? String(pct) : '';
     el.dataset.reviews = reviews != null ? String(reviews) : '';
+    el.dataset.endsAt = deal.sale_ends_at ? String(Date.parse(deal.sale_ends_at) || '') : '';
+    const endTxt = endsLabel(deal);
+    const endsHtml = endTxt
+      ? `<div class="ends${endsSoon(deal.sale_ends_at) ? ' soon' : ''}">${esc(endTxt)}</div>`
+      : '';
     el.innerHTML =
       `<a class="cover" href="${esc(url)}" target="_blank" rel="noopener">` +
       `<div class="topline"><span class="badge ${badgeCls}">${esc(badgeText)}</span>${offHtml}</div>` +
       `<h3>${esc(title)}</h3></a>` +
       `<div class="prices"><span class="now">${esc(money(price))} AUD</span>${wasHtml}</div>` +
+      endsHtml +
+      
       `<div class="chips">${chips.join('')}</div>` +
       `<div class="links">` +
       `<a class="buy" href="${esc(url)}" target="_blank" rel="noopener">Nintendo AU</a>` +
@@ -808,6 +850,11 @@
       if (mode === 'off') return num(b, 'off') - num(a, 'off') || num(a, 'price') - num(b, 'price');
       if (mode === 'reviews') return num(b, 'reviews') - num(a, 'reviews');
       if (mode === 'title') return (a.dataset.title || '').localeCompare(b.dataset.title || '');
+      if (mode === 'ends') {
+        const ae = parseFloat(a.dataset.endsAt) || Number.POSITIVE_INFINITY;
+        const be = parseFloat(b.dataset.endsAt) || Number.POSITIVE_INFINITY;
+        return ae - be || (a.dataset.title || '').localeCompare(b.dataset.title || '');
+      }
       if (mode === 'op-first') {
         const ar = a.dataset.rating === 'op' ? 0 : 1;
         const br = b.dataset.rating === 'op' ? 0 : 1;

@@ -54,6 +54,8 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
+      # scrape.js builds deals.json then best-effort enriches sale end dates via DekuDeals AU
+      # (scripts/enrich_dekudeals_ends.py). Enrichment failures do not fail the job.
       - name: Run full scrape pipeline
         env:
           CHROME_PATH: /usr/bin/google-chrome-stable
