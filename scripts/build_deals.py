@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 """Steam match + OP/VP filter + rogue flags; write public/deals.json.
 
-Uses only public Steam endpoints (storesearch / appdetails / appreviews) — no Steam API key.
-SteamSpy tags are optional enrichment for rogue_flag (also no key).
+Uses only public Steam endpoints (storesearch / appdetails / appreviews /
+appreviewhistogram) — no Steam API key. SteamSpy tags are optional enrichment
+for rogue_flag (also no key).
+
+Steam ratings: pull BOTH overall (English / Steam UI "All Reviews") and Recent
+(last ~30 days via appreviewhistogram). Keep a game if EITHER score is
+Overwhelmingly Positive or Very Positive.
 """
 import json, re, csv, os, hashlib, time
 from datetime import datetime, timezone
@@ -108,23 +113,109 @@ def steam_search(session, term: str):
     cache_set('search', term, data)
     return data
 
-def steam_reviews(session, appid: int):
-    cached = cache_get('reviews', str(appid))
+PASS_LABELS = frozenset({'Overwhelmingly Positive', 'Very Positive'})
+
+def steam_label_from_counts(positive: int, total: int):
+    """Map review counts to a Steam-style summary label (Valve thresholds)."""
+    if not total or total <= 0:
+        return None, None
+    pct = 100.0 * positive / total
+    if total >= 500 and pct >= 95:
+        label = 'Overwhelmingly Positive'
+    elif total >= 50 and pct >= 80:
+        label = 'Very Positive'
+    elif total >= 10 and pct >= 80:
+        label = 'Positive'
+    elif total >= 10 and pct >= 70:
+        label = 'Mostly Positive'
+    elif total >= 10 and pct >= 40:
+        label = 'Mixed'
+    elif total >= 10 and pct >= 20:
+        label = 'Mostly Negative'
+    elif total >= 500 and pct < 20:
+        label = 'Overwhelmingly Negative'
+    elif total >= 50 and pct < 20:
+        label = 'Very Negative'
+    elif total >= 10:
+        label = 'Negative'
+    else:
+        label = None
+    return label, round(pct)
+
+def parse_overall_summary(payload):
+    """Overall / English reviews from appreviews query_summary."""
+    qs = (payload or {}).get('query_summary') or {}
+    label = qs.get('review_score_desc') or None
+    total = qs.get('total_reviews') or 0
+    pos = qs.get('total_positive') or 0
+    pct = round(100.0 * pos / total) if total else None
+    return {
+        'label': label,
+        'percent': pct,
+        'review_count': total,
+        'positive': pos,
+    }
+
+def parse_recent_histogram(payload):
+    """Recent (~30 day) reviews from appreviewhistogram results.recent."""
+    results = (payload or {}).get('results') or {}
+    days = results.get('recent') or []
+    if not days:
+        return {'label': None, 'percent': None, 'review_count': 0, 'positive': 0}
+    up = sum(int(d.get('recommendations_up') or 0) for d in days)
+    down = sum(int(d.get('recommendations_down') or 0) for d in days)
+    total = up + down
+    label, pct = steam_label_from_counts(up, total)
+    return {
+        'label': label,
+        'percent': pct,
+        'review_count': total,
+        'positive': up,
+    }
+
+def steam_reviews_overall(session, appid: int):
+    """English overall reviews — matches Steam store 'All Reviews' / English Reviews."""
+    cached = cache_get('reviews_overall', str(appid))
     if cached is not None:
         return cached
+    # language=english matches the Steam UI "All Reviews" row for English storefronts.
+    # (language=all is all-languages overall; filter=recent still returns overall in query_summary.)
     url = (f'https://store.steampowered.com/appreviews/{appid}'
-           f'?json=1&language=all&purchase_type=all&num_per_page=0&filter_offtopic_activity=0')
+           f'?json=1&language=english&purchase_type=all&num_per_page=0'
+           f'&filter_offtopic_activity=0')
     for attempt in range(3):
         try:
             r = session.get(url, timeout=25)
             if r.status_code == 200:
                 data = r.json()
-                cache_set('reviews', str(appid), data)
+                cache_set('reviews_overall', str(appid), data)
                 return data
             time.sleep(1.0 * (attempt + 1))
         except Exception:
             time.sleep(1.0 * (attempt + 1))
     return None
+
+def steam_reviews_recent(session, appid: int):
+    """Recent review rollup via histogram (last ~30 daily buckets)."""
+    cached = cache_get('reviews_recent', str(appid))
+    if cached is not None:
+        return cached
+    url = f'https://store.steampowered.com/appreviewhistogram/{appid}?l=english'
+    for attempt in range(3):
+        try:
+            r = session.get(url, timeout=25)
+            if r.status_code == 200:
+                data = r.json()
+                cache_set('reviews_recent', str(appid), data)
+                return data
+            time.sleep(1.0 * (attempt + 1))
+        except Exception:
+            time.sleep(1.0 * (attempt + 1))
+    return None
+
+# Back-compat alias used nowhere after this patch, but keep name for any imports.
+def steam_reviews(session, appid: int):
+    return steam_reviews_overall(session, appid)
 
 def steam_appdetails(session, appid: int):
     cached = cache_get('details', str(appid))
@@ -300,20 +391,35 @@ def fetch_all_searches(keys):
             time.sleep(0.05)
 
 def fetch_reviews_parallel(appids):
-    missing = [a for a in appids if cache_get('reviews', str(a)) is None]
-    print(f'reviews cache hit {len(appids)-len(missing)}/{len(appids)}, fetching {len(missing)}')
+    miss_o = [a for a in appids if cache_get('reviews_overall', str(a)) is None]
+    miss_r = [a for a in appids if cache_get('reviews_recent', str(a)) is None]
+    print(f'overall reviews cache hit {len(appids)-len(miss_o)}/{len(appids)}, fetching {len(miss_o)}')
+    print(f'recent reviews cache hit {len(appids)-len(miss_r)}/{len(appids)}, fetching {len(miss_r)}')
 
-    def one(a):
-        return a, steam_reviews(make_session(), a)
+    def one_overall(a):
+        return a, steam_reviews_overall(make_session(), a)
+
+    def one_recent(a):
+        return a, steam_reviews_recent(make_session(), a)
 
     with ThreadPoolExecutor(max_workers=10) as ex:
-        futs = [ex.submit(one, a) for a in missing]
+        futs = [ex.submit(one_overall, a) for a in miss_o]
         done = 0
         for fut in as_completed(futs):
             fut.result()
             done += 1
             if done % 40 == 0:
-                print(f'  reviews fetched {done}/{len(missing)}')
+                print(f'  overall reviews fetched {done}/{len(miss_o)}')
+            time.sleep(0.03)
+
+    with ThreadPoolExecutor(max_workers=10) as ex:
+        futs = [ex.submit(one_recent, a) for a in miss_r]
+        done = 0
+        for fut in as_completed(futs):
+            fut.result()
+            done += 1
+            if done % 40 == 0:
+                print(f'  recent reviews fetched {done}/{len(miss_r)}')
             time.sleep(0.03)
 
 def fetch_details_spy_parallel(appids):
@@ -389,28 +495,36 @@ def main():
         if not meta:
             continue
         appid = meta['appid']
-        rev = cache_get('reviews', str(appid)) or {}
-        qs = (rev or {}).get('query_summary') or {}
-        label = qs.get('review_score_desc') or ''
-        if label not in ('Overwhelmingly Positive', 'Very Positive'):
+        overall = parse_overall_summary(cache_get('reviews_overall', str(appid)))
+        recent = parse_recent_histogram(cache_get('reviews_recent', str(appid)))
+        o_ok = overall['label'] in PASS_LABELS
+        r_ok = recent['label'] in PASS_LABELS
+        if not (o_ok or r_ok):
             continue
-        total = qs.get('total_reviews') or 0
-        pos = qs.get('total_positive') or 0
-        pct = round(100.0 * pos / total) if total else None
-        kept_candidates.append((i, o, meta, label, pct, total))
+        kept_candidates.append((i, o, meta, overall, recent))
 
-    print('OP/VP candidates (pre-dedupe)', len(kept_candidates))
+    print('OP/VP candidates (pre-dedupe, either overall or recent)', len(kept_candidates))
     kept_appids = sorted({m['appid'] for _, _, m, *_ in kept_candidates})
     fetch_details_spy_parallel(kept_appids)
 
+    def best_display_label(overall, recent):
+        """Primary badge: prefer OP, then VP, preferring overall when tied."""
+        for lab in ('Overwhelmingly Positive', 'Very Positive'):
+            if overall.get('label') == lab:
+                return lab
+            if recent.get('label') == lab:
+                return lab
+        return overall.get('label') or recent.get('label') or ''
+
     rows_by_app = {}
-    for i, o, meta, label, pct, total in kept_candidates:
+    for i, o, meta, overall, recent in kept_candidates:
         appid = meta['appid']
         spy = cache_get('spy', str(appid)) or {}
         details = cache_get('details', str(appid))
         rogue_flag, gnote = classify_rogue(appid, meta['steam_name'], spy)
         genres = extract_steam_genres(details, appid)
         tags = top_spy_tags((spy or {}).get('tags') or {}, n=15)
+        # Legacy single fields = overall (English), so sorts stay stable.
         row = {
             'title': o['title'],
             'steam_title': meta['steam_name'],
@@ -419,9 +533,15 @@ def main():
             'nintendo_original_price_aud': o['nintendo_original_price_aud'],
             'discount_percent': o['discount_percent'],
             'steam_app_id': appid,
-            'steam_rating_label': label,
-            'steam_percent_positive': pct,
-            'steam_review_count': total,
+            'steam_rating_label': best_display_label(overall, recent),
+            'steam_percent_positive': overall.get('percent'),
+            'steam_review_count': overall.get('review_count') or 0,
+            'steam_overall_label': overall.get('label'),
+            'steam_overall_percent': overall.get('percent'),
+            'steam_overall_review_count': overall.get('review_count') or 0,
+            'steam_recent_label': recent.get('label'),
+            'steam_recent_percent': recent.get('percent'),
+            'steam_recent_review_count': recent.get('review_count') or 0,
             'match_confidence': meta['confidence'],
             'fuzzy_score': meta['fuzzy_score'],
             'steam_genres': genres,
@@ -435,9 +555,9 @@ def main():
 
     rows = list(rows_by_app.values())
     rows.sort(key=lambda r: (
-        -(r['steam_percent_positive'] or 0),
-        -(r['steam_review_count'] or 0),
-        0 if r['steam_rating_label'] == 'Overwhelmingly Positive' else 1,
+        -(r.get('steam_overall_percent') if r.get('steam_overall_percent') is not None else r.get('steam_percent_positive') or 0),
+        -(r.get('steam_overall_review_count') or r.get('steam_review_count') or 0),
+        0 if r.get('steam_rating_label') == 'Overwhelmingly Positive' else 1,
     ))
     for idx, r in enumerate(rows, 1):
         r['rank'] = idx
@@ -455,10 +575,12 @@ def main():
             'ranking': '% positive desc, review count desc, Overwhelmingly Positive before Very Positive',
             'notes': (
                 'Live Magento scrape of Nintendo AU Current Offers via headless Chrome. '
-                'Steam via storesearch + appreviews + appdetails genres + SteamSpy tags. '
+                'Steam via storesearch + appreviews (English overall) + appreviewhistogram (recent ~30d) '
+                '+ appdetails genres + SteamSpy tags. '
+                'Inclusion: keep if overall OR recent is Overwhelmingly Positive / Very Positive. '
                 'rogue_flag from significant SteamSpy tags (top~12 / ≥35% of top-tag votes) + known lists; '
                 'Action Roguelike→roguelite; Traditional Roguelike→roguelike; both when both significant. '
-                'Duplicate Steam apps collapsed to cheapest AU offer. OP/VP only.'
+                'Duplicate Steam apps collapsed to cheapest AU offer.'
             ),
         },
         'deals': rows,
@@ -471,6 +593,8 @@ def main():
             'rank', 'title', 'steam_title', 'nintendo_url',
             'nintendo_price_aud', 'nintendo_original_price_aud', 'discount_percent',
             'steam_app_id', 'steam_rating_label', 'steam_percent_positive', 'steam_review_count',
+            'steam_overall_label', 'steam_overall_percent', 'steam_overall_review_count',
+            'steam_recent_label', 'steam_recent_percent', 'steam_recent_review_count',
             'match_confidence', 'fuzzy_score',
             'steam_genres', 'steamspy_tags', 'rogue_flag', 'rogue_note',
         ]

@@ -37,7 +37,9 @@ Matching uses public store endpoints only (no Steam Web API key):
 |----------|---------|
 | `store.steampowered.com/api/storesearch/` | Title search |
 | `store.steampowered.com/api/appdetails` | Genres |
-| `store.steampowered.com/appreviews/{id}` | Review score / OP·VP filter |
+| `store.steampowered.com/appreviews/{id}` | Overall (English) review score |
+| `store.steampowered.com/appreviewhistogram/{id}` | Recent (~30 day) review score |
+| Inclusion | Keep if **overall OR recent** is Overwhelmingly Positive / Very Positive |
 
 Optional: [SteamSpy](https://steamspy.com/) tags for `rogue_flag` (also no key). Prices stay **AUD**; buy links stay **`ec.nintendo.com` AU**.
 

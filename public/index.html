@@ -413,6 +413,48 @@
     color: #d0dce8;
   }
 
+  .steam-ratings {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 6px 0 2px;
+    font-size: 0.78rem;
+    line-height: 1.35;
+    color: var(--muted, #9aa3b2);
+  }
+  .steam-ratings .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 8px;
+  }
+  .steam-ratings .kind {
+    font-weight: 600;
+    color: var(--fg, #e8eaed);
+    min-width: 4.2rem;
+  }
+  .steam-ratings .mini-badge {
+    display: inline-block;
+    padding: 1px 7px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 650;
+  }
+  .steam-ratings .mini-badge.op {
+    background: rgba(102, 192, 244, 0.18);
+    color: #7dd3fc;
+  }
+  .steam-ratings .mini-badge.vp {
+    background: rgba(90, 166, 92, 0.2);
+    color: #86efac;
+  }
+  .steam-ratings .mini-badge.other {
+    background: rgba(148, 163, 184, 0.15);
+    color: #cbd5e1;
+  }
+  .steam-ratings .nums { color: var(--muted, #9aa3b2); }
+
+
   /* —— Status / empty / footer —— */
   .empty {
     color: var(--muted);
@@ -549,7 +591,7 @@
     <p><strong>How the data was put together</strong></p>
     <ul>
       <li>Daily scrape of the Australian Nintendo store Current Offers page (GitHub Actions + Chrome — not Cloudflare Workers).</li>
-      <li>Matched each title to Steam, then kept only games rated <strong>Overwhelmingly Positive</strong> or <strong>Very Positive</strong>.</li>
+      <li>Matched each title to Steam, then kept games where <strong>overall</strong> or <strong>recent</strong> reviews are <strong>Overwhelmingly Positive</strong> or <strong>Very Positive</strong> (either one is enough).</li>
       <li>Prices, discounts, and “Nintendo AU” links come from the AU eShop. Steam % / review counts are a quality filter, not a Nintendo score.</li>
       <li>Sale end dates (when shown) come from <strong>DekuDeals AU</strong>, matched by Nintendo title id. Coverage is incomplete and is not from the Nintendo listing itself.</li>
       <li>Steam genres and tags are shown on each card. Use the Roguelike / lite filters if you want those games only.</li>
@@ -665,7 +707,31 @@
   }
 
   function ratingKey(label) {
-    return label === 'Overwhelmingly Positive' ? 'op' : 'vp';
+    if (label === 'Overwhelmingly Positive') return 'op';
+    if (label === 'Very Positive') return 'vp';
+    return 'other';
+  }
+
+  function ratingLine(kind, label, pct, count) {
+    if (!label && pct == null && (count == null || count === 0)) {
+      return `<div class="row"><span class="kind">${esc(kind)}</span><span class="nums">—</span></div>`;
+    }
+    const rk = ratingKey(label);
+    const badge = label ? `<span class="mini-badge ${rk}">${esc(label)}</span>` : '';
+    const nums = [];
+    if (pct != null) nums.push(`${esc(pct)}%`);
+    if (count != null && count !== '') nums.push(`${esc(count)} reviews`);
+    const numsHtml = nums.length ? `<span class="nums">${nums.join(' · ')}</span>` : '';
+    return `<div class="row"><span class="kind">${esc(kind)}</span>${badge}${numsHtml}</div>`;
+  }
+
+  function cardMatchesRatingFilter(card, filter) {
+    if (filter === 'all') return true;
+    const overall = card.dataset.ratingOverall || card.dataset.rating || '';
+    const recent = card.dataset.ratingRecent || '';
+    if (filter === 'op') return overall === 'op' || recent === 'op';
+    if (filter === 'vp') return overall === 'vp' || recent === 'vp';
+    return true;
   }
 
   function isRogue(flag) {
@@ -737,7 +803,9 @@
 
   function buildCard(deal) {
     const flag = deal.rogue_flag || 'unknown';
-    const rk = ratingKey(deal.steam_rating_label);
+    const overallLabel = deal.steam_overall_label || deal.steam_rating_label || '';
+    const recentLabel = deal.steam_recent_label || '';
+    const rk = ratingKey(deal.steam_rating_label || overallLabel);
     const genres = deal.steam_genres || [];
     const tags = deal.steamspy_tags || [];
     const title = deal.title || '';
@@ -752,8 +820,10 @@
     const price = deal.nintendo_price_aud;
     const was = deal.nintendo_original_price_aud;
     const off = deal.discount_percent;
-    const pct = deal.steam_percent_positive;
-    const reviews = deal.steam_review_count;
+    const pct = deal.steam_overall_percent != null ? deal.steam_overall_percent : deal.steam_percent_positive;
+    const reviews = deal.steam_overall_review_count != null ? deal.steam_overall_review_count : deal.steam_review_count;
+    const recentPct = deal.steam_recent_percent;
+    const recentReviews = deal.steam_recent_review_count;
     const appid = deal.steam_app_id;
 
     const chips = [];
@@ -767,19 +837,23 @@
       chips.push(`<span class="${cls}">${esc(t)}</span>`);
     });
 
-    const badgeCls = rk === 'op' ? 'op' : 'vp';
-    const badgeText = deal.steam_rating_label || '';
+    const badgeCls = rk === 'op' ? 'op' : (rk === 'vp' ? 'vp' : 'vp');
+    const badgeText = deal.steam_rating_label || overallLabel || '';
     const offHtml = off != null ? `<span class="off">-${esc(off)}%</span>` : '';
     const wasHtml = was != null ? `<span class="was">${esc(money(was))}</span>` : '';
     const steamHref = appid ? `https://store.steampowered.com/app/${esc(appid)}/` : '#';
-    const steamLabel = pct != null
-      ? `Steam ${esc(pct)}% · ${esc(reviews ?? '')}`
-      : 'Steam';
+    const ratingsHtml =
+      `<div class="steam-ratings">` +
+      ratingLine('Overall', overallLabel, pct, reviews) +
+      ratingLine('Recent', recentLabel, recentPct, recentReviews) +
+      `</div>`;
 
     const el = document.createElement('article');
     el.className = 'card' + (featured ? ' featured' : '');
     el.dataset.flag = flag;
     el.dataset.rating = rk;
+    el.dataset.ratingOverall = ratingKey(overallLabel);
+    el.dataset.ratingRecent = ratingKey(recentLabel);
     el.dataset.title = title.toLowerCase();
     el.dataset.text = textBits;
     el.dataset.genres = genresAttr;
@@ -798,11 +872,11 @@
       `<h3>${esc(title)}</h3></a>` +
       `<div class="prices"><span class="now">${esc(money(price))} AUD</span>${wasHtml}</div>` +
       endsHtml +
-      
+      ratingsHtml +
       `<div class="chips">${chips.join('')}</div>` +
       `<div class="links">` +
       `<a class="buy" href="${esc(url)}" target="_blank" rel="noopener">Nintendo AU</a>` +
-      `<a class="steam" href="${steamHref}" target="_blank" rel="noopener">${steamLabel}</a>` +
+      `<a class="steam" href="${steamHref}" target="_blank" rel="noopener">Open on Steam</a>` +
       `</div>`;
     return el;
   }
@@ -876,7 +950,7 @@
     document.querySelectorAll('.card').forEach((c) => {
       const flag = c.dataset.flag;
       let ok = true;
-      if (rating !== 'all') ok = c.dataset.rating === rating;
+      if (rating !== 'all') ok = cardMatchesRatingFilter(c, rating);
       if (ok && rogue === 'rogue') ok = flag === 'roguelike' || flag === 'roguelite' || flag === 'both';
       if (ok && rogue === 'roguelike') ok = flag === 'roguelike' || flag === 'both';
       if (ok && rogue === 'roguelite') ok = flag === 'roguelite' || flag === 'both';
